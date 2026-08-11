@@ -192,6 +192,53 @@
     .case-dialog{width:min(1080px,calc(100% - 24px));background:#edf4f7}.case-dialog .dialog-scroll{padding:24px;background:#edf4f7}.case-document{display:grid;place-items:center;min-height:400px;padding:20px;background:#dfe9ee}.case-document img{max-width:100%;max-height:calc(88vh - 230px);object-fit:contain;background:#fff;box-shadow:0 18px 50px rgba(6,27,61,.18)}.case-caption{display:flex;justify-content:space-between;gap:22px;margin-top:14px;padding:14px 16px;background:#fff;border-left:4px solid var(--red);color:var(--muted);font-size:12px}.case-caption strong{color:var(--navy)}
     @media(max-width:1050px){.hero-head{grid-template-columns:1fr;min-height:520px}.hero-brand{position:absolute;right:32px;top:32px;width:220px}.identity-card{width:94%;grid-template-columns:1fr 1fr}.identity-contact{grid-template-columns:repeat(2,1fr)}.identity-contact .contact-link.primary,.identity-contact .contact-email,.identity-contact .contact-line{grid-column:1/-1}.position-grid,.campus-gallery,.alumni-grid{grid-template-columns:1fr 1fr}.concern-grid{grid-template-columns:1fr 1fr}}
     @media(max-width:760px){body::after{display:none}.topbar{height:66px}.brand span:last-child{font-size:14px}.language-note{padding:7px 8px;font-size:9px}.hero{padding-top:18px}.hero-head{min-height:600px;padding:34px 25px 54px;display:flex;align-items:flex-end;background-position:62% center}.hero-brand{position:absolute;top:24px;right:20px;width:154px;padding:14px}.hero-brand .seg-logo{margin:0;width:100%}.hero-brand .update{margin-top:12px;padding-top:10px}.hero-brand small{display:none}.hero-kicker{font-size:10px}.hero h1{font-size:clamp(48px,15vw,70px)}.hero h1 span{margin-top:12px;font-size:.43em;line-height:1.05}.hero-copy{font-size:14px;line-height:1.65}.hero-stats{margin-top:22px}.hero-stat{min-width:88px;margin-right:16px;padding-right:12px}.hero-stat strong{font-size:21px}.identity-card{width:92%;margin:-30px auto 28px}.identity-photo{width:72px;height:92px}.identity-contact{grid-template-columns:1fr 1fr}.matrix-shell{border-top-width:5px}.section-head{padding-top:22px}.section-head h2{font-size:40px}.position-grid,.campus-gallery,.alumni-grid{grid-template-columns:1fr}.position{min-height:280px}.alumni-head{align-items:flex-start;flex-direction:column;margin-top:52px}.alumni-head h3{font-size:32px}.catalog{display:grid;background:transparent;border:0;gap:12px}.catalog-card{border-left:4px solid var(--red)}.concern-grid{display:grid;grid-template-columns:1fr;background:transparent;border:0;gap:1px}.concern{min-height:auto;border-top:4px solid var(--navy)}.fee-rate,.fee-box{align-items:flex-start;flex-direction:column}.fee-rate span{text-align:left}}
+
+    /* SEG China official palette — sampled from swisseducation.com.cn, 2026-08-11 */
+    :root{
+      --cream:#fff;
+      --cream-2:#f1f1f1;
+      --navy:#410c0c;
+      --navy-2:#4e1011;
+      --red:#e42313;
+      --ink:#222;
+      --muted:#666;
+      --line:#ddd;
+      --soft:#f4f4f4;
+      --blue-soft:#f8f2f1;
+      --warn:#7a3f38;
+      --shadow:0 24px 60px rgba(65,12,12,.12)
+    }
+    body{background:#fff;background-image:radial-gradient(circle at 12% 4%,rgba(255,255,255,.96),transparent 28%),repeating-linear-gradient(90deg,transparent 0,transparent calc(8.333% - 1px),rgba(65,12,12,.018) calc(8.333% - 1px),rgba(65,12,12,.018) 8.333%)}
+    body::after{color:rgba(65,12,12,.14)}
+    .topbar{background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);box-shadow:0 7px 22px rgba(34,34,34,.08)}
+    .brand{color:#222}.brand-mark{background:var(--red)}
+    .nav-links a{color:#555}.nav-links a:hover{color:var(--red)}
+    .language-note{border-color:#999;color:#333}
+    .watermark{color:rgba(65,12,12,.11)}
+    .hero-head{background-color:var(--navy);background-image:linear-gradient(90deg,rgba(65,12,12,.94) 0%,rgba(65,12,12,.76) 48%,rgba(65,12,12,.18) 100%),url("alpine-campus-caux-web.jpg");box-shadow:0 34px 80px rgba(65,12,12,.18)}
+    .hero-brand{box-shadow:0 24px 50px rgba(65,12,12,.2)}
+    .identity-card{box-shadow:0 24px 55px rgba(65,12,12,.13)}
+    .identity-card::after{color:rgba(65,12,12,.035)}
+    .identity-photo{box-shadow:0 12px 24px rgba(65,12,12,.15)}
+    .matrix-shell{box-shadow:0 28px 70px rgba(65,12,12,.11)}
+    .program-link:hover{background:#f8f2f1}
+    .position{background:rgba(65,12,12,.78)}
+    .position:hover{background:rgba(78,16,17,.96)}
+    .position-code,.position li::before{color:#ff7b70}
+    .catalog-card:hover{box-shadow:0 20px 40px rgba(65,12,12,.12)}
+    .catalog-card[data-school="SHMS"],.catalog-card[data-school="CAAS"],.catalog-card[data-school="CRCS"],.catalog-card[data-school="HIM"],.catalog-card[data-school="HIM + CRCS"]{border-top-color:var(--red)}
+    .coverage span{border-color:#d2c2bf}
+    .agency{background:#f6f4f3}
+    .agency::before{background:repeating-radial-gradient(ellipse at 10% 20%,transparent 0 8px,rgba(65,12,12,.028) 9px 10px)}
+    .concern-grid{background:#d8c9c6;border-color:#d8c9c6}
+    .concern-kicker,.case-panel .case-label{color:var(--red)}
+    .case-boundary{border-color:#d9c7c4;background:rgba(255,255,255,.78)}
+    .case-panel{border-color:#d9c7c4;background:#fbf7f6}
+    .case-dialog,.case-dialog .dialog-scroll{background:#f5f2f1}
+    .case-document{background:#e8dfdd}
+    .case-document img{box-shadow:0 18px 50px rgba(65,12,12,.16)}
+    dialog::backdrop{background:rgba(65,12,12,.72)}
+    @media print{.watermark{color:rgba(65,12,12,.12)}}
   </style>
 </head>
 <body>
