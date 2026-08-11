@@ -89,6 +89,7 @@
     .empty{color:#9aa4b0;text-align:center;font-size:22px}
     .entry-strip{display:flex;align-items:center;gap:16px;padding:18px 24px;background:#eaf1f7;color:var(--navy);font-weight:750}
     .entry-strip button{border:0;background:transparent;color:var(--navy);font-weight:800;text-decoration:underline;text-decoration-color:rgba(239,43,37,.4);text-underline-offset:4px}
+    .entry-strip button small{display:block;margin-top:4px;color:var(--muted);font-size:10px;font-weight:600;text-decoration:none}
     .entry-strip button:hover{color:var(--red)}
     .matrix-hint{display:flex;justify-content:space-between;gap:18px;padding:12px 4px 0;color:var(--muted);font-size:12px}
     .matrix-hint strong{color:var(--red)}
@@ -140,6 +141,8 @@
     .dialog-scroll{max-height:calc(88vh - 96px);overflow:auto;padding:28px}
     .detail-meta{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
     .meta{padding:16px;background:#fff}.meta span{display:block;color:var(--muted);font-size:11px}.meta strong{display:block;margin-top:6px;color:var(--navy);font-size:15px}
+    .detail-official{margin:0 0 18px;padding:12px 14px;border-left:3px solid var(--red);background:var(--cream-2);color:var(--muted);font-size:12px;line-height:1.55}
+    .detail-official strong{color:var(--navy)}
     .detail-lead{margin:28px 0;padding:24px;background:var(--navy);color:#fff;font-size:19px;line-height:1.55}
     .detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
     .detail-block h3{margin:0 0 12px;color:var(--navy);font-size:19px}.detail-block ul{margin:0;padding-left:20px;color:var(--muted)}.detail-block li+li{margin-top:8px}
@@ -242,12 +245,12 @@
   </style>
 </head>
 <body>
-  <a class="skip-link" href="#matrix">跳到本硕学位</a>
+  <a class="skip-link" href="#matrix">跳到项目总览</a>
   <div class="watermark" aria-hidden="true">LUCINDA · SEG PRODUCT GUIDE</div>
   <header class="topbar">
     <div class="container nav">
       <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"></span><span>SEG 2027 产品导航</span></a>
-      <nav class="nav-links" aria-label="页面导航"><a href="#matrix">本硕学位</a><a href="#selling">校区特色</a><a href="#catalog">课程详情</a><a href="#cases">中留服案例</a><a href="#contact">联系 Lucinda</a></nav>
+      <nav class="nav-links" aria-label="页面导航"><a href="#matrix">项目总览</a><a href="#selling">校区特色</a><a href="#catalog">课程详情</a><a href="#cases">中留服案例</a><a href="#contact">联系 Lucinda</a></nav>
       <span class="language-note">四校主课｜全英文授课</span>
     </div>
   </header>
@@ -260,7 +263,7 @@
             <div class="hero-kicker">LUCINDA'S PROGRAM GUIDE · SWITZERLAND</div>
             <h1><em>SEG</em> 2027<span>四校产品导航</span></h1>
             <p class="hero-copy">先按学生目前的学历找到可申请项目，再查看学制、课程、实习和费用。家长、学生和合作机构可以用这份导航做第一轮比较。</p>
-            <div class="hero-stats" aria-label="产品导航概览"><div class="hero-stat"><strong>04</strong><span>Schools</span></div><div class="hero-stat"><strong>16</strong><span>Program routes</span></div><div class="hero-stat"><strong>2027</strong><span>Admissions</span></div></div>
+            <div class="hero-stats" aria-label="产品导航概览"><div class="hero-stat"><strong>04</strong><span>Schools</span></div><div class="hero-stat"><strong>19</strong><span>Programs</span></div><div class="hero-stat"><strong>2027</strong><span>Admissions</span></div></div>
           </div>
           <div class="hero-brand"><img class="seg-logo" src="seg-dark.png" alt="Swiss Education Group"><div class="update">信息核对至 2026-08-11</div><small>Caux · Leysin · Brig · Montreux · Le Bouveret</small></div>
         </div>
@@ -271,35 +274,36 @@
           <div class="identity-contact"><a class="contact-link primary" href="https://www.swisseducation.com.cn/namecard/discovery-our-program-greeting-from-swiss-education-group-lucinda/" target="_blank" rel="noopener noreferrer nofollow">查看 SEG 官网个人名片</a><span class="contact-email">邮箱：lucindalu@swisseducation.com.cn</span><a class="contact-link" href="tel:+8615821368840">电话联系</a><a class="contact-link" href="lucinda-seg.vcf" download="Lucinda-Lu-SEG.vcf">保存名片</a><div class="contact-line">手机／微信：+86 158 2136 8840<br>名片按钮将打开 SEG 中国官网；四校项目不设置官网外跳</div></div>
         </aside>
 
-        <div class="matrix-shell" aria-label="SEG 2027 本硕学位导航">
+        <div class="matrix-shell" aria-label="SEG 2027 四校项目导航">
           <div class="matrix">
-            <div class="corner">点击项目查看完整信息</div>
+            <div class="corner">先看当前阶段，再点项目看详情</div>
             <div class="school-head"><div><img loading="lazy" decoding="async" src="shms-dark.png" alt="SHMS 瑞士酒店管理大学"><strong>SHMS</strong><span class="school-cn">瑞士酒店管理大学</span><span>Swiss Hotel Management School</span><span class="school-rank">2024 QS 酒店与休闲管理：全球第 2</span></div></div>
             <div class="school-head"><div><img loading="lazy" decoding="async" src="caas-dark.png" alt="CAAS 瑞士美食艺术大学"><strong>CAAS</strong><span class="school-cn">瑞士美食艺术大学</span><span>Culinary Arts Academy Switzerland</span><span class="school-rank">2024 QS 酒店与休闲管理：全球第 7</span></div></div>
             <div class="school-head"><div><img loading="lazy" decoding="async" src="crcs-logo.svg" alt="CRCS 瑞士恺撒里兹大学"><strong>CRCS</strong><span class="school-cn">瑞士恺撒里兹大学</span><span>César Ritz Colleges Switzerland</span><span class="school-rank">2024 QS 酒店与休闲管理：全球第 3</span></div></div>
             <div class="school-head"><div><img loading="lazy" decoding="async" src="him-dark.png" alt="HIM 蒙特勒工商管理大学"><strong>HIM</strong><span class="school-cn">蒙特勒工商管理大学</span><span>HIM Business School</span><span class="school-rank">2024 QS 酒店与休闲管理：全球第 6</span></div></div>
 
             <div class="audience">高中毕业／<br>预科学生</div>
-            <div class="matrix-cell" data-school="SHMS｜瑞士酒店管理大学"><button class="program-link" data-program="shms-ba">瑞士高等职业文凭（ES）→ 国际酒店管理本科（BA）</button></div>
-            <div class="matrix-cell" data-school="CAAS｜瑞士美食艺术大学"><button class="program-link" data-program="caas-diploma">瑞士职业文凭（烹饪／甜点）</button><button class="program-link" data-program="caas-ba">烹饪艺术／甜点烘焙与巧克力本科（BA）</button></div>
-            <div class="matrix-cell" data-school="CRCS｜瑞士恺撒里兹大学"><button class="program-link" data-program="crcs-bsc">款待业商务管理本科（BSc）<small>第 1 学年为行业沉浸学年</small></button><button class="program-link" data-program="crcs-ai">应用 AI 与款待业商务本科（BSc）<small>第 1 学年为行业沉浸学年｜首届 2027.10</small></button></div>
-            <div class="matrix-cell" data-school="HIM｜蒙特勒工商管理大学"><button class="program-link" data-program="him-bba">瑞士高等职业文凭（ES）→ 工商管理本科（BBA）<small>英语主轨；另设中英／法英双语过渡轨</small></button></div>
+            <div class="matrix-cell" data-school="SHMS｜瑞士酒店管理大学"><button class="program-link" data-program="shms-ba">国际款待业管理本科<small>可先完成瑞士高等职业教育文凭，再衔接本科</small></button></div>
+            <div class="matrix-cell" data-school="CAAS｜瑞士美食艺术大学"><button class="program-link" data-program="caas-diploma-culinary">瑞士烹饪艺术职业文凭<small>非本科学位｜可分阶段完成</small></button><button class="program-link" data-program="caas-diploma-pastry">瑞士甜点艺术职业文凭<small>非本科学位｜可分阶段完成</small></button><button class="program-link" data-program="caas-ba-culinary">烹饪艺术本科<small>厨房实训与餐饮经营</small></button><button class="program-link" data-program="caas-ba-pastry">甜点、烘焙及巧克力艺术本科<small>甜点、烘焙及巧克力</small></button></div>
+            <div class="matrix-cell" data-school="CRCS｜瑞士恺撒里兹大学"><button class="program-link" data-program="crcs-bsc">款待业商务管理本科<small>第 1 学年为行业沉浸学年</small></button><button class="program-link" data-program="crcs-ai">应用人工智能与款待业商务管理本科<small>AI 商业应用｜非计算机工程本科｜首届 2027.10</small></button></div>
+            <div class="matrix-cell" data-school="HIM｜蒙特勒工商管理大学"><button class="program-link" data-program="him-bba">工商管理本科<small>含瑞士高等职业教育文凭衔接路径｜中英／法英过渡轨</small></button></div>
 
-            <div class="audience">本科毕业／<br>职业转换</div>
-            <div class="matrix-cell" data-school="SHMS｜瑞士酒店管理大学"><button class="program-link" data-program="shms-pgd">酒店、度假村与水疗研究生文凭（PGD）</button><button class="program-link" data-program="shms-ma">国际酒店商务管理硕士（MA）</button><button class="program-link" data-program="shms-msc">国际酒店管理理学硕士（MSc）</button><button class="program-link" data-program="shms-mas">商业高级研修硕士（MAS）</button></div>
-            <div class="matrix-cell" data-school="CAAS｜瑞士美食艺术大学"><button class="program-link" data-program="caas-ma">美食商务管理硕士（MA）</button></div>
-            <div class="matrix-cell" data-school="CRCS｜瑞士恺撒里兹大学"><button class="program-link" data-program="crcs-msc">领导力理学硕士（MSc）</button></div>
-            <div class="matrix-cell" data-school="HIM｜蒙特勒工商管理大学"><button class="program-link" data-program="him-ai">应用 AI 与客户体验硕士</button></div>
+            <div class="audience">本科毕业／<br>转专业申请</div>
+            <div class="matrix-cell" data-school="SHMS｜瑞士酒店管理大学"><button class="program-link" data-program="shms-pgd">酒店、度假村与水疗管理研究生文凭<small>研究生文凭，非硕士</small></button><button class="program-link" data-program="shms-ma">国际款待业商务管理硕士<small>文学硕士｜标准轨或快轨</small></button><button class="program-link" data-program="shms-luxury">奢侈品品牌管理硕士<small>文学硕士｜品牌与消费者体验方向</small></button><button class="program-link" data-program="shms-msc">国际款待业管理硕士<small>理学硕士｜侧重战略、数据与技术</small></button><button class="program-link" data-program="shms-mas">商业高级研修硕士<small>职业／继续教育路径</small></button></div>
+            <div class="matrix-cell" data-school="CAAS｜瑞士美食艺术大学"><button class="program-link" data-program="caas-ma">美食商务管理硕士<small>文学硕士｜食品创新与餐饮创业</small></button></div>
+            <div class="matrix-cell" data-school="CRCS｜瑞士恺撒里兹大学"><button class="program-link" data-program="crcs-msc">领导力理学硕士<small>官网主口径 15 个月</small></button></div>
+            <div class="matrix-cell" data-school="HIM｜蒙特勒工商管理大学"><button class="program-link" data-program="him-ai">AI 与客户体验硕士<small>线上 + 澳门 + 蒙特勒</small></button></div>
 
-            <div class="audience">在职管理者</div>
-            <div class="matrix-cell" data-school="SHMS｜瑞士酒店管理大学"><button class="program-link" data-program="shms-online">在职酒店管理在线硕士（Online MA）</button><button class="program-link" data-program="shms-mba">全球工商管理硕士（MBA，计划）</button></div>
-            <div class="matrix-cell" data-school="CAAS｜瑞士美食艺术大学"><span class="empty">暂无独立在职项目</span></div>
-            <div class="matrix-cell" data-school="CRCS｜瑞士恺撒里兹大学"><span class="empty">暂无独立在职项目</span></div>
-            <div class="matrix-cell" data-school="HIM｜蒙特勒工商管理大学"><button class="program-link" data-program="him-dual">可继续申请 CRCS 领导力硕士<small>完成后可取得两个硕士学位</small></button></div>
+            <div class="audience">在职进修／<br>继续深造</div>
+            <div class="matrix-cell" data-school="SHMS｜瑞士酒店管理大学"><button class="program-link" data-program="shms-online">在职款待业管理在线硕士<small>全在线｜最快 18 个月</small></button><button class="program-link" data-program="shms-mba">全球工商管理硕士<small>计划项目｜正式项目页待发布</small></button></div>
+            <div class="matrix-cell" data-school="CAAS｜瑞士美食艺术大学"><span class="empty">本校暂无对应项目</span></div>
+            <div class="matrix-cell" data-school="CRCS｜瑞士恺撒里兹大学"><span class="empty">本校暂无对应项目</span></div>
+            <div class="matrix-cell" data-school="HIM｜蒙特勒工商管理大学"><button class="program-link" data-program="him-dual">AI 与客户体验 + 领导力双硕士路径<small>第二硕士需另行申请，时间与费用另计</small></button></div>
           </div>
-          <div class="entry-strip"><span>◎ 语言与适应入口</span><button data-program="foundation">EFP / IFP（Leysin）｜SHMS Access Foundation</button></div>
+          <div class="entry-strip"><span>◎ 入学准备课程</span><button data-program="foundation">英语强化／主课适应／本科衔接<small>EFP / IFP / SHMS Access｜Leysin</small></button></div>
         </div>
-        <div class="matrix-hint"><span><strong>使用提示：</strong>点击任意项目即可生成该项目的独立网址锚点。</span><span>项目、学费、开学与录取以当期官网、Offer 和 Invoice 为准。</span></div>
+        <div class="matrix-hint"><span><strong>使用提示：</strong>先按当前学历和学习目标找到合适项目，再点击查看学制、课程、实习和费用。</span><span>项目设置、学费、开学时间与录取要求以当期官网、Offer 和 Invoice 为准。</span></div>
+        <div class="matrix-hint"><span><strong>名称说明：</strong>矩阵使用便于理解的中文简称；正式英文项目名、学位类型及授予信息请点击项目详情查看。</span></div>
         <div class="fee-rate"><strong>本周预算汇率：1 CHF ≈ ¥8.36</strong><span>更新于 2026-08-11｜按中国银行瑞郎现汇卖出价取整<br>人民币仅供预算；正式付款币种为 CHF，银行手续费另计</span></div>
       </div>
     </section>
@@ -308,10 +312,10 @@
       <div class="container">
         <div class="section-head"><h2>四校怎么选</h2><p>下面列出各校的中文名称、校区、课程重点、实习安排和住宿环境，方便直接比较。</p></div>
         <div class="position-grid">
-          <article class="position"><span class="position-code">SHMS</span><span class="position-school">瑞士酒店管理大学｜Caux · Leysin</span><span class="position-rank">2024 QS 酒店与休闲管理全球第 2</span><h3>酒店管理、活动与体验设计</h3><p>本科从酒店运营开始，研究生可继续学习奢侈品、地产、康养、活动和体验设计。</p><ul><li>ES 可衔接本科</li><li>本科含两次全球实习</li><li>设 MA、MSc 和 MAS</li></ul></article>
+          <article class="position"><span class="position-code">SHMS</span><span class="position-school">瑞士酒店管理大学｜Caux · Leysin</span><span class="position-rank">2024 QS 酒店与休闲管理全球第 2</span><h3>酒店管理、活动与体验设计</h3><p>本科从酒店运营开始，研究生可继续学习奢侈品、地产、康养、活动和体验设计。</p><ul><li>瑞士高等职业教育文凭可衔接本科</li><li>本科含两次全球实习</li><li>设文学硕士、理学硕士和高级研修硕士</li></ul></article>
           <article class="position"><span class="position-code">CAAS</span><span class="position-school">瑞士美食艺术大学｜Le Bouveret · Brig</span><span class="position-rank">2024 QS 酒店与休闲管理全球第 7</span><h3>烹饪、甜点与餐饮经营</h3><p>课程同时安排厨房训练和商业课程，后期学习餐厅运营、产品开发、品牌与创业。</p><ul><li>职业文凭可分阶段完成</li><li>本科约 1,100 小时厨房训练</li><li>学生参与经营对外餐厅</li></ul></article>
           <article class="position"><span class="position-code">CRCS</span><span class="position-school">瑞士恺撒里兹大学｜Brig</span><span class="position-rank">2024 QS 酒店与休闲管理全球第 3</span><h3>款待业商务、应用 AI 与领导力</h3><p>两个本科都从行业沉浸学年开始，然后分别进入款待业商务或应用 AI 方向。</p><ul><li>现行学位由 CRCS 独立颁发，并获瑞士联邦认可</li><li>第 1 学年含两段 11 周课程和 6 个月实习</li><li>AI 方向侧重商业应用</li></ul></article>
-          <article class="position"><span class="position-code">HIM</span><span class="position-school">蒙特勒工商管理大学｜Montreux</span><span class="position-rank">2024 QS 酒店与休闲管理全球第 6</span><h3>工商管理与客户体验</h3><p>本科可选金融、营销、管理或款待业管理；硕士学习 AI 在客户体验中的应用。</p><ul><li>BBA 含三次全球实习</li><li>设中英、法英双语过渡轨</li><li>AI 硕士包含线上、澳门和蒙特勒学习</li></ul></article>
+          <article class="position"><span class="position-code">HIM</span><span class="position-school">蒙特勒工商管理大学｜Montreux</span><span class="position-rank">2024 QS 酒店与休闲管理全球第 6</span><h3>工商管理与客户体验</h3><p>本科可选金融、营销、管理或款待业管理；硕士学习 AI 在客户体验中的应用。</p><ul><li>工商管理本科含三次全球实习</li><li>设中英、法英双语过渡轨</li><li>AI 硕士包含线上、澳门和蒙特勒学习</li></ul></article>
         </div>
         <div class="campus-gallery" aria-label="四校住宿环境">
           <figure class="campus-card"><img loading="lazy" decoding="async" src="dorm-shms.jpg" alt="SHMS Caux Palace 双人房实景"><figcaption><strong>SHMS｜Caux Palace 双人房示例</strong><span>图片可确认为 Caux 校区房间；实际楼栋、房型与入住安排以 Offer 为准。</span></figcaption></figure>
@@ -337,7 +341,7 @@
         <div class="filters" role="group" aria-label="筛选项目">
           <button class="filter" aria-pressed="true" data-filter="all">全部</button>
           <button class="filter" aria-pressed="false" data-filter="undergrad">本科与职业文凭</button>
-          <button class="filter" aria-pressed="false" data-filter="postgrad">研究生与转专业</button>
+          <button class="filter" aria-pressed="false" data-filter="postgrad">硕士、研究生文凭与转专业</button>
           <button class="filter" aria-pressed="false" data-filter="executive">在职与双硕士</button>
           <button class="filter" aria-pressed="false" data-filter="ai">AI 方向</button>
         </div>
@@ -374,24 +378,52 @@
 
   <script>
     const programs = {
-      "shms-ba": {school:"SHMS",title:"瑞士高等职业文凭（ES）→ 国际酒店管理本科（BA）",tags:["undergrad"],audience:"高中毕业生；希望同时学习实操、管理并参加全球实习",duration:"2-3 年；本科完整路径 3 年",campus:"Caux → Leysin",intake:"2027 年 2 月、9 月",language:"全英文；IELTS 5.5 / TOEFL 46",fee:"CHF 186,500",feeNote:"本科完整四个学术学期；另有 CHF 2,000 security deposit，最终以 Invoice 为准。",lead:"前期在宫殿酒店校区学习餐饮、房务和收益管理，后期可选择酒店管理、活动管理或酒店设计。",sell:["前三个学期与 ES 课程共用，完成后可继续衔接本科最后阶段","本科安排两次各约 6 个月的全球实习","可选 Hospitality、Event 或 Design 专业方向"],curriculum:["前期：餐饮服务、厨房、成本控制、会计与沟通","中期：房务、收益管理、活动策划和设计","后期：数据决策、领导力、品牌、战略和数字作品集"],agency:["最低年龄 17 岁；高中学历与语言成绩需满足当期要求","学校提供职业服务和岗位支持，具体实习仍以岗位匹配和学生表现为准","咨询时先确认学生更偏酒店运营、活动管理还是空间与体验设计"]},
-      "shms-pgd": {school:"SHMS",title:"酒店、度假村与水疗研究生文凭（PGD）",tags:["postgrad"],audience:"本科毕业转专业；或高中毕业并有至少 3 年工作经验",duration:"1 年",campus:"Leysin + 全球实习",intake:"2027 年 2 月、9 月",language:"全英文；IELTS 5.5 / TOEFL 46",fee:"2027 正式价格待确认",feeNote:"当前本地 2027 费用表未形成独立完整报价。",lead:"为没有款待业学历、但希望进入酒店、度假村或康养场景的人建立运营基础。",sell:["18 周集中课程后进入 6 个月全球实习","同时覆盖餐饮、前厅、收益、活动、数字营销和人力资源","三个 Concept Labs 聚焦服务、国际餐饮与水疗宾客体验"],curriculum:["Food & Beverage、Front Office、Finance & Yield","Event Planning、HR、Market Research、Digital Sales","Service、International Cuisine、Spa & Guest Services"],agency:["建议 21 岁以上","高中学历申请者通常需要至少 3 年工作经验","适合明确要转入款待业的人，不宜只因“硕士前过渡”而推荐"]},
-      "shms-ma": {school:"SHMS",title:"国际酒店商务管理硕士（MA）",tags:["postgrad"],audience:"本科毕业转专业；酒店管理、品牌或客户体验方向",duration:"标准轨 36 周；快轨 18 周在校 + 独立研究",campus:"Caux + off-campus",intake:"2 月、9 月；11 月仅快轨",language:"全英文；IELTS 6.0 / TOEFL 60",fee:"CHF 54,500 / 40,800",feeNote:"分别对应 36 周标准轨与 18 周快轨；另有 CHF 2,000 security deposit。",lead:"以财务、营销和领导力为核心，可进入酒店运营、奢侈品品牌、MICE、康养和消费者体验。",sell:["本科可来自任意专业，适合跨专业进入酒店商业管理","标准轨与快轨两种节奏，适应不同时间安排","课程可组合酒店运营、餐饮、奢侈品、MICE、康养与体验设计"],curriculum:["Strategic Financial & Revenue Management","Marketing Management；Leadership & Talent Management","Independent Study；可选全球实习"],agency:["通常需 21 岁以上","本科或符合条件的管理经验路径需个案审核","先问学生想要酒店运营还是奢侈品/消费者体验方向"]},
-      "shms-msc": {school:"SHMS",title:"国际酒店管理理学硕士（MSc）",tags:["postgrad","ai"],audience:"相关本科毕业；希望强化战略、数据与技术驱动管理",duration:"1 年；90 ECTS",campus:"Leysin + 5 个月项目",intake:"2027 年 2 月、9 月",language:"全英文；IELTS 6.0 / TOEFL 60",fee:"Grand Total CHF 40,800",feeNote:"2027 费用表 tuition 分项存在算术差异，预算暂以 Grand Total 为准。",lead:"比 MA 更偏战略、研究、风险、体验设计、数据分析与技术驱动的酒店管理。",sell:["把数据分析与 AI 放进运营效率和客户体验决策","第二学期以 Integrated Business Project 收束","适合未来进入战略、咨询、项目管理或高级运营岗位"],curriculum:["Business Leadership、Technology-Driven Value Creation","Strategic Directions、Risk & Uncertainty、Experience Design","Data Analytics、Revenue、Hospitality Design & Entrepreneurship"],agency:["通常要求相关本科或行业管理经验","不建议简单理解为“MA 的更高级版本”，两者培养方式不同","费用对外只使用 Grand Total"]},
-      "shms-mas": {school:"SHMS",title:"商业高级研修硕士（MAS）",tags:["postgrad","executive","ai"],audience:"本科或专科毕业者、转专业申请人和有经验的管理人员",duration:"6-12 个月；可选实习",campus:"Leysin + off-campus",intake:"2027 年 9 月、11 月",language:"全英文；PGC 入学 IELTS 5.5，MAS 阶段前 6.0",fee:"CHF 43,000",feeNote:"完整 MAS 路径；部分校内停留、住宿及可选实习另核。",lead:"课程分为 PGC、PGD 和 MAS 三个阶段，可选择房地产、康养或大型活动数字化方向。",sell:["每个阶段都有对应资格，学生可按职业计划决定完成到哪一阶段","三个方向均包含领导力、财务、AI、数据和风险治理","Industry Atelier 使用企业题目完成项目"],curriculum:["房地产与奢华物业管理","康养与长寿商业管理","大型活动数字化管理"],agency:["这是瑞士职业高等教育项目，申请前要核对学生的学历认证用途","可接受专科或职业本科，3 年以上高级经验者可个案考虑","介绍时应说明具体方向、学习成果和认证边界"]},
-      "shms-online": {school:"SHMS",title:"在职酒店管理在线硕士（Online MA）",tags:["postgrad","executive","ai"],audience:"在职酒店、旅游及服务业管理者",duration:"加速 18 个月；常规 2-3 年",campus:"Online；可选 Leysin 驻留周",intake:"2027 年 1 月、5 月、9 月",language:"全英文；IELTS 6.0 / TOEFL 60",fee:"CHF 20,700",feeNote:"付款计划会加收总额 5%；另有 CHF 2,000 security deposit。",lead:"不离职完成酒店管理硕士，课程直接覆盖财务、AI、营销、项目与体验设计。",sell:["6 个核心模块，每模块 10 周，可一次修一门或两门","学习任务可连接当前工作场景","可选择 Integrated Business Project 或 Dissertation"],curriculum:["Financial Decision Making","AI Technology & Data Analysis；Digital Sales","Operations & Project、Leadership、Sustainable Experience Design"],agency:["适合能够稳定投入学习时间的在职人士","本科或 5 年款待/旅游管理经验可申请","线上学历认可目标需按学生所在国家与具体用途核验"]},
-      "shms-mba": {school:"SHMS",title:"全球工商管理硕士（MBA，计划）",tags:["postgrad","executive"],audience:"希望学习综合商业管理的本科毕业者与管理人员",duration:"计划 1 年左右",campus:"Leysin",intake:"计划 2027 年 9 月上线",language:"全英文；正式录取要求待发布",fee:"CHF 49,200",feeNote:"金额来自 2027 官方费用表；正式项目页与完整 Admissions 尚待发布。",lead:"计划中的综合商科 MBA，不限定酒店管理背景，适合作为 2027 管理人群需求预热。",sell:["培训信息显示与 University of Derby 合作","计划采用多个 9 周模块与独立研究","结业项目可能包括 Dissertation 或 Social Impact Project"],curriculum:["正式课程表待官网项目页发布","当前只适合说明方向，不宜承诺完整课程细节"],agency:["这是计划产品，不与已完整上线项目同等销售","费用已出现，但录取、校历和正式项目页尚未闭环","可以收集需求，不建议在正式文件前做精确承诺"]},
-      "caas-diploma": {school:"CAAS",title:"瑞士职业文凭（烹饪／甜点）",tags:["undergrad"],audience:"17 岁以上；想先验证兴趣或快速获得专业技能",duration:"完整路径 1 年；3 个 11 周 term + 6 个月实习",campus:"Le Bouveret",intake:"烹饪：1/4/7/10 月；甜点：1/7 月",language:"全英文；IELTS 5.5 / Duolingo 95",fee:"CHF 20,000 / term",feeNote:"三 term 完整路径 CHF 60,000；另有 CHF 2,000 security deposit。",lead:"可以从一个 term 开始，逐级获得 Certificate、Diploma 和 Grand Diploma。",sell:["烹饪最多约 850 小时、甜点最多约 858 小时专业训练","课程在专业厨房、烘焙、巧克力实验室中完成","适合技能型学生，也可作为后续本科的实践入口"],curriculum:["烹饪：基础技法→欧洲与冷厨房→全球菜系与可持续菜单","甜点：经典烘焙→巧克力与现代甜点→法式甜点与面包","完整路径包含 6 个月实习"],agency:["17 岁可入学，瑞士/EU 实习通常需 18 岁","未完成高中者可个案申请职业文凭，但后续衔接 BA 需补足学历条件","阶段退出奖项与对应费用应以个案 Invoice 确认"]},
-      "caas-ba": {school:"CAAS",title:"烹饪艺术／甜点烘焙与巧克力本科（BA）",tags:["undergrad"],audience:"高中毕业；希望把专业技能发展成餐饮管理或创业能力",duration:"3 年；180 ECTS",campus:"Le Bouveret → Brig",intake:"烹饪：1/4/7/10 月；甜点：1/7 月",language:"全英文；IELTS 5.5 / TOEFL 55 / Duolingo 95",fee:"CHF 176,200",feeNote:"本科完整路径；另有 CHF 2,000 security deposit。",lead:"前两年以技能和餐厅运营为主，第三年进入商业计划、品牌、财务和创业。",sell:["约 1,100 小时厨房实训，并运营 50 座对外餐厅","两次各约 6 个月实习","每学年都有阶段文凭，最后取得 CAAS 与 University of Derby 学位路径"],curriculum:["Year 1：经典技法、全球菜系、营养与厨房领导力","Year 2：Fine Dining、成本、服务、饮品、产品开发","Year 3：Business Plan、营销、财务、活动、餐厅设计与战略"],agency:["建议 18 岁，Term 3 结束时必须满 18 岁","先区分烹饪主厨路径与甜点/烘焙/巧克力路径","这是技能与商业并重的本科，不是单纯厨师培训"]},
-      "caas-ma": {school:"CAAS",title:"美食商务管理硕士（MA）",tags:["postgrad"],audience:"本科毕业转专业、餐饮创业者与食品行业从业者",duration:"1 年；90 ECTS",campus:"Le Bouveret",intake:"2027 年 4 月、10 月",language:"全英文；IELTS 6.0，单项不低于 5.5",fee:"CHF 49,000",feeNote:"另有 CHF 2,000 security deposit。",lead:"这是一门美食商业管理硕士，课程包括食品概念、产品创新、活动策划、创业项目和厨房实践。",sell:["本科专业不限，适合希望转入餐饮或食品行业的人","安排 240 小时厨房训练","包含活动项目、Integrated Business Project 和 6 个月实习"],curriculum:["Food Culture、Leadership、Revenue、Sustainability、Strategy","Culinary Innovation & AI、Marketing、Research、Entrepreneurship","Integrated Business Project + Internship"],agency:["通常建议 21 岁以上","不接受 Duolingo；语言单项要求需提前核对","咨询时先确认学生更关注餐饮运营、品牌、产品还是创业"]},
-      "crcs-bsc": {school:"CRCS",title:"款待业商务管理本科（BSc）",tags:["undergrad"],audience:"高中毕业；希望学习综合商业、领导力与款待业管理",duration:"4 年；180 ECTS；第 1 学年为行业沉浸学年",campus:"Brig + 全球实习",intake:"2027 年 1 月、7 月、10 月",language:"全英文；IELTS 5.5，单项不低于 4.5",fee:"2027 学费待发布",feeNote:"2026 总价 CHF 163,200 不能直接作为 2027 报价。",lead:"这是 CRCS 四年制本科。第 1 学年就是行业沉浸学年，含两段 11 周课程和 6 个月实习，后续再进入商业管理与战略课程。",sell:["现行学位由 CRCS 独立颁发，并获瑞士联邦认可","行业沉浸学年不是单独的产品，而是本科第 1 学年","可选领导力、金融、商业分析、创业、营销或数字战略方向"],curriculum:["第 1 学年：客户服务、厨房、餐饮系统、房务、领导力，然后完成 6 个月全球实习","Business Essentials：经济、营销、会计、统计与 AI Foundations","Advanced Management 与 Executive Competences：CRM、ESG、创新、战略与论文"],agency:["四年总学制已包含行业沉浸学年，不应再把它单列为一个本科产品","学制与三年制本科不同，需提前比较时间与总预算","2027 费用需等待新的官方费用表"]},
-      "crcs-ai": {school:"CRCS",title:"应用 AI 与款待业商务本科（BSc）",tags:["undergrad","ai"],audience:"高中毕业；希望学习 AI 在商业和服务业中的应用",duration:"4 年；180 ECTS；第 1 学年为行业沉浸学年",campus:"Brig + 全球实习",intake:"首届 2027 年 10 月",language:"全英文；IELTS 5.5，单项不低于 4.5",fee:"2027 学费待发布",feeNote:"首届项目，必须等待 CRCS 2027 正式费用文件。",lead:"这是 CRCS 四年制本科。第 1 学年就是行业沉浸学年，含两段 11 周课程和 6 个月实习，后续进入 AI、数据与自动化的商业应用课程。",sell:["现行学位由 CRCS 独立颁发，并获瑞士联邦认可","行业沉浸学年不是单独的产品，而是本科第 1 学年","课程从 AI Literacy、Analytics 和 Automation 学到原型设计与商业项目"],curriculum:["第 1 学年：客户服务、厨房、餐饮系统、房务、领导力，然后完成 6 个月全球实习","应用阶段：AI Tools、Automation、Analytics、Customer Intelligence、Revenue","战略阶段：Responsible AI、Digital Transformation、Venture Creation、Pitching"],agency:["四年总学制已包含行业沉浸学年，不应再把它单列为一个本科产品","课程面向商业应用，编程和算法研发不是培养重点","这是首届项目，咨询时需确认学生接受四年学制和第 1 学年的服务运营课程"]},
-      "crcs-msc": {school:"CRCS",title:"领导力理学硕士（MSc）",tags:["postgrad","executive"],audience:"本科毕业；希望进入管理、金融、奢侈品或旅游行业的管理岗位",duration:"官网主口径 15 个月；90 ECTS",campus:"Brig + off-campus",intake:"2027 年 4 月、10 月",language:"全英文；IELTS 6.0",fee:"2027 学费待发布",feeNote:"官网页面同时出现 15 个月与 two-year/five terms 表述；2027 报价待正式费用表。",lead:"由 CRCS 独立颁发、获瑞士联邦认可的硕士学位。结课方式包括领导力项目、创业加速器或可选实习。",sell:["学位由 CRCS 独立颁发，并获瑞士联邦认可","课程包括人员管理、财务、战略、组织变革和董事会沟通","可选 Hospitality & Tourism、Finance & Wealth 或 Luxury Brand 方向"],curriculum:["Term 1：People、Finance、Operations、Marketing","Term 2：Change、Strategy、Storytelling、Ethics、Negotiation","Term 3：专业课、Leadership in Practice、Retreat、Valuation"],agency:["官网对学制有不同表述，本页暂按 Admissions 的 15 个月口径","非相关本科可能需要 Business Immersion","2027 学费尚未发布"]},
-      "him-bba": {school:"HIM",title:"瑞士高等职业文凭（ES）→ 工商管理本科（BBA）",tags:["undergrad"],audience:"高中毕业；希望进入金融、营销、管理或款待业管理",duration:"ES 2.5 年；BBA 完整路径 3 年",campus:"Montreux",intake:"2027 年 1 月、4 月",language:"英语主轨；另有中英／法英双语过渡轨",fee:"Grand Total CHF 131,800",feeNote:"2027 费用表六个 term 的 tuition 分项合计与总栏相差 CHF 200；预算暂用 Grand Total。",lead:"把客户体验作为商科底层能力，再选择金融、营销、管理或款待业管理专业。",sell:["三次 4-6 个月全球实习，毕业形成约 1.5 年职业经验","四个专业方向，不再局限于酒店行业","中英/法英轨从母语逐步过渡到全英文课程"],curriculum:["Year 1：Customer Experience、Finance、Marketing、Data Decision","Year 2：Management、Accounting、Innovating with AI + 专业课","Year 3：Strategy、Ethics、Law、Organization + 高级专业课"],agency:["英语主轨 IELTS 5.5 / TOEFL 46；双语轨应按对应页面核对语言条件","ES 独立页面与 BBA 页面对认可状态的文字尚未完全统一","Northwood University BBA 与 HIM 阶段性资格应分别解释"]},
-      "him-ai": {school:"HIM",title:"应用 AI 与客户体验硕士",tags:["postgrad","ai"],audience:"本科毕业；没有工程背景，希望学习 AI 的商业应用",duration:"1 年；限 24 人",campus:"Online + Macao + Montreux",intake:"2027 年 1 月",language:"全英文；IELTS 6.0",fee:"Grand Total CHF 38,000",feeNote:"Term 1 tuition 与 term total 相差 CHF 200；预算暂用 Grand Total，双硕士另计。",lead:"课程面向 AI 产品、数据、伦理和客户体验的商业应用，重点不是算法工程。",sell:["1 至 3 月线上学习，4 至 5 月在澳门，6 至 9 月在蒙特勒","安排两次 Industry Immersion，最后完成线上 Capstone","本科专业不限；选拔包括 case、video 和院长面试"],curriculum:["Level 1：AI Fundamentals、UX、Applied AI、Data Science","Level 2：AI Product、CSR、Ethics & IP、UX Neuroscience、Trends","Oct-Dec：Online Capstone；之后可申请 CRCS 双硕士"],agency:["本科 GPA 通常需达到 3.0","瑞士端的认可表述不能直接等同中国留服认证","申请前要确认学生能接受线上、澳门与瑞士三段学习安排"]},
-      "him-dual": {school:"HIM + CRCS",title:"AI 与领导力双硕士路径",tags:["postgrad","executive","ai"],audience:"希望继续学习领导力并取得第二个硕士学位的 HIM 学生",duration:"完成 HIM 主项目后增加 CRCS 阶段",campus:"Montreux / Online → Brig",intake:"随 HIM AI Master 路径",language:"全英文",fee:"双硕士增量费用待个案确认",feeNote:"HIM CHF 38,000 不等于双硕士完整总价，Brig 阶段住宿及额外费用需另核。",lead:"完成 HIM 的 AI 硕士后，可另行申请 CRCS 领导力硕士，继续学习战略、组织变革和高管沟通。",sell:["先学习 AI 产品与客户体验，再学习组织变革和全球战略","完成两个学校规定的课程后可取得两个硕士学位","第二阶段需单独申请，并增加学习时间和费用"],curriculum:["Leadership for Change & Innovation","Global Strategic Management、Storytelling、Ethics","C-suite、Negotiation、Networking"],agency:["双硕士不在 HIM 主项目中自动包含，需要单独申请和计费","先确认学生是否需要第二学位及其认证用途","住宿、额外 term 和学习时间需重新预算"]},
-      "foundation": {school:"SEG / SHMS",title:"语言与适应入口：EFP / IFP / Access Foundation",tags:["undergrad"],audience:"语言、学历或瑞士学习准备度暂未达到主课要求的学生",duration:"EFP 10 周；IFP 4 周；Access 9 或 18 周",campus:"Leysin",intake:"按各校 2027 Admissions 页面",language:"EFP 为英语强化；IFP 为学习适应；Access 入门英语约 IELTS 4.5",fee:"Access CHF 12,400 / 24,900",feeNote:"分别对应 9 周／18 周；EFP、IFP 当前完整 2027 价格需另核。",lead:"EFP、IFP 和 Access 的用途不同，分别对应英语强化、入学适应和本科衔接。",sell:["EFP：提高英语与学术学习能力","IFP：主课前适应瑞士校园和跨文化环境","Access：为学历或学术准备不足者提供本科衔接"],curriculum:["具体学习安排按学生最终学校与入学季匹配","IFP 主要用于主课前适应，不能代替语言提分课程"],agency:["先确认学生需要补英语、补学历条件，还是提前适应海外学习","Access 已有 2027 册子与费用，但英文官网独立页面待发布","签证所需英语成绩仍以当期官方要求为准"]}
+      "shms-ba": {school:"SHMS",title:"国际款待业管理本科",tags:["undergrad"],audience:"高中毕业生；希望同时学习实操、管理并参加全球实习",duration:"2-3 年；本科完整路径 3 年",campus:"Caux → Leysin",intake:"2027 年 2 月、9 月",language:"全英文；IELTS 5.5 / TOEFL 46",fee:"CHF 186,500",feeNote:"本科完整四个学术学期；另有 CHF 2,000 security deposit，最终以 Invoice 为准。",lead:"前期在宫殿酒店校区学习餐饮、房务和收益管理，后期可选择款待业管理、活动管理或酒店设计。",sell:["前三个学期与瑞士高等职业教育文凭课程共用，完成后可继续衔接本科最后阶段","本科安排两次各约 6 个月的全球实习","可选款待业管理、活动管理或酒店设计专业方向"],curriculum:["前期：餐饮服务、厨房、成本控制、会计与沟通","中期：房务、收益管理、活动策划和设计","后期：数据决策、领导力、品牌、战略和数字作品集"],agency:["最低年龄 17 岁；高中学历与语言成绩需满足当期要求","学校提供职业服务和岗位支持，具体实习仍以岗位匹配和学生表现为准","咨询时先确认学生更偏酒店运营、活动管理还是空间与体验设计"]},
+      "shms-pgd": {school:"SHMS",title:"酒店、度假村与水疗管理研究生文凭",tags:["postgrad"],audience:"本科毕业转专业；或高中毕业并有至少 3 年工作经验",duration:"1 年",campus:"Leysin + 全球实习",intake:"2027 年 2 月、9 月",language:"全英文；IELTS 5.5 / TOEFL 46",fee:"2027 正式价格待确认",feeNote:"这是研究生文凭，不是硕士学位。当前本地 2027 费用表未形成独立完整报价。",lead:"为没有款待业学历、但希望进入酒店、度假村或康养场景的人建立运营基础。",sell:["研究生文凭，非硕士学位","18 周集中课程后进入 6 个月全球实习","同时覆盖餐饮、前厅、收益、活动、数字营销和人力资源"],curriculum:["Food & Beverage、Front Office、Finance & Yield","Event Planning、HR、Market Research、Digital Sales","Service、International Cuisine、Spa & Guest Services"],agency:["建议 21 岁以上","高中学历申请者通常需要至少 3 年工作经验","适合明确要转入款待业的人，不应作为硕士项目介绍"]},
+      "shms-ma": {school:"SHMS",title:"国际款待业商务管理硕士",tags:["postgrad"],audience:"本科毕业转专业；希望进入款待业运营、商业管理或客户体验方向",duration:"标准轨 36 周；快轨 18 周在校 + 独立研究",campus:"Caux + off-campus",intake:"2 月、9 月；11 月仅快轨",language:"全英文；IELTS 6.0 / TOEFL 60",fee:"CHF 54,500 / 40,800",feeNote:"分别对应 36 周标准轨与 18 周快轨；另有 CHF 2,000 security deposit。",lead:"以财务、营销和领导力为核心，适合进入款待业运营、MICE、康养和消费者体验相关岗位。",sell:["本科可来自任意专业，适合跨专业进入款待业商务管理","标准轨与快轨两种节奏，适应不同时间安排","课程组合财务、市场、领导力与独立研究"],curriculum:["Strategic Financial & Revenue Management","Marketing Management；Leadership & Talent Management","Independent Study；可选全球实习"],agency:["通常需 21 岁以上","本科或符合条件的管理经验路径需个案审核","奢侈品品牌管理是 SHMS 文学硕士体系中单独列示的路径，不能只作为一门选修课介绍"]},
+      "shms-luxury": {school:"SHMS",title:"奢侈品品牌管理硕士",tags:["postgrad"],audience:"本科毕业；希望进入奢侈品、高端生活方式、品牌管理或消费者体验领域",duration:"1 年；18 周或 36 周在校 + 独立研究；实习可选",campus:"Caux + off-campus",intake:"2027 年 2 月、9 月、11 月；具体路径以当期申请页为准",language:"全英文；IELTS 6.0 / TOEFL 60",fee:"CHF 54,500 / 40,800",feeNote:"沿用 SHMS 文学硕士 36 周标准轨／18 周快轨官方 Grand Total；另有 CHF 2,000 security deposit，最终以 Invoice 为准。",lead:"第一阶段与国际款待业商务管理共享管理核心，后续集中学习奢侈品价值创造、品牌管理和消费者体验。",sell:["SHMS 文学硕士体系中单独列示的奢侈品品牌管理路径，不只是一门选修课","把品牌管理与消费者体验、营销和领导力结合","可选 18 周或 36 周在校学习，并完成独立研究"],curriculum:["Strategic Financial & Revenue Management、Marketing Management","Leadership & Talent Management","Luxury Value Creation、Modern Luxury Consumer、Strategic Luxury Brand Management、Consumer Experience Design"],agency:["不能把本路径说成与国际款待业商务管理完全无关的独立学位","本科背景与具体开学路径按当期招生要求审核","本项目没有对应的中留服既往案例，因此不显示案例链接"]},
+      "shms-msc": {school:"SHMS",title:"国际款待业管理硕士",tags:["postgrad","ai"],audience:"相关本科毕业；希望强化战略、数据与技术驱动管理",duration:"1 年；90 ECTS",campus:"Leysin + 5 个月项目",intake:"2027 年 2 月、9 月",language:"全英文；IELTS 6.0 / TOEFL 60",fee:"Grand Total CHF 40,800",feeNote:"2027 费用表 tuition 分项存在算术差异，预算暂以 Grand Total 为准。",lead:"比文学硕士更偏战略、研究、风险、体验设计、数据分析与技术驱动的款待业管理。",sell:["把数据分析与 AI 放进运营效率和客户体验决策","第二学期以 Integrated Business Project 收束","适合未来进入战略、咨询、项目管理或高级运营岗位"],curriculum:["Business Leadership、Technology-Driven Value Creation","Strategic Directions、Risk & Uncertainty、Experience Design","Data Analytics、Revenue、Hospitality Design & Entrepreneurship"],agency:["通常要求相关本科或行业管理经验","不建议简单理解为“文学硕士的更高级版本”，两者培养方式不同","费用对外只使用 Grand Total"]},
+      "shms-mas": {school:"SHMS",title:"商业高级研修硕士",tags:["postgrad","executive","ai"],audience:"本科或专科毕业者、转专业申请人和有经验的管理人员",duration:"6-12 个月；可选实习",campus:"Leysin + off-campus",intake:"2027 年 9 月、11 月",language:"全英文；PGC 入学 IELTS 5.5，MAS 阶段前 6.0",fee:"CHF 43,000",feeNote:"完整 MAS 路径；部分校内停留、住宿及可选实习另核。",lead:"课程分为证书、研究生文凭和高级研修硕士三个阶段，可选择房地产、康养或大型活动数字化方向。",sell:["每个阶段都有对应资格，学生可按职业计划决定完成到哪一阶段","三个方向均包含领导力、财务、AI、数据和风险治理","Industry Atelier 使用企业题目完成项目"],curriculum:["房地产与奢华物业管理","康养与长寿商业管理","大型活动数字化管理"],agency:["这是职业／继续教育路径，申请前要核对学生的学历认证用途","可接受专科或职业本科，3 年以上高级经验者可个案考虑","介绍时应说明具体方向、学习成果和认证边界"]},
+      "shms-online": {school:"SHMS",title:"在职款待业管理在线硕士",tags:["postgrad","executive","ai"],audience:"在职酒店、旅游及服务业管理者",duration:"加速 18 个月；常规 2-3 年",campus:"Online；可选 Leysin 驻留周",intake:"2027 年 1 月、5 月、9 月",language:"全英文；IELTS 6.0 / TOEFL 60",fee:"CHF 20,700",feeNote:"付款计划会加收总额 5%；另有 CHF 2,000 security deposit。",lead:"不离职完成款待业管理硕士，课程直接覆盖财务、AI、营销、项目与体验设计。",sell:["6 个核心模块，每模块 10 周，可一次修一门或两门","学习任务可连接当前工作场景","可选择 Integrated Business Project 或 Dissertation"],curriculum:["Financial Decision Making","AI Technology & Data Analysis；Digital Sales","Operations & Project、Leadership、Sustainable Experience Design"],agency:["适合能够稳定投入学习时间的在职人士","本科或 5 年款待业／旅游管理经验可申请","线上学历认可目标需按学生所在国家与具体用途核验"]},
+      "shms-mba": {school:"SHMS",title:"全球工商管理硕士",tags:["postgrad","executive"],audience:"希望学习综合商业管理的本科毕业者与管理人员",duration:"计划 1 年左右",campus:"Leysin",intake:"计划 2027 年 9 月上线",language:"全英文；正式录取要求待发布",fee:"CHF 49,200",feeNote:"计划项目。金额来自 2027 官方费用表；正式项目页与完整 Admissions 尚待发布。",lead:"计划中的综合商科 MBA，不限定酒店管理背景，现阶段仅适合作为 2027 意向登记。",sell:["培训信息显示与 University of Derby 合作","计划采用多个 9 周模块与独立研究","结业项目可能包括 Dissertation 或 Social Impact Project"],curriculum:["正式课程表待官网项目页发布","当前只适合说明方向，不宜承诺完整课程细节"],agency:["这是计划产品，不与已完整上线项目同等销售","费用已出现，但录取、校历和正式项目页尚未闭环","可以收集需求，不建议在正式文件前做精确承诺"]},
+      "caas-diploma-culinary": {school:"CAAS",title:"瑞士烹饪艺术职业文凭",tags:["undergrad"],audience:"17 岁以上；想先验证烹饪兴趣或快速建立专业厨房技能",duration:"完整路径：3 个 11 周学期 + 6 个月实习",campus:"Le Bouveret",intake:"2027 年 1 月、4 月、7 月、10 月",language:"全英文；IELTS 5.5 / Duolingo 95",fee:"CHF 20,000 / term",feeNote:"两学期按公开学期价预算为 CHF 40,000；三学期完整路径 CHF 60,000；另有 CHF 2,000 security deposit，最终以 Invoice 为准。",lead:"从基础技法学到欧洲菜、冷厨房、全球菜系与可持续菜单，可按学期逐级完成。",sell:["最多约 850 课时烹饪专业训练","在专业厨房中完成实操课程","属于瑞士职业文凭路线，不是本科学位"],curriculum:["1 学期：Professional Certificate","2 学期 + 6 个月实习：Professional Swiss Diploma","3 学期 + 6 个月实习：Professional Swiss Grand Diploma","课程由基础技法进阶至欧洲、国际烹饪与综合实训"],agency:["17 岁可入学，瑞士／EU 实习通常需 18 岁","未完成高中者可个案申请职业文凭，但后续申请本科需补足学历条件","阶段退出奖项与对应费用应以个案 Invoice 确认"]},
+      "caas-diploma-pastry": {school:"CAAS",title:"瑞士甜点艺术职业文凭",tags:["undergrad"],audience:"17 岁以上；想学习甜点、烘焙、面包与巧克力专业技能",duration:"完整路径：3 个 11 周学期 + 6 个月实习",campus:"Le Bouveret",intake:"2027 年 1 月、7 月",language:"全英文；IELTS 5.5 / Duolingo 95",fee:"CHF 20,000 / term",feeNote:"两学期按公开学期价预算为 CHF 40,000；三学期完整路径 CHF 60,000；另有 CHF 2,000 security deposit，最终以 Invoice 为准。",lead:"从经典烘焙学到巧克力、现代甜点、法式甜点与面包，可按学期逐级完成。",sell:["最多约 850 课时甜点专业训练","在烘焙、甜点与巧克力实验室中完成实操","属于瑞士职业文凭路线，不是本科学位"],curriculum:["1 学期：Professional Certificate","2 学期 + 6 个月实习：Professional Swiss Diploma","3 学期 + 6 个月实习：Professional Swiss Grand Diploma","课程由甜点基础进阶至巧克力、烘焙与维也纳式面包"],agency:["17 岁可入学，瑞士／EU 实习通常需 18 岁","与烹饪职业文凭是两条独立路线，开学月份不同","阶段退出奖项与对应费用应以个案 Invoice 确认"]},
+      "caas-ba-culinary": {school:"CAAS",title:"烹饪艺术本科",tags:["undergrad"],audience:"高中毕业；希望把烹饪技能发展成餐饮经营、管理或创业能力",duration:"3 年；180 ECTS",campus:"Le Bouveret → Brig",intake:"2027 年 1 月、4 月、7 月、10 月",language:"全英文；IELTS 5.5 / TOEFL 55 / Duolingo 95",fee:"CHF 176,200",feeNote:"本科完整路径；另有 CHF 2,000 security deposit。",lead:"前两年学习烹饪技能和餐厅运营，第三年进入商业计划、品牌、财务和创业。",sell:["约 1,100 小时厨房实训，并参与经营 50 座对外餐厅","两次各约 6 个月实习","把烹饪训练与餐饮商业、品牌和创业结合"],curriculum:["Year 1：经典技法、全球菜系、营养与厨房领导力","Year 2：Fine Dining、成本、服务、饮品与产品开发","Year 3：Business Plan、营销、财务、活动、餐厅设计与战略"],agency:["建议 18 岁，Term 3 结束时必须满 18 岁","这是技能与商业并重的本科，不是单纯厨师培训","本页仅在此烹饪艺术本科显示对应的中留服既往案例"]},
+      "caas-ba-pastry": {school:"CAAS",title:"甜点、烘焙及巧克力艺术本科",tags:["undergrad"],audience:"高中毕业；希望把甜点、烘焙及巧克力技能发展成产品、品牌或创业能力",duration:"3 年；180 ECTS",campus:"Le Bouveret → Brig",intake:"2027 年 1 月、7 月",language:"全英文；IELTS 5.5 / TOEFL 55 / Duolingo 95",fee:"CHF 176,200",feeNote:"本科完整路径；另有 CHF 2,000 security deposit。",lead:"前两年强化甜点、烘焙、面包和巧克力技艺，第三年进入品牌、财务、商业计划和创业。",sell:["甜点、烘焙及巧克力为独立本科方向","两次各约 6 个月实习","把产品研发与餐饮商业、品牌和创业结合"],curriculum:["Year 1：经典甜点、烘焙、面包与巧克力基础","Year 2：高级甜点、产品开发、成本与餐厅运营","Year 3：Business Plan、营销、财务、活动、餐厅设计与战略"],agency:["建议 18 岁，Term 3 结束时必须满 18 岁","与烹饪艺术本科是两条独立路线，开学月份不同","现有中留服案例为烹饪艺术本科，因此本项目不挂载该案例"]},
+      "caas-ma": {school:"CAAS",title:"美食商务管理硕士",tags:["postgrad"],audience:"本科毕业转专业、餐饮创业者与食品行业从业者",duration:"1 年；90 ECTS",campus:"Le Bouveret",intake:"2027 年 4 月、10 月",language:"全英文；IELTS 6.0，单项不低于 5.5",fee:"CHF 49,000",feeNote:"另有 CHF 2,000 security deposit。",lead:"课程结合食品概念、产品创新、活动策划、创业项目和厨房实践。",sell:["本科专业不限，适合希望转入餐饮或食品行业的人","安排 240 小时厨房训练","包含活动项目、Integrated Business Project 和 6 个月实习"],curriculum:["Food Culture、Leadership、Revenue、Sustainability、Strategy","Culinary Innovation & AI、Marketing、Research、Entrepreneurship","Integrated Business Project + Internship"],agency:["通常建议 21 岁以上","不接受 Duolingo；语言单项要求需提前核对","咨询时先确认学生更关注餐饮运营、品牌、产品还是创业"]},
+      "crcs-bsc": {school:"CRCS",title:"款待业商务管理本科",tags:["undergrad"],audience:"高中毕业；希望学习综合商业、领导力与款待业管理",duration:"4 年；180 ECTS；第 1 学年为行业沉浸学年",campus:"Brig + 全球实习",intake:"2027 年 1 月、7 月、10 月",language:"全英文；IELTS 5.5，单项不低于 4.5",fee:"2027 学费待发布",feeNote:"2026 总价 CHF 163,200 不能直接作为 2027 报价。",lead:"这是 CRCS 四年制本科。第 1 学年就是行业沉浸学年，含两段 11 周课程和 6 个月实习，后续再进入商业管理与战略课程。",sell:["现行学位由 CRCS 独立颁发，并获瑞士联邦认可","行业沉浸学年不是单独的产品，而是本科第 1 学年","可选领导力、金融、商业分析、创业、营销或数字战略方向"],curriculum:["第 1 学年：客户服务、厨房、餐饮系统、房务、领导力，然后完成 6 个月全球实习","Business Essentials：经济、营销、会计、统计与 AI Foundations","Advanced Management 与 Executive Competences：CRM、ESG、创新、战略与论文"],agency:["四年总学制已包含行业沉浸学年，不应再把它单列为一个本科产品","学制与三年制本科不同，需提前比较时间与总预算","2027 费用需等待新的官方费用表"]},
+      "crcs-ai": {school:"CRCS",title:"应用人工智能与款待业商务管理本科",tags:["undergrad","ai"],audience:"高中毕业；希望学习人工智能在商业和服务业中的应用",duration:"4 年；180 ECTS；第 1 学年为行业沉浸学年",campus:"Brig + 全球实习",intake:"首届 2027 年 10 月",language:"全英文；IELTS 5.5，单项不低于 4.5",fee:"2027 学费待发布",feeNote:"首届项目，必须等待 CRCS 2027 正式费用文件。",lead:"这是 CRCS 四年制本科。第 1 学年就是行业沉浸学年，含两段 11 周课程和 6 个月实习，后续进入 AI、数据与自动化的商业应用课程。",sell:["现行学位由 CRCS 独立颁发，并获瑞士联邦认可","行业沉浸学年不是单独的产品，而是本科第 1 学年","课程从 AI Literacy、Analytics 和 Automation 学到原型设计与商业项目"],curriculum:["第 1 学年：客户服务、厨房、餐饮系统、房务、领导力，然后完成 6 个月全球实习","应用阶段：AI Tools、Automation、Analytics、Customer Intelligence、Revenue","战略阶段：Responsible AI、Digital Transformation、Venture Creation、Pitching"],agency:["四年总学制已包含行业沉浸学年，不应再把它单列为一个本科产品","课程面向商业应用，编程和算法研发不是培养重点","这是首届项目，咨询时需确认学生接受四年学制和第 1 学年的服务运营课程"]},
+      "crcs-msc": {school:"CRCS",title:"领导力理学硕士",tags:["postgrad","executive"],audience:"本科毕业；希望进入管理、金融、奢侈品或旅游行业的管理岗位",duration:"官网主口径 15 个月；90 ECTS",campus:"Brig + off-campus",intake:"2027 年 4 月、10 月",language:"全英文；IELTS 6.0",fee:"2027 学费待发布",feeNote:"官网页面同时出现 15 个月与 two-year/five terms 表述；2027 报价待正式费用表。",lead:"由 CRCS 独立颁发、获瑞士联邦认可的硕士学位。结课方式包括领导力项目、创业加速器或可选实习。",sell:["学位由 CRCS 独立颁发，并获瑞士联邦认可","课程包括人员管理、财务、战略、组织变革和董事会沟通","可选 Hospitality & Tourism、Finance & Wealth 或 Luxury Brand 方向"],curriculum:["Term 1：People、Finance、Operations、Marketing","Term 2：Change、Strategy、Storytelling、Ethics、Negotiation","Term 3：专业课、Leadership in Practice、Retreat、Valuation"],agency:["官网对学制有不同表述，本页暂按 Admissions 的 15 个月口径","非相关本科可能需要 Business Immersion","2027 学费尚未发布"]},
+      "him-bba": {school:"HIM",title:"工商管理本科",tags:["undergrad"],audience:"高中毕业；希望进入金融、营销、管理或款待业管理",duration:"瑞士高等职业教育文凭 2.5 年；本科完整路径 3 年",campus:"Montreux",intake:"2027 年 1 月、4 月",language:"英语主轨；另有中英／法英双语过渡轨",fee:"Grand Total CHF 131,800",feeNote:"2027 费用表六个 term 的 tuition 分项合计与总栏相差 CHF 200；预算暂用 Grand Total。",lead:"把客户体验作为商科底层能力，再选择金融、营销、管理或款待业管理专业。",sell:["三次 4-6 个月全球实习，毕业形成约 1.5 年职业经验","四个专业方向，不再局限于酒店行业","中英／法英轨从母语逐步过渡到全英文课程"],curriculum:["Year 1：Customer Experience、Finance、Marketing、Data Decision","Year 2：Management、Accounting、Innovating with AI + 专业课","Year 3：Strategy、Ethics、Law、Organization + 高级专业课"],agency:["英语主轨 IELTS 5.5 / TOEFL 46；双语轨应按对应页面核对语言条件","瑞士高等职业教育文凭独立页面与本科页面对认可状态的文字尚未完全统一","Northwood University BBA 与 HIM 阶段性资格应分别解释"]},
+      "him-ai": {school:"HIM",title:"AI 与客户体验硕士",tags:["postgrad","ai"],audience:"本科毕业；没有工程背景，希望学习 AI 的商业应用",duration:"1 年；限 24 人",campus:"Online + Macao + Montreux",intake:"2027 年 1 月",language:"全英文；IELTS 6.0",fee:"Grand Total CHF 38,000",feeNote:"Term 1 tuition 与 term total 相差 CHF 200；预算暂用 Grand Total，双硕士另计。",lead:"课程面向 AI 产品、数据、伦理和客户体验的商业应用，重点不是算法工程。",sell:["1 至 3 月线上学习，4 至 5 月在澳门，6 至 9 月在蒙特勒","安排两次 Industry Immersion，最后完成线上 Capstone","本科专业不限；选拔包括 case、video 和院长面试"],curriculum:["Level 1：AI Fundamentals、UX、Applied AI、Data Science","Level 2：AI Product、CSR、Ethics & IP、UX Neuroscience、Trends","Oct-Dec：Online Capstone；之后可申请 CRCS 双硕士"],agency:["本科 GPA 通常需达到 3.0","瑞士端的认可表述不能直接等同中国留服认证","申请前要确认学生能接受线上、澳门与瑞士三段学习安排"]},
+      "him-dual": {school:"HIM + CRCS",title:"AI 与客户体验 + 领导力双硕士路径",tags:["postgrad","executive","ai"],audience:"希望继续学习领导力并取得第二个硕士学位的 HIM 学生",duration:"完成 HIM 主项目后增加 CRCS 阶段",campus:"Montreux / Online → Brig",intake:"随 HIM AI Master 路径",language:"全英文",fee:"双硕士增量费用待个案确认",feeNote:"HIM CHF 38,000 不等于双硕士完整总价，Brig 阶段住宿及额外费用需另核。",lead:"完成 HIM 的 AI 与客户体验硕士后，可另行申请 CRCS 领导力硕士，继续学习战略、组织变革和高管沟通。",sell:["先学习 AI 产品与客户体验，再学习组织变革和全球战略","完成两个学校规定的课程后可取得两个硕士学位","第二阶段需单独申请，并增加学习时间和费用"],curriculum:["Leadership for Change & Innovation","Global Strategic Management、Storytelling、Ethics","C-suite、Negotiation、Networking"],agency:["双硕士不在 HIM 主项目中自动包含，需要单独申请和计费","先确认学生是否需要第二学位及其认证用途","住宿、额外 term 和学习时间需重新预算"]},
+      "foundation": {school:"SEG / SHMS",title:"入学准备课程",tags:["undergrad"],audience:"语言、学历或瑞士学习准备度暂未达到主课要求的学生",duration:"EFP 10 周；IFP 4 周；Access 9 或 18 周",campus:"Leysin",intake:"按各校 2027 Admissions 页面",language:"EFP 为英语强化；IFP 为学习适应；Access 入门英语约 IELTS 4.5",fee:"Access CHF 12,400 / 24,900",feeNote:"分别对应 9 周／18 周；EFP、IFP 当前完整 2027 价格需另核。",lead:"EFP、IFP 和 Access 的用途不同，分别对应英语强化、入学适应和本科衔接。",sell:["EFP：提高英语与学术学习能力","IFP：主课前适应瑞士校园和跨文化环境","Access：为学历或学术准备不足者提供本科衔接"],curriculum:["具体学习安排按学生最终学校与入学季匹配","IFP 主要用于主课前适应，不能代替语言提分课程"],agency:["先确认学生需要补英语、补学历条件，还是提前适应海外学习","Access 已有 2027 册子与费用，但英文官网独立页面待发布","签证所需英语成绩仍以当期官方要求为准"]}
     };
+
+    const officialNames={
+      "shms-ba":"Bachelor of Arts in International Hospitality Management｜文学学士",
+      "shms-pgd":"Postgraduate Diploma in International Hotel, Resort & Spa Management｜研究生文凭（非硕士）",
+      "shms-ma":"Master of Arts in International Hospitality Business Management｜文学硕士",
+      "shms-luxury":"Master of Arts in International Hospitality Business Management: Luxury Brand Management｜国际款待业商务管理—奢侈品品牌管理文学硕士",
+      "shms-msc":"Master of Science in International Hospitality Management｜理学硕士",
+      "shms-mas":"Master of Advanced Studies in Business｜高级研修硕士（职业／继续教育路径）",
+      "shms-online":"Master of Arts in Executive Hospitality Management (Online)｜在线文学硕士",
+      "shms-mba":"Master of Business Administration (Global)｜计划项目",
+      "caas-diploma-culinary":"Professional Swiss Diploma in Culinary Arts｜瑞士职业文凭（非本科学位）",
+      "caas-diploma-pastry":"Professional Swiss Diploma in Pastry and Chocolate Arts｜瑞士职业文凭（非本科学位）",
+      "caas-ba-culinary":"CAAS Bachelor of International Business in Culinary Arts + University of Derby BA (Hons) in Culinary Arts｜本科授予路径",
+      "caas-ba-pastry":"CAAS Bachelor of International Business in Pastry, Bakery & Chocolate Arts + University of Derby BA (Hons) in Culinary Arts｜本科授予路径",
+      "caas-ma":"Master of Arts in Culinary Business Management｜文学硕士",
+      "crcs-bsc":"Bachelor of Science in Hospitality Business Management｜理学学士",
+      "crcs-ai":"Bachelor of Science in Applied AI for Hospitality Business Management｜理学学士",
+      "crcs-msc":"Master of Science in Leadership｜理学硕士",
+      "him-bba":"Bachelor of Business Administration｜工商管理学士",
+      "him-ai":"Master in Applied AI in Customer Experience｜HIM Professional Master",
+      "him-dual":"HIM Master + CRCS Master of Science in Leadership｜双硕士申请路径",
+      "foundation":"EFP / IFP / SHMS Access Foundation｜入学准备课程"
+    };
+    const programAliases={"caas-diploma":"caas-diploma-culinary","caas-ba":"caas-ba-culinary"};
+    const resolveProgram=id=>programAliases[id]||id;
 
     const FX_RATE=8.36;
     const FX_UPDATED="2026-08-11";
@@ -400,12 +432,15 @@
       "shms-ba":{chf:[186500],coverage:standardCampus},
       "shms-pgd":{chf:[],coverage:["住宿：2027 价格待确认","餐饮：2027 价格待确认","保险：2027 价格待确认"]},
       "shms-ma":{chf:[54500,40800],labels:["36 周标准轨","18 周快轨"],coverage:standardCampus},
+      "shms-luxury":{chf:[54500,40800],labels:["36 周标准轨","18 周快轨"],coverage:standardCampus},
       "shms-msc":{chf:[40800],coverage:standardCampus},
       "shms-mas":{chf:[43000],coverage:["住宿：含列示在校阶段标准房型","餐饮：含列示在校阶段餐食","保险：含在校学期；可选延住／实习另计"]},
       "shms-online":{chf:[20700],coverage:["住宿：不含；驻留周另计","餐饮：不含","保险：不含"]},
       "shms-mba":{chf:[49200],coverage:standardCampus},
-      "caas-diploma":{chf:[20000,60000],labels:["每学期","三学期完整路径"],coverage:standardCampus},
-      "caas-ba":{chf:[176200],coverage:standardCampus},
+      "caas-diploma-culinary":{chf:[20000,40000,60000],labels:["每学期","两学期路径预算","三学期完整路径"],coverage:standardCampus},
+      "caas-diploma-pastry":{chf:[20000,40000,60000],labels:["每学期","两学期路径预算","三学期完整路径"],coverage:standardCampus},
+      "caas-ba-culinary":{chf:[176200],coverage:standardCampus},
+      "caas-ba-pastry":{chf:[176200],coverage:standardCampus},
       "caas-ma":{chf:[49000],coverage:standardCampus},
       "crcs-bsc":{chf:[],coverage:["住宿：2027 费用表待发布","餐饮：2027 费用表待发布","保险：2027 费用表待发布"]},
       "crcs-ai":{chf:[],coverage:["住宿：2027 费用表待发布","餐饮：2027 费用表待发布","保险：2027 费用表待发布"]},
@@ -418,7 +453,7 @@
     const directCases={
       "shms-ba":"SHMS 本科既往案例：University of Derby 文学学士，专业领域为国际酒店管理。",
       "shms-ma":"SHMS 硕士既往案例：University of Derby 文学硕士，专业领域为国际酒店商务管理。",
-      "caas-ba":"CAAS 相关本科既往案例：University of Derby 荣誉文学学士，专业领域为烹饪艺术。",
+      "caas-ba-culinary":"CAAS 相关本科既往案例：University of Derby 荣誉文学学士，专业领域为烹饪艺术。",
       "him-bba":"HIM 本科既往案例：Northwood University 工商管理学士，专业领域为酒店管理。"
     };
     const caseDocuments={
@@ -428,7 +463,7 @@
       "shms-ba":{title:"国际酒店管理本科案例",degree:"本科｜国际酒店管理｜University of Derby",image:"case-shms-ba.png"},
       "shms-ma":{title:"国际酒店商务管理硕士案例",degree:"硕士｜国际酒店商务管理｜University of Derby",image:"case-shms-ma.png"}
     };
-    const programCaseDocument={"caas-ba":"caas-ba","him-bba":"him-ba","shms-ba":"shms-ba","shms-ma":"shms-ma"};
+    const programCaseDocument={"caas-ba-culinary":"caas-ba","him-bba":"him-ba","shms-ba":"shms-ba","shms-ma":"shms-ma"};
 
     const catalogGrid=document.getElementById('catalogGrid');
     const dialog=document.getElementById('detailDialog');
@@ -451,11 +486,13 @@
       catalogGrid.innerHTML=Object.entries(programs).filter(([id])=>id!=='foundation').map(([id,p])=>`<article class="catalog-card" data-school="${escapeHtml(p.school)}" data-tags="${p.tags.join(' ')}"><div class="catalog-top"><span>${escapeHtml(p.school)}</span><span>${p.tags.includes('ai')?'AI 方向':'2027'}</span></div><h3>${escapeHtml(p.title)}</h3><p>${escapeHtml(p.lead)}</p><div class="catalog-bottom"><div class="price"><small>2027 学费</small>${escapeHtml(p.fee)}${rmbLine(id)}</div><button class="open-detail" data-program="${id}">课程详情</button></div></article>`).join('');
     }
     function list(items){return `<ul>${items.map(x=>`<li>${escapeHtml(x)}</li>`).join('')}</ul>`}
-    function showProgram(id,pushHash=true){
+    function showProgram(rawId,pushHash=true){
+      const id=resolveProgram(rawId);
       const p=programs[id]; if(!p)return;
       dialogSchool.textContent=p.school;
       dialogTitle.textContent=p.title;
       dialogContent.innerHTML=`
+        <div class="detail-official"><strong>正式项目名与类型：</strong>${escapeHtml(officialNames[id]||p.title)}</div>
         <div class="detail-meta"><div class="meta"><span>适合人群</span><strong>${escapeHtml(p.audience)}</strong></div><div class="meta"><span>学制</span><strong>${escapeHtml(p.duration)}</strong></div><div class="meta"><span>地点</span><strong>${escapeHtml(p.campus)}</strong></div><div class="meta"><span>2027 开学</span><strong>${escapeHtml(p.intake)}</strong></div></div>
         <div class="detail-lead">${escapeHtml(p.lead)}</div>
         <div class="detail-grid"><div class="detail-block"><h3>项目特点</h3>${list(p.sell)}</div><div class="detail-block"><h3>课程与实践安排</h3>${list(p.curriculum)}</div><div class="detail-block"><h3>授课与语言</h3><p>${escapeHtml(p.language)}</p></div>${caseBlock(id)}</div>
@@ -478,7 +515,8 @@
     dialog.addEventListener('close',()=>{if(location.hash.startsWith('#program/'))history.replaceState(null,'',location.pathname+location.search)});
     document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');const f=b.dataset.filter;document.querySelectorAll('.catalog-card').forEach(c=>c.hidden=f!=='all'&&!c.dataset.tags.split(' ').includes(f))}));
     renderCatalog();
-    const match=location.hash.match(/^#program\/(.+)$/);if(match&&programs[match[1]])showProgram(match[1],false);
+    window.addEventListener('hashchange',()=>{const next=location.hash.match(/^#program\/(.+)$/);if(next)showProgram(next[1],false)});
+    const match=location.hash.match(/^#program\/(.+)$/);if(match)showProgram(match[1],false);
   </script>
 </body>
 </html>
