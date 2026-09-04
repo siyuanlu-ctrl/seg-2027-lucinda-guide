@@ -17,6 +17,7 @@
   <meta property="og:image:width" content="145">
   <meta property="og:image:height" content="145">
   <link rel="image_src" href="https://siyuanlu-ctrl.github.io/seg-2027-lucinda-guide/seg-dark.png">
+  <link rel="icon" type="image/png" href="seg-dark.png">
   <meta itemprop="name" content="SEG 2027 产品导航 | Lucinda Lu">
   <meta itemprop="description" content="SHMS、CAAS、CRCS、HIM 四校项目、课程、卖点、2027 费用及中留服既往案例。">
   <meta itemprop="image" content="https://siyuanlu-ctrl.github.io/seg-2027-lucinda-guide/seg-dark.png">
@@ -24,7 +25,6 @@
   <meta name="twitter:title" content="SEG 2027 产品导航 | Lucinda Lu">
   <meta name="twitter:description" content="SHMS、CAAS、CRCS、HIM 四校项目、课程、卖点、2027 费用及中留服既往案例。">
   <meta name="twitter:image" content="https://siyuanlu-ctrl.github.io/seg-2027-lucinda-guide/seg-dark.png">
-  <link rel="preload" as="image" href="alpine-campus-caux-web.jpg" fetchpriority="high">
   <title>SEG 2027 产品导航｜Lucinda Lu · SEG 招生官</title>
   <style>
     :root {
@@ -70,6 +70,7 @@
     .contact-link.primary{background:var(--navy);color:#fff}.contact-link:hover,.contact-button:hover{border-color:var(--red);color:var(--red)}.contact-link.primary:hover{background:var(--red);color:#fff}
     .contact-status{border-color:#9eb0c5;background:var(--navy);color:#fff;cursor:default}.contact-email{padding:8px 10px;border:1px solid var(--line);background:var(--soft);color:var(--navy);font-size:12px;font-weight:850;text-align:center;user-select:all}
     .contact-line{margin-top:5px;color:var(--muted);font-size:11px;text-align:center}
+    .contact-qr{grid-column:1/-1;width:min(100%,210px);height:auto;margin:4px auto 0;border:1px solid var(--line);background:#fff}
     .matrix-shell{border:1px solid var(--line);background:#fff;box-shadow:var(--shadow);overflow:hidden}
     .matrix{display:grid;grid-template-columns:150px repeat(4,minmax(0,1fr))}
     .corner{padding:18px;background:#fff;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;align-items:end;color:var(--muted);font-size:12px}
@@ -101,12 +102,12 @@
     .school-positioning .section-head h2{color:#fff}.school-positioning .section-head p{color:rgba(255,255,255,.7)}
     .position-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.2)}
     .position{min-height:330px;padding:28px;background:var(--navy);display:flex;flex-direction:column}
-    .position-code{color:#ff756e;font-size:13px;font-weight:850;letter-spacing:.14em}.position-school{display:block;margin-top:7px;color:rgba(255,255,255,.68);font-size:12px;font-weight:700}.position-rank{display:inline-block;margin-top:14px;padding:5px 8px;border:1px solid rgba(255,255,255,.32);color:#fff;font-size:11px;font-weight:800}
+    .position-code{color:#ff756e;font-size:13px;font-weight:850;letter-spacing:.14em}.position-school{display:block;margin-top:7px;color:rgba(255,255,255,.84);font-size:12px;font-weight:700}.position-rank{display:inline-block;margin-top:14px;padding:5px 8px;border:1px solid rgba(255,255,255,.32);color:#fff;font-size:11px;font-weight:800}
     .position h3{margin:44px 0 12px;font-size:28px;line-height:1.15}
-    .position p{margin:0;color:rgba(255,255,255,.7)}
-    .position ul{margin:auto 0 0;padding:24px 0 0;list-style:none;color:rgba(255,255,255,.88);font-size:14px}
+    .position ul{margin:22px 0 0;padding:0;list-style:none;color:rgba(255,255,255,.9);font-size:14px}
     .position li+li{margin-top:8px}.position li::before{content:"+";margin-right:8px;color:#ff756e;font-weight:900}
-    .campus-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;margin-top:1px;background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.22)}.campus-card{margin:0;background:#fff;color:var(--navy)}.campus-card img{width:100%;aspect-ratio:4/3;object-fit:cover}.campus-card figcaption{padding:16px 18px 18px}.campus-card strong{display:block;font-size:15px}.campus-card span{display:block;margin-top:5px;color:var(--muted);font-size:11px;line-height:1.55}.campus-note{margin:18px 0 0;color:rgba(255,255,255,.66);font-size:11px}
+    .campus-schools{display:grid;gap:34px}.campus-school{padding-top:20px;border-top:1px solid rgba(255,255,255,.28)}.campus-school:first-child{padding-top:0;border-top:0}.campus-school-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:13px}.campus-school-head h3{margin:0;color:#fff;font-family:"Bodoni 72",Didot,Georgia,"Songti SC",serif;font-size:30px;font-weight:600}.campus-school-head p{max-width:68ch;margin:0;color:rgba(255,255,255,.68);font-size:11px;line-height:1.55;text-align:right}
+    .campus-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;margin-top:1px;background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.22)}.campus-card{margin:0;background:#fff;color:var(--navy)}.campus-card img{width:100%;aspect-ratio:4/3;object-fit:cover;background:#ece8e7}.campus-card figcaption{padding:16px 18px 18px}.campus-card strong{display:block;font-size:15px}.campus-card span{display:block;margin-top:5px;color:var(--muted);font-size:11px;line-height:1.55}.room-fee-tag{display:inline-block!important;margin:0 0 8px!important;padding:4px 7px;border:1px solid #c14b43;background:#fff4f2;color:#8b1712!important;font-size:9px!important;font-weight:900!important;letter-spacing:.06em}.room-fee-tag.upgrade{border-color:#b6bcc5;background:#f5f6f7;color:#536173!important}.campus-note{margin:18px 0 0;color:rgba(255,255,255,.66);font-size:11px;line-height:1.65}
     .alumni-head{display:flex;justify-content:space-between;gap:24px;align-items:flex-end;margin:72px 0 22px}.alumni-head h3{margin:0;font-family:"Bodoni 72",Didot,Georgia,"Songti SC",serif;font-size:38px;font-weight:600}.alumni-head p{max-width:620px;margin:0;color:rgba(255,255,255,.68);font-size:12px;line-height:1.7}.alumni-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.22)}.alumni-school{background:#fff;color:var(--navy)}.alumni-school-head{padding:20px 20px 16px;border-top:5px solid var(--red);border-bottom:1px solid var(--line)}.alumni-school-head strong{display:block;font-size:23px}.alumni-school-head span{display:block;margin-top:3px;color:var(--muted);font-size:11px}.alumni-person{min-height:152px;padding:16px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:68px 1fr;gap:13px;align-items:start}.alumni-person:last-child{border-bottom:0}.alumni-photo{width:68px;height:92px;object-fit:cover;object-position:center top;background:#e8edf2}.alumni-copy{min-width:0}.alumni-person .alumni-tag{display:inline-block;margin-bottom:7px;color:#a32019;font-size:9px;font-weight:900;letter-spacing:.12em}.alumni-person strong{display:block;font-size:15px;line-height:1.25}.alumni-person p{margin:7px 0 0;color:var(--muted);font-size:10px;line-height:1.5}.alumni-photo-note{display:block;margin-top:7px;color:#8a96a8;font-size:9px;line-height:1.4}.alumni-source{margin:14px 0 0;color:rgba(255,255,255,.58);font-size:10px}
     .finder{background:#f5f7f9}
     .filters{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:24px}
@@ -167,7 +168,7 @@
     .language-note{border-color:rgba(255,255,255,.55);border-radius:0;color:#fff;letter-spacing:.05em}
     .watermark{right:-76px;color:rgba(6,27,61,.12);font-size:12px;letter-spacing:.32em}
     .hero{padding:34px 0 54px;background:transparent}
-    .hero-head{position:relative;isolation:isolate;min-height:470px;margin:0 0 0;padding:64px 68px 78px;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(250px,.55fr);align-items:end;overflow:hidden;background-color:var(--navy);background-image:linear-gradient(90deg,rgba(4,18,42,.94) 0%,rgba(4,18,42,.76) 48%,rgba(4,18,42,.2) 100%),url("alpine-campus-caux-web.jpg");background-size:cover;background-position:center 48%;box-shadow:0 34px 80px rgba(6,27,61,.2)}
+    .hero-head{position:relative;isolation:isolate;min-height:470px;margin:0 0 0;padding:64px 68px 78px;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(250px,.55fr);align-items:end;overflow:hidden;background-color:var(--navy);background-image:none;background-size:cover;background-position:center 48%;box-shadow:0 34px 80px rgba(6,27,61,.2)}
     .hero-head::before{content:"";position:absolute;inset:0 auto 0 0;width:9px;background:var(--red);z-index:-1}.hero-head::after{content:"";position:absolute;right:-7%;bottom:-1px;width:62%;height:27%;background:rgba(255,255,255,.13);clip-path:polygon(0 100%,16% 42%,28% 73%,44% 12%,59% 64%,70% 38%,83% 78%,100% 24%,100% 100%);z-index:-1}
     .hero-copy-block{position:relative;z-index:1;max-width:760px}
     .hero-kicker{display:flex;align-items:center;gap:12px;margin-bottom:22px;color:#fff;font-size:12px;font-weight:800;letter-spacing:.18em}.hero-kicker::before{content:"";width:34px;height:4px;background:var(--red)}
@@ -196,7 +197,7 @@
     @media(max-width:1050px){.hero-head{grid-template-columns:1fr;min-height:520px}.hero-brand{position:absolute;right:32px;top:32px;width:220px}.identity-card{width:94%;grid-template-columns:1fr 1fr}.identity-contact{grid-template-columns:repeat(2,1fr)}.identity-contact .contact-link.primary,.identity-contact .contact-email,.identity-contact .contact-line{grid-column:1/-1}.position-grid,.campus-gallery,.alumni-grid{grid-template-columns:1fr 1fr}.concern-grid{grid-template-columns:1fr 1fr}}
     @media(max-width:760px){body::after{display:none}.topbar{height:66px}.brand span:last-child{font-size:14px}.language-note{padding:7px 8px;font-size:9px}.hero{padding-top:18px}.hero-head{min-height:600px;padding:34px 25px 54px;display:flex;align-items:flex-end;background-position:62% center}.hero-brand{position:absolute;top:24px;right:20px;width:154px;padding:14px}.hero-brand .seg-logo{margin:0;width:100%}.hero-brand .update{margin-top:12px;padding-top:10px}.hero-brand small{display:none}.hero-kicker{font-size:10px}.hero h1{font-size:clamp(48px,15vw,70px)}.hero h1 span{margin-top:12px;font-size:.43em;line-height:1.05}.hero-copy{font-size:14px;line-height:1.65}.hero-stats{margin-top:22px}.hero-stat{min-width:88px;margin-right:16px;padding-right:12px}.hero-stat strong{font-size:21px}.identity-card{width:92%;margin:-30px auto 28px}.identity-photo{width:72px;height:92px}.identity-contact{grid-template-columns:1fr 1fr}.matrix-shell{border-top-width:5px}.section-head{padding-top:22px}.section-head h2{font-size:40px}.position-grid,.campus-gallery,.alumni-grid{grid-template-columns:1fr}.position{min-height:280px}.alumni-head{align-items:flex-start;flex-direction:column;margin-top:52px}.alumni-head h3{font-size:32px}.catalog{display:grid;background:transparent;border:0;gap:12px}.catalog-card{border-left:4px solid var(--red)}.concern-grid{display:grid;grid-template-columns:1fr;background:transparent;border:0;gap:1px}.concern{min-height:auto;border-top:4px solid var(--navy)}.fee-rate,.fee-box{align-items:flex-start;flex-direction:column}.fee-rate span{text-align:left}}
 
-    /* SEG China official palette — sampled from swisseducation.com.cn, 2026-08-11 */
+    /* SEG China official palette, sampled from swisseducation.com.cn, 2026-08-11 */
     :root{
       --cream:#fff;
       --cream-2:#f1f1f1;
@@ -218,7 +219,7 @@
     .nav-links a{color:#555}.nav-links a:hover{color:var(--red)}
     .language-note{border-color:#999;color:#333}
     .watermark{color:rgba(65,12,12,.11)}
-    .hero-head{background-color:var(--navy);background-image:linear-gradient(90deg,rgba(65,12,12,.94) 0%,rgba(65,12,12,.76) 48%,rgba(65,12,12,.18) 100%),url("alpine-campus-caux-web.jpg");box-shadow:0 34px 80px rgba(65,12,12,.18)}
+    .hero-head{background-color:var(--navy);background-image:none;box-shadow:0 34px 80px rgba(65,12,12,.18)}
     .hero-brand{box-shadow:0 24px 50px rgba(65,12,12,.2)}
     .identity-card{box-shadow:0 24px 55px rgba(65,12,12,.13)}
     .identity-card::after{color:rgba(65,12,12,.035)}
@@ -241,6 +242,270 @@
     .case-document{background:#e8dfdd}
     .case-document img{box-shadow:0 18px 50px rgba(65,12,12,.16)}
     dialog::backdrop{background:rgba(65,12,12,.72)}
+    .media-disclosure{margin:0;padding:0}.media-summary{display:none;list-style:none}.media-summary::-webkit-details-marker{display:none}
+    @media(max-width:760px){
+      .topbar,.hero-brand{backdrop-filter:none}.topbar{box-shadow:0 4px 14px rgba(34,34,34,.06)}.brand{gap:8px}.brand-mark{width:30px;height:30px}.brand span:last-child{font-size:12px;white-space:nowrap}.language-note{padding:6px;font-size:8px;white-space:nowrap}
+      .hero-head{min-height:510px;padding-bottom:44px}
+      section{padding:72px 0}
+      .filters{flex-wrap:nowrap;gap:8px;margin-inline:-14px;padding:0 14px 14px;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none;-webkit-overflow-scrolling:touch}.filters::-webkit-scrollbar{display:none}.filter{flex:0 0 auto;scroll-snap-align:start}
+      .media-disclosure{margin-top:16px;border-top:1px solid rgba(255,255,255,.3);border-bottom:1px solid rgba(255,255,255,.3)}
+      .media-disclosure+.media-disclosure{margin-top:10px}
+      .media-summary{min-height:74px;padding:14px 4px;display:flex;align-items:center;justify-content:space-between;gap:16px;color:#fff;cursor:pointer}
+      .media-summary span{display:block;font-size:17px;font-weight:800}.media-summary small{display:block;margin-top:4px;color:rgba(255,255,255,.62);font-size:11px;font-weight:600}
+      .media-summary::after{content:"＋";flex:0 0 auto;color:#ff7b70;font-size:24px;font-weight:500}.media-disclosure[open]>.media-summary::after{content:"－"}
+      .media-disclosure[open]>.media-summary{margin-bottom:12px}
+      .media-disclosure .campus-gallery{margin-top:0}.media-disclosure .campus-note{padding-bottom:14px}.media-disclosure .alumni-head{margin:8px 0 20px}.media-disclosure .alumni-source{padding-bottom:14px}
+    }
+    /* Matrix-first home: the product table is the only primary-page content. */
+    html{scroll-behavior:auto}
+    .topbar{height:78px;overflow:visible;background:#fff;border-top:5px solid var(--red);box-shadow:0 5px 18px rgba(65,12,12,.07);backdrop-filter:none}
+    .matrix-home{padding:30px 0 52px;background:#fff}
+    .matrix-home,.secondary-section,.media-disclosure{scroll-margin-top:90px}
+    .matrix-home .identity-card{width:100%;margin:0 0 18px;padding:18px 20px;grid-template-columns:minmax(300px,1.15fr) minmax(210px,.65fr) minmax(320px,.9fr);gap:20px}
+    .matrix-home .identity-card::after{font-size:42px;bottom:-15px}
+    .matrix-home .identity-photo{width:72px;height:92px}
+    .matrix-home .identity-name{font-size:24px}
+    .matrix-home .identity-org{padding-left:20px}
+    .matrix-home .identity-org img{width:132px}
+    .matrix-home .identity-contact{grid-template-columns:1fr 1fr;gap:6px}
+    .matrix-home .identity-contact .contact-link.primary,.matrix-home .identity-contact .contact-email,.matrix-home .identity-contact .contact-line{grid-column:1/-1}
+    .matrix-home .identity-contact .contact-link{min-height:36px}
+    .topbar .explore-nav{width:min(calc(100% - 48px),var(--max));height:73px;margin:0 auto;display:grid;grid-template-columns:210px minmax(0,1fr);border:1px solid var(--line);border-top:0;background:#fff}
+    .explore-nav-title{margin:0;padding:0 18px;background:#4b0909;color:#fff;display:flex;align-items:center;text-decoration:none;font-size:13px;font-weight:850;line-height:1.35}
+    .explore-links{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));background:var(--line);gap:1px;min-width:0}
+    .explore-link{min-width:0;padding:9px 11px;border:0;background:#fff;color:var(--navy);display:flex;flex-direction:column;align-items:flex-start;justify-content:center;text-align:left;text-decoration:none;font-size:12px;font-weight:850;line-height:1.25}
+    .explore-link small{display:block;margin-top:4px;color:var(--muted);font-size:8.5px;font-weight:650;line-height:1.25}
+    .explore-link:hover,.explore-link:focus-visible{background:var(--soft);color:var(--red)}
+    .explore-link[aria-expanded="true"]{box-shadow:inset 0 -4px 0 var(--red);color:var(--red)}
+    .secondary-section[hidden]{display:none!important}
+    .secondary-section{scroll-margin-top:86px}
+    body.secondary-view .matrix-home{padding-bottom:0}
+    body.secondary-view .matrix-home .matrix-shell,
+    body.secondary-view .matrix-home .matrix-hint,
+    body.secondary-view .matrix-home .fee-rate{display:none}
+    body.secondary-view .matrix-home .identity-card{margin-bottom:0}
+    body.secondary-view .secondary-section{padding-top:62px}
+    .section-close{margin:0 0 28px;padding:10px 14px;border:1px solid currentColor;background:transparent;color:inherit;font-size:12px;font-weight:800}
+    .finder .section-close,.agency .section-close,.preparation .section-close,.calendar .section-close{color:var(--navy)}
+    .media-page{background:var(--navy);color:#fff}
+    .media-page .section-head h2{color:#fff}
+    .media-page .section-head p{color:rgba(255,255,255,.75)}
+    .media-page .campus-gallery,.media-page .alumni-grid{margin-top:0}
+    .media-summary{min-height:72px;padding:15px 4px;display:flex;align-items:center;justify-content:space-between;gap:16px;border-top:1px solid rgba(255,255,255,.3);color:#fff;cursor:pointer}
+    .media-summary span{display:block;font-size:17px;font-weight:800}.media-summary small{display:block;margin-top:4px;color:rgba(255,255,255,.62);font-size:11px;font-weight:600}
+    .media-summary::after{content:"＋";flex:0 0 auto;color:#ff7b70;font-size:24px;font-weight:500}.media-disclosure[open]>.media-summary::after{content:"－"}
+    .media-disclosure[open]>.media-summary{margin-bottom:12px}
+    .entry-strip{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:6px;background:#eee6e4}
+    .entry-strip button{position:relative;min-height:108px;padding:22px 58px 22px 26px;border:0;border-left:6px solid var(--red);background:#fff;color:var(--navy);text-align:left;text-decoration:none;font-size:18px;font-weight:850;line-height:1.3}
+    .entry-strip button::after{content:"\2197";position:absolute;right:24px;top:50%;transform:translateY(-50%);color:var(--red);font-size:22px;font-weight:700}
+    .entry-strip button small{display:block;margin-top:8px;color:var(--muted);font-size:12px;font-weight:650;line-height:1.45;text-decoration:none}
+    .entry-strip button:hover,.entry-strip button:focus-visible{background:var(--soft);color:var(--red)}
+    .preparation,.calendar{background:#f6f3f2;color:var(--ink)}
+    .prep-panel{padding:28px;border:1px solid #d9c7c4;border-top:5px solid var(--red);background:#fff;scroll-margin-top:90px}
+    .prep-panel+.prep-panel{margin-top:22px}
+    .prep-panel h3{margin:0;color:var(--navy);font-size:25px}
+    .prep-intro{max-width:76ch;margin:9px 0 20px;color:var(--muted);font-size:14px}
+    .table-scroll{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+    .info-table{width:100%;min-width:820px;border-collapse:collapse;background:#fff;text-align:left}
+    .info-table th{padding:12px 13px;background:#4b0909;color:#fff;font-size:11px;font-weight:850;line-height:1.35;vertical-align:top}
+    .info-table td{padding:13px;border-bottom:1px solid var(--line);color:var(--muted);font-size:12px;line-height:1.55;vertical-align:top}
+    .info-table tr:last-child td{border-bottom:0}
+    .info-table td:first-child{color:var(--navy);font-weight:850}
+    .project-en,.fee-breakdown{display:block;margin-top:4px;color:var(--muted);font-size:9.5px;font-weight:650;line-height:1.45}
+    .rmb-estimate{display:block;margin-top:3px;color:#a32019;font-size:10px;font-weight:800;white-space:nowrap}
+    .pathway-cost{display:block;margin-top:10px;padding:10px 11px;border-left:3px solid var(--red);background:#f8f2f1;color:var(--navy);font-size:10px;font-weight:700;line-height:1.55}
+    .pathway-cost strong,.pathway-cost span{display:block}.pathway-cost strong{font-size:11px}.pathway-cost .rmb-estimate{margin-top:2px}.pathway-saving{margin-top:4px;color:#a32019;font-weight:850}
+    .table-note{margin:18px 0 0;padding:14px 16px;border-left:4px solid var(--red);background:#f8f5f4;color:var(--muted);font-size:12px;line-height:1.7}
+    .table-note strong{color:var(--navy)}
+    .china-fx{display:block;margin-top:7px;color:#a32019;font-weight:800}
+    .china-campus-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;margin:18px 0 22px;border:1px solid var(--line);background:var(--line)}.china-campus-card{margin:0;background:#fff}.china-campus-card img{width:100%;aspect-ratio:4/3;object-fit:cover;background:#ece8e7}.china-campus-card figcaption{padding:11px 13px;color:var(--navy);font-size:11px;font-weight:850}.china-campus-card figcaption span{display:block;margin-top:4px;color:var(--muted);font-size:9.5px;font-weight:650;line-height:1.45}
+    .inline-detail{margin-top:14px;padding:10px 14px;border:1px solid var(--navy);background:#fff;color:var(--navy);font-size:12px;font-weight:850}
+    .inline-detail:hover{background:var(--navy);color:#fff}
+    .calendar-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .calendar-school{border:1px solid #d9c7c4;background:#fff}
+    .calendar-school>summary{min-height:62px;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:18px;list-style:none;color:var(--navy);font-size:17px;font-weight:850;cursor:pointer}
+    .calendar-school>summary::-webkit-details-marker{display:none}
+    .calendar-school>summary::after{content:"＋";color:var(--red);font-size:22px;font-weight:500}
+    .calendar-school[open]>summary{border-bottom:1px solid var(--line)}
+    .calendar-school[open]>summary::after{content:"－"}
+    .calendar-school .table-scroll{padding:0 14px 14px}
+    .calendar-school .info-table{min-width:720px}
+    .calendar-school.shms-calendar{grid-column:1/-1}
+    .calendar-school>.table-note{margin:0 14px 14px}
+    .date-pending{color:#a32019}
+    .calendar-source{margin:18px 0 0;color:var(--muted);font-size:12px;line-height:1.7}
+    .floating-home{position:fixed;right:18px;bottom:max(18px,env(safe-area-inset-bottom));z-index:80;min-height:46px;padding:11px 16px;border:2px solid #fff;background:var(--navy);color:#fff;box-shadow:0 12px 30px rgba(65,12,12,.3);font-size:13px;font-weight:850;letter-spacing:.02em;cursor:pointer}
+    .floating-home:hover,.floating-home:focus-visible{background:var(--red);outline:3px solid rgba(228,35,19,.22);outline-offset:3px}
+    .floating-home[hidden]{display:none!important}
+    .case-dialog{width:min(1180px,calc(100% - 24px))}
+    .case-document{min-height:520px;padding:28px}
+    .case-document img{width:min(100%,900px);max-width:900px;max-height:none;height:auto;object-fit:contain}
+
+    /* Admissions: compact, text-first and explicit about source-year boundaries. */
+    .admissions{background:#f6f3f2;color:var(--ink)}
+    .admission-version{margin-bottom:22px;padding:20px 22px;border-left:5px solid var(--red);background:#fff;box-shadow:0 12px 30px rgba(65,12,12,.06)}
+    .admission-badges{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:12px}
+    .admission-badge{padding:5px 8px;border:1px solid #d9c7c4;background:#f8f2f1;color:#6f1714;font-size:10px;font-weight:900;letter-spacing:.04em}
+    .admission-version strong{display:block;color:var(--navy);font-size:18px}
+    .admission-version p{max-width:92ch;margin:8px 0 0;color:var(--muted);font-size:12px;line-height:1.7}
+    .admission-alert{margin-bottom:26px;padding:16px 18px;background:#4b0909;color:#fff;font-size:13px;line-height:1.65}
+    .admission-alert strong{color:#fff}
+    .admission-glance{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;margin-bottom:28px;border:1px solid var(--line);background:var(--line)}
+    .admission-glance article{min-height:136px;padding:20px;background:#fff}
+    .admission-glance span{display:block;color:var(--red);font-size:10px;font-weight:900;letter-spacing:.1em}
+    .admission-glance strong{display:block;margin-top:10px;color:var(--navy);font-size:17px;line-height:1.4}
+    .admission-glance p{margin:7px 0 0;color:var(--muted);font-size:11px;line-height:1.65}
+    .admission-subtitle{margin:34px 0 14px;color:var(--navy);font-family:"Bodoni 72",Didot,Georgia,"Songti SC",serif;font-size:28px;font-weight:600}
+    .admission-schools{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .admission-school,.admission-reference{border:1px solid #d9c7c4;background:#fff}
+    .admission-school>summary,.admission-reference>summary{min-height:66px;padding:15px 18px;display:flex;align-items:center;justify-content:space-between;gap:16px;list-style:none;color:var(--navy);font-size:17px;font-weight:900;cursor:pointer}
+    .admission-school>summary::-webkit-details-marker,.admission-reference>summary::-webkit-details-marker{display:none}
+    .admission-school>summary::after,.admission-reference>summary::after{content:"＋";color:var(--red);font-size:22px;font-weight:500}
+    .admission-school[open]>summary,.admission-reference[open]>summary{border-bottom:1px solid var(--line)}
+    .admission-school[open]>summary::after,.admission-reference[open]>summary::after{content:"－"}
+    .admission-school-body,.admission-reference-body{padding:18px}
+    .admission-level+.admission-level{margin-top:18px;padding-top:18px;border-top:1px solid var(--line)}
+    .admission-level h4{margin:0 0 8px;color:#6f1714;font-size:14px}
+    .admission-level p{margin:0;color:var(--muted);font-size:11.5px;line-height:1.7}
+    .admission-level ul,.admission-reference-body ul{margin:0;padding-left:18px;color:var(--muted);font-size:11.5px;line-height:1.65}
+    .admission-level li+li,.admission-reference-body li+li{margin-top:6px}
+    .admission-evidence{display:inline-block;margin-top:8px;padding:3px 6px;background:#eef2f6;color:var(--navy);font-size:9px;font-weight:850}
+    .admission-references{display:grid;gap:10px}
+    .admission-score-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+    .admission-score{padding:14px;background:#fff}
+    .admission-score strong{display:block;color:var(--navy);font-size:12px}
+    .admission-score span{display:block;margin-top:5px;color:var(--muted);font-size:10.5px;line-height:1.55}
+    .admission-boundary{margin-top:22px;padding:18px;border-top:4px solid var(--red);background:#fff;color:var(--muted);font-size:12px;line-height:1.7}
+    .admission-boundary strong{color:var(--navy)}
+
+    /* Course directory: school first, then Bachelor / Master / Other. */
+    .catalog{display:grid;grid-template-columns:1fr;gap:24px;background:transparent;border:0}
+    .catalog-school{min-width:0;border:1px solid var(--line);border-top:6px solid var(--red);background:#fff;box-shadow:0 18px 42px rgba(65,12,12,.08)}
+    .catalog-school[hidden],.catalog-degree-row[hidden],.catalog-empty[hidden],.catalog-row-empty[hidden]{display:none!important}
+    .catalog-school>summary{min-height:94px;padding:20px 24px;display:grid;grid-template-columns:88px minmax(0,1fr) auto;align-items:center;gap:20px;list-style:none;color:var(--navy);cursor:pointer}
+    .catalog-school>summary::-webkit-details-marker{display:none}
+    .catalog-school-code{font-size:23px;font-weight:900;letter-spacing:.08em}
+    .catalog-school-name strong{display:block;font-family:"Bodoni 72",Didot,Georgia,"Songti SC",serif;font-size:25px;font-weight:600;line-height:1.15}
+    .catalog-school-name span{display:block;margin-top:5px;color:var(--muted);font-size:11px;font-weight:650;letter-spacing:.04em}
+    .catalog-school-status{display:flex;align-items:center;gap:14px;color:var(--muted);font-size:11px;font-weight:750;white-space:nowrap}
+    .catalog-school-toggle{width:28px;height:28px;border:1px solid var(--line);display:grid;place-items:center;color:var(--red);font-size:20px;font-weight:500}
+    .catalog-school-toggle::before{content:"＋"}
+    .catalog-school[open] .catalog-school-toggle::before{content:"－"}
+    .catalog-school-body{border-top:1px solid var(--line)}
+    .catalog-degree-row{display:grid;grid-template-columns:132px minmax(0,1fr);min-width:0;border-bottom:1px solid var(--line)}
+    .catalog-degree-row:last-child{border-bottom:0}
+    .catalog-row-label{padding:20px 18px;background:#f8f2f1;color:var(--navy);display:flex;flex-direction:column;justify-content:center}
+    .catalog-row-label strong{font-size:18px;font-weight:850}
+    .catalog-row-label span{margin-top:5px;color:var(--muted);font-size:10px;font-weight:650;line-height:1.35}
+    .catalog-row-track{min-width:0;display:grid;grid-template-columns:repeat(var(--course-count),minmax(0,1fr));gap:1px;background:var(--line)}
+    .catalog-row-track.is-single{grid-template-columns:minmax(260px,430px);background:#fff}
+    .catalog-row-track.is-empty{display:block;background:#fff}
+    .catalog-card{min-width:0;min-height:0;padding:0;border:0;border-radius:0;background:#fff;box-shadow:none;display:block;transition:background .18s ease,transform .18s ease}
+    .catalog-card:hover{border:0;background:#fbf7f6;box-shadow:none;transform:translateY(-2px);z-index:1}
+    .catalog-card-link{width:100%;min-height:148px;padding:17px 18px;border:0;background:transparent;color:var(--navy);display:flex;flex-direction:column;text-align:left;cursor:pointer}
+    .catalog-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+    .catalog-card-title{display:block;margin:0;color:var(--navy);font-family:"Bodoni 72",Didot,Georgia,"Songti SC",serif;font-size:18px;font-weight:650;line-height:1.3;text-wrap:pretty}
+    .catalog-card-arrow{flex:0 0 auto;color:var(--red);font-size:18px;font-weight:800}
+    .catalog-card-meta{display:block;margin-top:9px;color:var(--muted);font-size:10.5px;font-weight:650;line-height:1.45}
+    .catalog-card-foot{margin-top:auto;padding-top:12px;display:flex;align-items:flex-end;justify-content:space-between;gap:12px}
+    .catalog-card-price{color:var(--navy);font-size:12px;font-weight:850;font-variant-numeric:tabular-nums}
+    .catalog-card-badges{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:4px}
+    .catalog-card-badge{padding:3px 5px;border:1px solid #d9c7c4;color:var(--red);font-size:8.5px;font-weight:850;letter-spacing:.04em;white-space:nowrap}
+    .catalog-row-empty{min-height:84px;margin:0;padding:20px;display:flex;align-items:center;color:var(--muted);font-size:12px;line-height:1.6}
+    .catalog-empty{margin:24px 0 0;padding:22px;border-left:5px solid var(--red);background:#fff;color:var(--navy);font-weight:750}
+    @media(max-width:1050px){
+      .topbar .explore-nav{grid-template-columns:158px minmax(0,1fr)}
+      .explore-nav-title{padding-inline:12px;font-size:11px}
+      .explore-link{padding-inline:7px;font-size:10.5px}
+      .explore-link small{display:none}
+      .catalog-school>summary{grid-template-columns:76px minmax(0,1fr) auto}
+      .catalog-degree-row{grid-template-columns:112px minmax(0,1fr)}
+    }
+    @media(max-width:760px){
+      .container{width:min(calc(100% - 20px),var(--max))}
+      .topbar{height:158px;min-height:158px}
+      .topbar .explore-nav{width:100%;height:153px;grid-template-columns:1fr;grid-template-rows:28px 1fr;border-inline:0}
+      .explore-nav-title{padding-inline:12px;justify-content:center;font-size:11px;line-height:1}
+      .explore-links{grid-template-columns:1fr 1fr;grid-template-rows:repeat(4,1fr)}
+      .explore-link:last-child{grid-column:1/-1}
+      .explore-link{min-height:0;padding:5px 9px;align-items:center;text-align:center;font-size:11.5px;line-height:1.1}
+      .explore-link small{display:none}
+      .matrix-home{padding:14px 0 34px}
+      body.secondary-view .matrix-home{padding-bottom:0}
+      .matrix-home,.secondary-section,.media-disclosure{scroll-margin-top:166px}
+      .matrix-home .identity-card{width:100%;margin:0 0 14px;padding:14px;grid-template-columns:1fr;gap:12px}
+      .matrix-home .identity-main{gap:13px}
+      .matrix-home .identity-photo{width:72px;height:92px}
+      .matrix-home .identity-name{font-size:21px}
+      .matrix-home .identity-role{margin-top:4px;font-size:12px}
+      .matrix-home .identity-org{padding:11px 0 0;border-left:0;border-top:1px solid var(--line);display:flex;align-items:center;gap:12px}
+      .matrix-home .identity-org img{width:116px;margin:0}
+      .matrix-home .identity-org span{margin:0;font-size:10px}
+      .matrix-home .identity-contact{grid-template-columns:1fr 1fr;gap:6px}
+      .matrix-home .identity-contact .contact-link{min-height:38px;padding-inline:8px;font-size:10.5px}
+      .matrix-home .identity-contact .contact-email{padding:7px 9px;text-align:left;white-space:normal;overflow-wrap:anywhere}
+      .matrix-home .identity-contact .contact-line{text-align:left;font-size:9.5px}
+      .matrix-home .identity-contact .contact-qr{width:min(100%,210px)}
+      .matrix-shell{box-shadow:0 12px 30px rgba(65,12,12,.09)}
+      .matrix-hint{font-size:10.5px}.fee-rate{padding:14px 15px}
+      .secondary-section{padding:56px 0}
+      .media-summary{padding-inline:2px}
+      .entry-strip{grid-template-columns:1fr}
+      .entry-strip{gap:5px;padding:5px}
+      .entry-strip button{min-height:90px;padding:17px 48px 17px 18px;font-size:16px}
+      .entry-strip button::after{right:18px;font-size:19px}
+      .entry-strip button small{margin-top:6px;font-size:11px}
+      .floating-home{right:12px;bottom:max(12px,env(safe-area-inset-bottom));min-height:44px;padding:10px 14px;font-size:12px}
+      .case-dialog .dialog-scroll{padding:14px}
+      .case-document{min-height:0;padding:10px}
+      .case-document img{width:100%;max-width:none}
+      .case-caption{align-items:flex-start;flex-direction:column;gap:7px}
+      .prep-panel{padding:20px 14px}
+      .prep-panel{scroll-margin-top:166px}
+      .prep-panel h3{font-size:21px}
+      .calendar-grid{grid-template-columns:1fr}
+      .campus-school-head{align-items:flex-start;flex-direction:column;gap:5px}.campus-school-head h3{font-size:26px}.campus-school-head p{text-align:left}.china-campus-gallery{grid-template-columns:1fr}
+      .calendar-school,.calendar-school.shms-calendar{min-width:0;grid-column:auto}
+      .admission-glance,.admission-schools,.admission-score-grid{grid-template-columns:1fr}
+      .admission-glance article{min-height:0;padding:16px}
+      .admission-school>summary,.admission-reference>summary{min-height:58px;padding:13px 14px;font-size:15px}
+      .admission-school-body,.admission-reference-body{padding:14px}
+      .admission-subtitle{font-size:24px}
+      .responsive-table{min-width:0}
+      .calendar-school .responsive-table{min-width:0}
+      .responsive-table thead{display:none}
+      .responsive-table tbody,.responsive-table tr,.responsive-table td{display:block;width:100%}
+      .responsive-table tr{margin:0 0 12px;border:1px solid var(--line);border-left:4px solid var(--red);background:#fff}
+      .responsive-table tr:last-child{margin-bottom:0}
+      .responsive-table td{padding:8px 10px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:92px minmax(0,1fr);gap:10px;font-size:11px}
+      .responsive-table td:last-child{border-bottom:0}
+      .responsive-table td::before{content:attr(data-label);color:var(--navy);font-size:10px;font-weight:850}
+      .responsive-table td>.project-en,.responsive-table td>.rmb-estimate,.responsive-table td>.fee-breakdown,.responsive-table td>.pathway-cost{grid-column:2;margin-top:0;white-space:normal}
+      .calendar-school .table-scroll{padding:12px}
+      .catalog-card,.position,.concern,.program-link,.filter,.open-detail,.action,.explore-link{transition:none!important;transform:none!important}
+      .catalog{gap:14px}
+      .catalog-school{box-shadow:none}
+      .catalog-school>summary{min-height:76px;padding:14px;grid-template-columns:58px minmax(0,1fr) auto;gap:10px}
+      .catalog-school-code{font-size:16px}
+      .catalog-school-name strong{font-size:18px}
+      .catalog-school-name span{margin-top:3px;font-size:9px}
+      .catalog-school-status>span{display:none}
+      .catalog-school-toggle{width:26px;height:26px}
+      .catalog-degree-row{grid-template-columns:1fr}
+      .catalog-row-label{padding:10px 13px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:12px}
+      .catalog-row-label strong{font-size:15px}
+      .catalog-row-label span{margin:0;text-align:right;font-size:9px}
+      .catalog-row-track,.catalog-row-track.is-single{grid-template-columns:1fr;background:var(--line)}
+      .catalog-card-link{min-height:0;padding:14px}
+      .catalog-card-title{font-size:17px}
+      .catalog-card-meta{font-size:10px}
+      .catalog-card-foot{padding-top:10px}
+      .catalog-row-empty{min-height:62px;padding:15px;font-size:11px}
+    }
+    @media(max-width:360px){
+      .explore-link{padding-inline:5px;font-size:10.5px}
+      .responsive-table td{grid-template-columns:82px minmax(0,1fr)}
+    }
     @media print{.watermark{color:rgba(65,12,12,.12)}}
   </style>
 </head>
@@ -248,123 +513,380 @@
   <a class="skip-link" href="#matrix">跳到项目总览</a>
   <div class="watermark" aria-hidden="true">LUCINDA · SEG PRODUCT GUIDE</div>
   <header class="topbar">
-    <div class="container nav">
-      <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"></span><span>SEG 2027 产品导航</span></a>
-      <nav class="nav-links" aria-label="页面导航"><a href="#matrix">项目总览</a><a href="#selling">校区特色</a><a href="#catalog">课程详情</a><a href="#cases">中留服案例</a><a href="#contact">联系 Lucinda</a></nav>
-      <span class="language-note">四校主课｜全英文授课</span>
-    </div>
+    <nav class="explore-nav" aria-label="SEG 四校快速导航">
+      <a class="explore-nav-title" href="#matrix" data-collapse>想先了解什么？点一下就能看</a>
+      <div class="explore-links">
+        <a class="explore-link" href="#catalog" data-reveal="catalog" data-target="catalog" aria-expanded="false">项目与 2027 费用<small>学什么、读多久、预算多少</small></a>
+        <a class="explore-link" href="#admissions" data-reveal="admissions" data-target="admissions" aria-expanded="false">录取要求<small>学历、成绩、英语与特殊背景</small></a>
+        <a class="explore-link" href="#selling" data-reveal="selling" data-target="selling" aria-expanded="false">四校定位<small>看看哪所学校更适合</small></a>
+        <a class="explore-link" href="#campus" data-reveal="campus" data-target="campus" aria-expanded="false">校区与住宿<small>看看学习和生活环境</small></a>
+        <a class="explore-link" href="#alumni" data-reveal="alumni" data-target="alumni" aria-expanded="false">校友案例<small>看看毕业后的不同发展</small></a>
+        <a class="explore-link" href="#cases" data-reveal="cases" data-target="cases" aria-expanded="false">中留服案例<small>查看已提供的对应案例</small></a>
+        <a class="explore-link" href="#calendar" data-reveal="calendar" data-target="calendar" aria-expanded="false">四校日历<small>查看 2027 报到、开课与结课日期</small></a>
+      </div>
+    </nav>
   </header>
 
   <main id="top">
-    <section class="hero" id="matrix">
+    <section class="matrix-home" id="matrix">
       <div class="container">
-        <div class="hero-head">
-          <div class="hero-copy-block">
-            <div class="hero-kicker">LUCINDA'S PROGRAM GUIDE · SWITZERLAND</div>
-            <h1><em>SEG</em> 2027<span>四校产品导航</span></h1>
-            <p class="hero-copy">先按学生目前的学历找到可申请项目，再查看学制、课程、实习和费用。家长、学生和合作机构可以用这份导航做第一轮比较。</p>
-            <div class="hero-stats" aria-label="产品导航概览"><div class="hero-stat"><strong>04</strong><span>Schools</span></div><div class="hero-stat"><strong>19</strong><span>Programs</span></div><div class="hero-stat"><strong>2027</strong><span>Admissions</span></div></div>
-          </div>
-          <div class="hero-brand"><img class="seg-logo" src="seg-dark.png" alt="Swiss Education Group"><div class="update">信息核对至 2026-08-11</div><small>Caux · Leysin · Brig · Montreux · Le Bouveret</small></div>
-        </div>
-
         <aside class="identity-card" id="contact" aria-label="Lucinda SEG 联系信息">
-          <div class="identity-main"><img class="identity-photo" src="lucinda-lu-web.jpg" alt="Lucinda Lu 陆思远" decoding="async"><div><span class="identity-kicker">YOUR SEG CONTACT · PERSONAL GUIDE</span><strong class="identity-name">Lucinda Lu｜陆思远</strong><span class="identity-role">SEG 招生官｜SEG Recruitment Officer</span></div></div>
-          <div class="identity-org"><img src="seg-dark.png" alt="Swiss Education Group"><span>Swiss Education Group · China Office</span></div>
-          <div class="identity-contact"><a class="contact-link primary" href="https://www.swisseducation.com.cn/namecard/discovery-our-program-greeting-from-swiss-education-group-lucinda/" target="_blank" rel="noopener noreferrer nofollow">查看 SEG 官网个人名片</a><span class="contact-email">邮箱：lucindalu@swisseducation.com.cn</span><a class="contact-link" href="tel:+8615821368840">电话联系</a><a class="contact-link" href="lucinda-seg.vcf" download="Lucinda-Lu-SEG.vcf">保存名片</a><div class="contact-line">手机／微信：+86 158 2136 8840<br>名片按钮将打开 SEG 中国官网；四校项目不设置官网外跳</div></div>
+          <div class="identity-main"><img class="identity-photo" src="lucinda-lu-web.jpg" width="420" height="376" alt="Lucinda Lu 陆思远" decoding="async"><div><span class="identity-kicker">YOUR SEG CONTACT · PERSONAL GUIDE</span><strong class="identity-name">Lucinda Lu｜陆思远</strong><span class="identity-role">SEG 招生官｜SEG Recruitment Officer</span></div></div>
+          <div class="identity-org"><img src="seg-dark.png" width="145" height="145" alt="Swiss Education Group"><span>Swiss Education Group · China Office</span></div>
+          <div class="identity-contact"><a class="contact-link primary" href="https://www.swisseducation.com.cn/namecard/discovery-our-program-greeting-from-swiss-education-group-lucinda/" target="_blank" rel="noopener noreferrer nofollow">查看 SEG 官网个人名片</a><span class="contact-email">邮箱：lucindalu@swisseducation.com.cn</span><a class="contact-link" href="tel:+8619117284880">电话：19117284880</a><a class="contact-link" href="lucinda-seg.vcf" download="Lucinda-Lu-SEG.vcf">保存名片</a><img class="contact-qr" src="lucinda-wechat-qr.png" width="306" height="314" alt="Lucinda SEG 微信二维码" loading="lazy" decoding="async"></div>
         </aside>
 
         <div class="matrix-shell" aria-label="SEG 2027 四校项目导航">
           <div class="matrix">
             <div class="corner">先看当前阶段，再点项目看详情</div>
             <div class="school-head"><div><img loading="lazy" decoding="async" src="shms-dark.png" alt="SHMS 瑞士酒店管理大学"><strong>SHMS</strong><span class="school-cn">瑞士酒店管理大学</span><span>Swiss Hotel Management School</span><span class="school-rank">2024 QS 酒店与休闲管理：全球第 2</span></div></div>
-            <div class="school-head"><div><img loading="lazy" decoding="async" src="caas-dark.png" alt="CAAS 瑞士美食艺术大学"><strong>CAAS</strong><span class="school-cn">瑞士美食艺术大学</span><span>Culinary Arts Academy Switzerland</span><span class="school-rank">2024 QS 酒店与休闲管理：全球第 7</span></div></div>
-            <div class="school-head"><div><img loading="lazy" decoding="async" src="crcs-logo.svg" alt="CRCS 瑞士恺撒里兹大学"><strong>CRCS</strong><span class="school-cn">瑞士恺撒里兹大学</span><span>César Ritz Colleges Switzerland</span><span class="school-rank">2024 QS 酒店与休闲管理：全球第 3</span></div></div>
-            <div class="school-head"><div><img loading="lazy" decoding="async" src="him-dark.png" alt="HIM 蒙特勒工商管理大学"><strong>HIM</strong><span class="school-cn">蒙特勒工商管理大学</span><span>HIM Business School</span><span class="school-rank">2024 QS 酒店与休闲管理：全球第 6</span></div></div>
+            <div class="school-head"><div><img loading="lazy" decoding="async" src="caas-dark.png" alt="CAAS 瑞士美食艺术管理大学"><strong>CAAS</strong><span class="school-cn">瑞士美食艺术管理大学</span><span>Culinary Arts Academy Switzerland</span><span class="school-rank">2024 QS 酒店与休闲管理：全球第 7</span></div></div>
+            <div class="school-head"><div><img loading="lazy" decoding="async" src="crcs-logo.svg" alt="CRCS 瑞士恺撒里兹学院"><strong>CRCS</strong><span class="school-cn">瑞士恺撒里兹学院</span><span>César Ritz Colleges Switzerland</span><span class="school-rank">2024 QS 酒店与休闲管理：全球第 3</span></div></div>
+            <div class="school-head"><div><img loading="lazy" decoding="async" src="him-dark.png" alt="HIM 瑞士蒙特勒工商管理大学"><strong>HIM</strong><span class="school-cn">瑞士蒙特勒工商管理大学</span><span>HIM Business School</span><span class="school-rank">2024 QS 酒店与休闲管理：全球第 6</span></div></div>
 
             <div class="audience">高中毕业／<br>预科学生</div>
             <div class="matrix-cell" data-school="SHMS｜瑞士酒店管理大学"><button class="program-link" data-program="shms-ba">国际款待业管理本科<small>可先完成瑞士高等职业教育文凭，再衔接本科</small></button></div>
-            <div class="matrix-cell" data-school="CAAS｜瑞士美食艺术大学"><button class="program-link" data-program="caas-diploma-culinary">瑞士烹饪艺术职业文凭<small>非本科学位｜可分阶段完成</small></button><button class="program-link" data-program="caas-diploma-pastry">瑞士甜点艺术职业文凭<small>非本科学位｜可分阶段完成</small></button><button class="program-link" data-program="caas-ba-culinary">烹饪艺术本科<small>厨房实训与餐饮经营</small></button><button class="program-link" data-program="caas-ba-pastry">甜点、烘焙及巧克力艺术本科<small>甜点、烘焙及巧克力</small></button></div>
-            <div class="matrix-cell" data-school="CRCS｜瑞士恺撒里兹大学"><button class="program-link" data-program="crcs-bsc">款待业商务管理本科<small>第 1 学年为行业沉浸学年</small></button><button class="program-link" data-program="crcs-ai">应用人工智能与款待业商务管理本科<small>AI 商业应用｜非计算机工程本科｜首届 2027.10</small></button></div>
-            <div class="matrix-cell" data-school="HIM｜蒙特勒工商管理大学"><button class="program-link" data-program="him-bba">工商管理本科<small>含瑞士高等职业教育文凭衔接路径｜中英／法英过渡轨</small></button></div>
+            <div class="matrix-cell" data-school="CAAS｜瑞士美食艺术管理大学"><button class="program-link" data-program="caas-ba-culinary">烹饪艺术本科（BA）<small>厨房实训与餐饮经营</small></button><button class="program-link" data-program="caas-ba-pastry">甜点、烘焙及巧克力艺术本科（BA）<small>约 1,100 小时厨房实践</small></button></div>
+            <div class="matrix-cell" data-school="CRCS｜瑞士恺撒里兹学院"><button class="program-link" data-program="crcs-bsc">款待业商务管理本科（BSc）<small>四年制｜第 1 学年为行业沉浸学年</small></button><button class="program-link" data-program="crcs-ai">AI 与款待业商务管理本科（BSc）<small>AI 商业应用｜首届 2027 年 10 月</small></button></div>
+            <div class="matrix-cell" data-school="HIM｜瑞士蒙特勒工商管理大学"><button class="program-link" data-program="him-bba">工商管理本科（BBA）<small>3 年｜英文主轨，另设中英／法英过渡路径｜3 次实习</small></button></div>
 
             <div class="audience">本科毕业／<br>转专业申请</div>
-            <div class="matrix-cell" data-school="SHMS｜瑞士酒店管理大学"><button class="program-link" data-program="shms-pgd">酒店、度假村与水疗管理研究生文凭<small>研究生文凭，非硕士</small></button><button class="program-link" data-program="shms-ma">国际款待业商务管理硕士<small>文学硕士｜标准轨或快轨</small></button><button class="program-link" data-program="shms-luxury">奢侈品品牌管理硕士<small>文学硕士｜品牌与消费者体验方向</small></button><button class="program-link" data-program="shms-msc">国际款待业管理硕士<small>理学硕士｜侧重战略、数据与技术</small></button><button class="program-link" data-program="shms-mas">商业高级研修硕士<small>职业／继续教育路径</small></button></div>
-            <div class="matrix-cell" data-school="CAAS｜瑞士美食艺术大学"><button class="program-link" data-program="caas-ma">美食商务管理硕士<small>文学硕士｜食品创新与餐饮创业</small></button></div>
-            <div class="matrix-cell" data-school="CRCS｜瑞士恺撒里兹大学"><button class="program-link" data-program="crcs-msc">领导力理学硕士<small>官网主口径 15 个月</small></button></div>
-            <div class="matrix-cell" data-school="HIM｜蒙特勒工商管理大学"><button class="program-link" data-program="him-ai">AI 与客户体验硕士<small>线上 + 澳门 + 蒙特勒</small></button></div>
+            <div class="matrix-cell" data-school="SHMS｜瑞士酒店管理大学"><button class="program-link" data-program="shms-ma">国际款待业商务管理文学硕士（MA）<small>标准轨或快轨｜可选实习</small></button><button class="program-link" data-program="shms-luxury">奢侈品品牌管理文学硕士（MA）<small>奢侈品价值、品牌与消费者体验</small></button><button class="program-link" data-program="shms-msc">国际款待业管理理学硕士（MSc）<small>战略、风险、数据与技术</small></button><button class="program-link" data-program="shms-mas">证书、文凭与高级研修硕士路线<small>PGC → PGD → MAS｜3 个职业方向</small></button></div>
+            <div class="matrix-cell" data-school="CAAS｜瑞士美食艺术管理大学"><button class="program-link" data-program="caas-ma">美食商务管理文学硕士（MA）<small>食品创新、餐饮创业与商业项目</small></button></div>
+            <div class="matrix-cell" data-school="CRCS｜瑞士恺撒里兹学院"><button class="program-link" data-program="crcs-msc">领导力理学硕士（MSc）<small>15 个月｜3 个专业方向</small></button></div>
+            <div class="matrix-cell" data-school="HIM｜瑞士蒙特勒工商管理大学"><button class="program-link" data-program="him-ai">AI 与客户体验硕士<small>1 年｜线上 + 澳门 + 蒙特勒｜可选 CRCS 阶段</small></button></div>
 
             <div class="audience">在职进修／<br>继续深造</div>
-            <div class="matrix-cell" data-school="SHMS｜瑞士酒店管理大学"><button class="program-link" data-program="shms-online">在职款待业管理在线硕士<small>全在线｜最快 18 个月</small></button><button class="program-link" data-program="shms-mba">全球工商管理硕士<small>计划项目｜正式项目页待发布</small></button></div>
-            <div class="matrix-cell" data-school="CAAS｜瑞士美食艺术大学"><span class="empty">本校暂无对应项目</span></div>
-            <div class="matrix-cell" data-school="CRCS｜瑞士恺撒里兹大学"><span class="empty">本校暂无对应项目</span></div>
-            <div class="matrix-cell" data-school="HIM｜蒙特勒工商管理大学"><button class="program-link" data-program="him-dual">AI 与客户体验 + 领导力双硕士路径<small>第二硕士需另行申请，时间与费用另计</small></button></div>
+            <div class="matrix-cell" data-school="SHMS｜瑞士酒店管理大学"><button class="program-link" data-program="shms-online">在职款待业管理在线文学硕士（MA）<small>6 个模块｜约 1.5 至 2 年或更久</small></button><button class="program-link" data-program="shms-mba">全球工商管理硕士（MBA Global）<small>12 个月｜3 个在校阶段 + 毕业项目</small></button></div>
+            <div class="matrix-cell" data-school="CAAS｜瑞士美食艺术管理大学"><button class="program-link" data-program="caas-diploma-culinary">瑞士烹饪艺术职业文凭<small>短期技能进阶｜非本科学位</small></button><button class="program-link" data-program="caas-diploma-pastry">瑞士甜点艺术职业文凭<small>短期技能进阶｜非本科学位</small></button></div>
+            <div class="matrix-cell" data-school="CRCS｜瑞士恺撒里兹学院"></div>
+            <div class="matrix-cell" data-school="HIM｜瑞士蒙特勒工商管理大学"></div>
           </div>
-          <div class="entry-strip"><span>◎ 入学准备课程</span><button data-program="foundation">英语强化／主课适应／本科衔接<small>EFP / IFP / SHMS Access｜Leysin</small></button></div>
+          <div class="entry-strip" aria-label="入学准备与中国校区项目">
+            <button type="button" data-reveal="preparation" data-target="swissPrep" aria-expanded="false">瑞士本部入学准备课程<small>EFP、IFP、AFP 用途与费用</small></button>
+            <button type="button" data-reveal="preparation" data-target="chinaCampus" aria-expanded="false">中国校区项目<small>2026 班型、学制、费用与赴瑞衔接</small></button>
+          </div>
         </div>
         <div class="matrix-hint"><span><strong>使用提示：</strong>先按当前学历和学习目标找到合适项目，再点击查看学制、课程、实习和费用。</span><span>项目设置、学费、开学时间与录取要求以当期官网、Offer 和 Invoice 为准。</span></div>
         <div class="matrix-hint"><span><strong>名称说明：</strong>矩阵使用便于理解的中文简称；正式英文项目名、学位类型及授予信息请点击项目详情查看。</span></div>
-        <div class="fee-rate"><strong>本周预算汇率：1 CHF ≈ ¥8.36</strong><span>更新于 2026-08-11｜按中国银行瑞郎现汇卖出价取整<br>人民币仅供预算；正式付款币种为 CHF，银行手续费另计</span></div>
+        <div class="fee-rate"><strong>本周预算汇率：1 CHF ≈ ¥8.34</strong><span>更新于 2026-09-04｜按中国银行瑞郎现汇卖出价取整<br>人民币仅供预算；正式付款币种为 CHF，银行手续费另计</span></div>
       </div>
     </section>
 
-    <section class="school-positioning" id="selling">
+    <section class="preparation secondary-section lazy-media-section" id="preparation" hidden>
       <div class="container">
-        <div class="section-head"><h2>四校怎么选</h2><p>下面列出各校的中文名称、校区、课程重点、实习安排和住宿环境，方便直接比较。</p></div>
+        <div class="section-head"><h2>入学准备与中国校区项目</h2><p>先分清学生需要补英语、做主课前适应，还是在中国完成一段衔接课程。两类安排分开列出，方便按学生情况比较。</p></div>
+        <button class="section-close" type="button" data-collapse>返回主页</button>
+
+        <article class="prep-panel" id="swissPrep">
+          <h3>瑞士本部入学准备课程</h3>
+          <p class="prep-intro">EFP、IFP 和 AFP 解决的问题不同。EFP 用于英语强化，IFP 帮助学生在主课前适应学习与生活，AFP 是本科衔接课程。</p>
+          <div class="table-scroll">
+            <table class="info-table responsive-table">
+              <thead><tr><th>课程</th><th>学制</th><th>主要用途</th><th>适合人群与入学参考</th><th>2027 费用</th></tr></thead>
+              <tbody>
+                <tr><td data-label="课程">EFP</td><td data-label="学制">10 周</td><td data-label="主要用途">英语强化</td><td data-label="适合人群">英语暂未达到目标主课要求的学生；具体门槛与安排以 Offer 为准</td><td data-label="2027 费用">待核</td></tr>
+                <tr><td data-label="课程">IFP</td><td data-label="学制">4 周</td><td data-label="主要用途">主课前适应</td><td data-label="适合人群">已进入主课录取流程，希望提前适应英语授课、校园与跨文化学习的学生</td><td data-label="2027 费用">待核</td></tr>
+                <tr><td data-label="课程">AFP</td><td data-label="学制">9 周或 18 周</td><td data-label="主要用途">本科衔接，上课地点为 Leysin</td><td data-label="适合人群">入学参考为年满 16 岁、IELTS 4.5、个人陈述、简历与面试</td><td data-label="2027 费用">9 周 CHF 12,400<br>18 周 CHF 24,900</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table-note"><strong>怎么称呼更准确：</strong>EFP 是英语强化，IFP 是主课前适应，AFP 才是本科衔接课程，不建议把三项都统称为“瑞士预科”。AFP 的 CHF 12,400 或 CHF 24,900 包含学费、住宿、餐饮、基础设施及服务，另缴 CHF 2,000 保证金。EFP 和 IFP 的 2027 费用需再核对当期官方文件。</div>
+          <button class="inline-detail" type="button" data-program="foundation">查看完整详情</button>
+        </article>
+
+        <article class="prep-panel" id="chinaCampus">
+          <h3>中国校区项目</h3>
+          <p class="prep-intro">以下为中国校区 2026 资料所列的 7 个项目，仅对接 SHMS 与 CRCS，不适用于 CAAS 或 HIM。表中时长和费用只对应中国校区阶段，因此单独展示，不纳入瑞士四校主项目表。</p>
+          <div class="china-campus-gallery" aria-label="SEG 中国校区环境">
+            <figure class="china-campus-card"><img loading="lazy" decoding="async" data-src="china-campus.jpg" alt="SEG 中国校区航拍环境"><figcaption>校区环境<span>最新版中国校区折页中的校园航拍图。</span></figcaption></figure>
+            <figure class="china-campus-card"><img loading="lazy" decoding="async" data-src="china-classroom.jpg" alt="SEG 中国校区课堂教学"><figcaption>教室与课堂<span>中国校区课堂实景；课程安排以当期班级通知为准。</span></figcaption></figure>
+            <figure class="china-campus-card"><img loading="lazy" decoding="async" data-src="china-dorm-double.jpg" alt="SEG 中国校区双人宿舍"><figcaption>学生宿舍<span>折页所示双人宿舍实景；实际房型与入住安排以校区确认及 Offer 为准。</span></figcaption></figure>
+          </div>
+          <div class="table-scroll">
+            <table class="info-table responsive-table">
+              <thead><tr><th>项目</th><th>中国校区阶段时长</th><th>2026 中国校区费表总计</th><th>申请条件</th><th>赴瑞衔接</th></tr></thead>
+              <tbody>
+                <tr><td data-label="项目">本科预科班<small class="project-en">Access Foundation Program</small></td><td data-label="中国阶段">18 周</td><td data-label="2026 费表总计">CHF 21,400<span class="rmb-estimate" data-chf-budget="21400"></span><small class="fee-breakdown">学费 10,850 + 英语 4,500 + 住宿 2,500 + 设施服务 3,550</small></td><td data-label="申请条件">17 岁以上，IELTS 3.5 或同等；IGCSE 至少 3 门且单科 C 及以上，或有工作经验但未完成高中者接受个案审核；需面试</td><td data-label="赴瑞衔接">中国 AFP → 中国 SHMS 大一 → SHMS Caux 大二；升大一须 IELTS 4.5 并通过专业课考试</td></tr>
+                <tr><td data-label="项目">英语强化班<small class="project-en">English Strengthening Program</small></td><td data-label="中国阶段">18 周</td><td data-label="2026 费表总计">CHF 13,500<span class="rmb-estimate" data-chf-budget="13500"></span><small class="fee-breakdown">学费 7,450 + 住宿 2,500 + 设施服务 3,550</small></td><td data-label="申请条件">17 岁以上，高中或同等学历毕业；IELTS 3.5，或高考英语单科 70 至 90 分</td><td data-label="赴瑞衔接">中国英语强化 → 中国 SHMS 大一；升大一须 IELTS 4.5 并通过本学期课程考试</td></tr>
+                <tr><td data-label="项目">SHMS 国际款待业管理本科中国校区大一（BA）<small class="project-en">SHMS Year 1</small></td><td data-label="中国阶段">5 周 + 18 周</td><td data-label="2026 费表总计">CHF 25,500<span class="rmb-estimate" data-chf-budget="25500"></span><small class="fee-breakdown">学费 14,950 + 英语 4,500 + 住宿 2,500 + 设施服务 3,550</small></td><td data-label="申请条件">17 岁以上，高中毕业并取得文凭；IELTS 4.5 或同等</td><td data-label="赴瑞衔接">中国 SHMS BA1 → Caux BA2（对应 SHMS Semester 2，不等于完整大学二年级）→ 按课程安排完成两段环球实习及 Leysin BA3、BA4；升读须 IELTS 5.5 并通过中国阶段课程<small class="pathway-cost"><strong>中国＋瑞士完整本科费表合计（粗算）：CHF 164,300</strong><span class="rmb-estimate" data-chf-budget="164300"></span><span>其中赴瑞后阶段：CHF 138,800</span><span class="pathway-saving" data-chf-saving="22200"></span></small></td></tr>
+                <tr><td data-label="项目">CRCS 款待业商务管理本科中国校区大一（BSc）<small class="project-en">CRCS Year 1</small></td><td data-label="中国阶段">5 周 + 18 周</td><td data-label="2026 费表总计">CHF 25,500<span class="rmb-estimate" data-chf-budget="25500"></span><small class="fee-breakdown">学费 14,950 + 英语 4,500 + 住宿 2,500 + 设施服务 3,550</small></td><td data-label="申请条件">17 岁以上，高中毕业并取得文凭；IELTS 4.5 或同等</td><td data-label="赴瑞衔接">按中国项目标题暂以完整替代 CRCS 第 1、2 学期、赴瑞从第 3 学期开始测算；折页与 2027 瑞士课程排列并不完全一致，衔接及学分抵扣须校方书面确认<small class="pathway-cost"><strong>中国＋瑞士完整本科费表合计（条件式粗算）：CHF 160,300</strong><span class="rmb-estimate" data-chf-budget="160300"></span><span>其中赴瑞后阶段：CHF 134,800</span><span class="pathway-saving" data-chf-saving="9000"></span></small></td></tr>
+                <tr><td data-label="项目">SHMS 国际酒店、度假村与水疗管理硕士预科（PGC）<small class="project-en">Postgraduate Certificate</small></td><td data-label="中国阶段">5 周 + 18 周</td><td data-label="2026 费表总计">CHF 25,500<span class="rmb-estimate" data-chf-budget="25500"></span><small class="fee-breakdown">学费 11,390 + 桥梁课 3,560 + 英语 4,500 + 住宿 2,500 + 设施服务 3,550</small></td><td data-label="申请条件">20 岁以上，IELTS 4.5 或同等；学士学位、大专文凭，或高中毕业并有至少 3 年相关经验</td><td data-label="赴瑞衔接">中国 PGC → 6 个月实习 → Leysin 6 周 PGD → Leysin 或 Caux 硕士 1 至 1.5 年</td></tr>
+                <tr><td data-label="项目">SHMS 款待业管理精英桥梁班<small class="project-en">SHMS Hospitality Gateway</small></td><td data-label="中国阶段">5 周 + 18 周</td><td data-label="2026 费表总计">CHF 25,500<span class="rmb-estimate" data-chf-budget="25500"></span><small class="fee-breakdown">学费 14,950 + 英语 4,500 + 住宿 2,500 + 设施服务 3,550</small></td><td data-label="申请条件">18 岁以上，IELTS 4.5 或同等；完成国内大学 2 年预科，或高中毕业并有至少 3 年工作经验</td><td data-label="赴瑞衔接">中国桥梁班 → 6 个月实习 → Leysin 大三 → 6 个月实习 → Leysin 大四；具体升读门槛须校方确认</td></tr>
+                <tr><td data-label="项目">CRCS 款待业管理精英桥梁班<small class="project-en">CRCS Hospitality Gateway</small></td><td data-label="中国阶段">5 周 + 18 周</td><td data-label="2026 费表总计">CHF 25,500<span class="rmb-estimate" data-chf-budget="25500"></span><small class="fee-breakdown">学费 14,950 + 英语 4,500 + 住宿 2,500 + 设施服务 3,550</small></td><td data-label="申请条件">18 岁以上，IELTS 4.5 或同等；完成国内大学 2 年预科，或高中毕业并有至少 3 年工作经验</td><td data-label="赴瑞衔接">中国桥梁班 → CRCS 第 5、6 学期 → 实习 → 第 7 至 9 学期 → 实习 → 第 10 学期；折页升读条件文字有误，须校方确认</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table-note"><strong>费用与资料边界：</strong>中国校区单段价格来自 2026 费表；SHMS、CRCS 两条完整本科预算把该价格与 2027 瑞士费表拼接静态测算，不是校方单独发布的全程报价，也不应称为“纯学费”。中国阶段未注明包含餐饮与保险，因此页面展示的是已列收费项目的名义差额，不代表家庭最终净节省。CHF 2,000 保证金、房型升级、假期及实习期额外支出、签证、机票与交通等均未计入；费用每年复核，实际以入读年份 Offer 和 Invoice 为准。SHMS 硕士预科费表中的 CHF 3,560 桥梁课程标注“视项目而定”。IELTS 5.5 可申请免修英语，但资料未给出调整后金额，不能自行从总价扣减。住宿房型在费表的“标准双人间”与折页的“独立卧室和浴室”之间存在冲突，须校方确认。资料未列开学日期。<span class="china-fx" data-fx-note></span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="admissions secondary-section" id="admissions" hidden>
+      <div class="container">
+        <div class="section-head"><h2>录取要求</h2><p>先看学历与英语是否达到基础线，再按学校核对具体项目。特殊学历、跨专业或工作经验背景，需要结合完整材料单独审核。</p></div>
+        <button class="section-close" type="button" data-collapse>返回主页</button>
+
+        <div class="admission-version">
+          <div class="admission-badges"><span class="admission-badge">资料基准｜SEG 2025 版</span><span class="admission-badge">2027 适用性｜待录取部门复核</span></div>
+          <strong>这页用于申请前自查，不代表录取结果。</strong>
+          <p>通用条件依据《SEG Admission Requirements 2025》整理；SHMS MBA Global 与 HIM AI 硕士为 2027 新项目，单独采用 2027 官方折页与课程资料中的入学要求。最终仍以当期录取部门审核、正式 Offer 和签证要求为准。</p>
+        </div>
+
+        <div class="admission-alert"><strong>2027 语言提醒：</strong>2025 文件明确写明，从 2026 年 9 月入学季起，SHMS、HIM 所在州的签证审核不再接受 Duolingo。申请这两校时，建议优先准备 IELTS Academic 或考点版 TOEFL iBT。</div>
+
+        <div class="admission-glance" aria-label="录取要求快速判断">
+          <article><span>本科</span><strong>先确认高中阶段学历是否完整</strong><p>中国大陆普高、中专、大专或高职背景可提交审核；HIM 另需会考成绩。</p></article>
+          <article><span>硕士</span><strong>多数项目先看本科学位与成绩</strong><p>中国大陆本科通常参考双证与 70%；部分项目接受相关管理经验的特殊评估。</p></article>
+          <article><span>英语</span><strong>最低分只是进入审核的起点</strong><p>不同学校、层级与签证州要求不同，不要只凭一张语言成绩判断能否入学。</p></article>
+        </div>
+
+        <div class="admission-references">
+          <details class="admission-reference" open>
+            <summary>本科申请｜学历基础</summary>
+            <div class="admission-reference-body"><ul>
+              <li><strong>中国大陆：</strong>普通高中、中专、大专或高职（原文件标注 2.5–3 年制），完成学业并达到及格要求；HIM 还需提供会考成绩。</li>
+              <li><strong>A-Level：</strong>至少 2 门 A Level 达到 E，或 4 门 AS 达到 C；同时有 5 门 GCSE 达到 C，包括数学与英语。</li>
+              <li><strong>IB Diploma：</strong>取得 IBO 正式授予的 Diploma，至少 24 分。</li>
+              <li><strong>HKDSE：</strong>达到及格要求；加拿大或美国高中须提供正式高中毕业证，SAT、ACT、AP 不能代替美国高中毕业证。</li>
+              <li><strong>其他高中同等学历：</strong>应由国际考试机构或联邦／州级权威机构出具；单个学校自行颁发且未经外部认证的文凭，2025 文件写明不予认可。</li>
+            </ul></div>
+          </details>
+        </div>
+
+        <h3 class="admission-subtitle">按学校核对</h3>
+        <div class="admission-schools">
+          <details class="admission-school" open>
+            <summary>SHMS｜瑞士酒店管理大学</summary>
+            <div class="admission-school-body">
+              <div class="admission-level"><h4>本科</h4><p>学历按上方本科基础审核。英语最低参考：IELTS Academic 5.5、单项 5.0；或 TOEFL iBT 46–48、单项 12。</p></div>
+              <div class="admission-level"><h4>MA／MSc／在线 MA</h4><ul><li>通常需本科学位，最低相当于英国 2:2；SHMS PGD 也可作为申请背景。</li><li>无本科学位但有 5 年相关行业管理经验，可提交特殊评估；通常还要参加面试，并补修免费的 Academic Skills Module。</li><li>英语最低参考：IELTS 6.0、单项 5.5；或 TOEFL iBT 60，写作／听力／阅读／口语最低 13／13／14／15。</li></ul></div>
+              <div class="admission-level"><h4>MBA Global｜2027 项目补充</h4><p>持有受认可的荣誉学士学位，或同等水平的专业资格证书；IELTS Academic 6.5、单项不低于 6.0，或同等英语水平。英语授课学位毕业生可申请语言豁免。</p><span class="admission-evidence">依据 2027 SHMS 官方折页＋课程资料</span></div>
+              <div class="admission-level"><h4>PGD／AFP</h4><p>2025 文件中的 PGD 接受本科不限专业，或全日制高中毕业并有至少 3 年相关行业经验，可能需要面试。AFP 面向部分 IGCSE 科目不足、完成 11 年级或未完成高中但有工作经验的申请者，均按个案审核。</p></div>
+            </div>
+          </details>
+
+          <details class="admission-school">
+            <summary>CAAS｜瑞士美食艺术管理大学</summary>
+            <div class="admission-school-body">
+              <div class="admission-level"><h4>本科</h4><p>学历按上方本科基础审核。英语最低参考：IELTS 5.5、单项 5.0；TOEFL iBT 55、单项 12；Duolingo 95、单项 65（后者为 2025 文件口径，2027 使用前复核）。</p></div>
+              <div class="admission-level"><h4>美食商务管理 MA</h4><ul><li>通常需本科学位，最低相当于英国 2:2；SHMS PGD 也可作为申请背景。</li><li>无本科学位但有 5 年相关行业管理经验，可提交特殊评估；通常还要参加面试，并补修免费的 Academic Skills Module。</li><li>英语最低参考：IELTS 6.0、单项 5.5；或 TOEFL iBT 79，单项最低 13／13／14／15。</li></ul></div>
+              <div class="admission-level"><h4>职业文凭</h4><p>2025 录取表未单列完整学历门槛；申请前按所选烹饪或甜点职业文凭向录取部门核对。英语参考与 CAAS 本科／SD 同组。</p></div>
+            </div>
+          </details>
+
+          <details class="admission-school">
+            <summary>CRCS｜瑞士恺撒里兹学院</summary>
+            <div class="admission-school-body">
+              <div class="admission-level"><h4>本科</h4><p>学历按上方本科基础审核。英语最低参考：IELTS 5.5、单项 5.0；TOEFL iBT 55、单项 12；Duolingo 95、单项 65（2025 文件口径）。</p></div>
+              <div class="admission-level"><h4>领导力 MSc</h4><ul><li>通常需商科或相关专业本科学位。按 2025 文件，其他专业需先做学术评估；获录取后须参加免费的 Business Immersion Seminar Series，2027 执行方式仍需复核。</li><li>相关行业经验为建议项，不是强制要求。PGD 背景可提交衔接评估，具体资格及入读阶段以录取审核为准。</li><li>英语最低参考：IELTS 6.0、单项 5.5；TOEFL iBT 79、单项最低 13／13／14／15；Duolingo 105、单项 65（2025 文件口径）。</li></ul></div>
+            </div>
+          </details>
+
+          <details class="admission-school">
+            <summary>HIM｜瑞士蒙特勒工商管理大学</summary>
+            <div class="admission-school-body">
+              <div class="admission-level"><h4>工商管理本科 BBA</h4><p>学历按上方本科基础审核，中国大陆申请者另需会考成绩。英语最低参考：IELTS 5.5、单项 5.0；或 TOEFL iBT 46–48、单项 12。2027 申请不建议使用 Duolingo 作为签证语言方案。</p></div>
+              <div class="admission-level"><h4>AI 与客户体验硕士｜2027 项目补充</h4><ul><li>具备学士学位，不限专业领域；最低 GPA 3.0。</li><li>IELTS 6.0 或同等英语水平。</li><li>选拔流程包括线上案例分析、视频提交与校长面试。</li></ul><span class="admission-evidence">依据 2027 HIM 官方折页＋课程资料</span></div>
+            </div>
+          </details>
+        </div>
+
+        <h3 class="admission-subtitle">成绩与语言补充</h3>
+        <div class="admission-references">
+          <details class="admission-reference">
+            <summary>硕士申请｜各地区本科成绩参考</summary>
+            <div class="admission-reference-body"><div class="admission-score-grid">
+              <div class="admission-score"><strong>中国大陆</strong><span>学士学位证＋毕业证，通常参考 70%</span></div>
+              <div class="admission-score"><strong>中国香港／台湾</strong><span>香港参考 2.0；台湾参考 65%</span></div>
+              <div class="admission-score"><strong>美国／加拿大</strong><span>美国 GPA 2.6；加拿大参考 66%</span></div>
+              <div class="admission-score"><strong>韩国</strong><span>获 Ecctis 认可的学士学位，参考 75%</span></div>
+              <div class="admission-score"><strong>马来西亚／泰国</strong><span>马来西亚 MQR 注册学位参考 2.5；泰国四年制学位参考 2.5</span></div>
+              <div class="admission-score"><strong>新加坡</strong><span>学士学位参考 4.0/5；荣誉学士参考 3.5/4，私立大学个案审核</span></div>
+            </div><p class="calendar-source">澳大利亚一项在原文件中只写“51”而未标单位，因此本页不把它自行改写成 51%。其他国家与特殊学历请单独核对。</p></div>
+          </details>
+          <details class="admission-reference">
+            <summary>语言衔接｜AFP、EFP、IFP／BC</summary>
+            <div class="admission-reference-body"><ul>
+              <li><strong>SHMS AFP：</strong>IELTS 4.5、单项 4.5；TOEFL 按个案评估。2025 文件曾列 Duolingo 75、单项 65，但 2027 申请不能把它作为 SHMS 签证语言方案。</li>
+              <li><strong>EFP＋本科／PGD：</strong>IELTS 5.0、单项 4.5；Duolingo 80、单项 65 为 2025 校方口径，TOEFL 个案评估。</li>
+              <li><strong>EFP＋硕士：</strong>IELTS 5.5、单项 4.5；TOEFL iBT 46–48、单项 12；Duolingo 95、单项 65 为 2025 校方口径。</li>
+              <li><strong>IFP／BC 桥梁课程：</strong>语言要求与后续主课一致。</li>
+              <li>如 EFP 后续主课为 SHMS 或 HIM，Duolingo 不作为 2027 递签语言方案。</li>
+              <li>TOEFL Home 递签可能存在风险；学校接受 IELTS Online，但 2025 文件未单独确认其签证适用性。</li>
+            </ul></div>
+          </details>
+        </div>
+
+        <div class="admission-boundary"><strong>最终判断：</strong>达到最低条件不等于获得录取。学校会结合完整学历、成绩、英语、工作经历、面试及补充材料综合审核。若不确定自己的学历或语言如何对应，可扫描页面上方 Lucinda 微信二维码核对材料。</div>
+        <p class="calendar-source">资料来源：《SEG Admission Requirements 2025》；《2027 SHMS 中文折页＋课程》与《2027 HIM 中文折页＋课程》仅用于补充两项新增项目。</p>
+      </div>
+    </section>
+
+    <section class="school-positioning secondary-section" id="selling" hidden>
+      <div class="container">
+        <div class="section-head"><h2>四校定位</h2><p>每所学校擅长的方向不同。可以结合想学的内容、校区生活和实习节奏，找到更合适的选择。</p></div>
+        <button class="section-close" type="button" data-collapse>返回主页</button>
         <div class="position-grid">
-          <article class="position"><span class="position-code">SHMS</span><span class="position-school">瑞士酒店管理大学｜Caux · Leysin</span><span class="position-rank">2024 QS 酒店与休闲管理全球第 2</span><h3>酒店管理、活动与体验设计</h3><p>本科从酒店运营开始，研究生可继续学习奢侈品、地产、康养、活动和体验设计。</p><ul><li>瑞士高等职业教育文凭可衔接本科</li><li>本科含两次全球实习</li><li>设文学硕士、理学硕士和高级研修硕士</li></ul></article>
-          <article class="position"><span class="position-code">CAAS</span><span class="position-school">瑞士美食艺术大学｜Le Bouveret · Brig</span><span class="position-rank">2024 QS 酒店与休闲管理全球第 7</span><h3>烹饪、甜点与餐饮经营</h3><p>课程同时安排厨房训练和商业课程，后期学习餐厅运营、产品开发、品牌与创业。</p><ul><li>职业文凭可分阶段完成</li><li>本科约 1,100 小时厨房训练</li><li>学生参与经营对外餐厅</li></ul></article>
-          <article class="position"><span class="position-code">CRCS</span><span class="position-school">瑞士恺撒里兹大学｜Brig</span><span class="position-rank">2024 QS 酒店与休闲管理全球第 3</span><h3>款待业商务、应用 AI 与领导力</h3><p>两个本科都从行业沉浸学年开始，然后分别进入款待业商务或应用 AI 方向。</p><ul><li>现行学位由 CRCS 独立颁发，并获瑞士联邦认可</li><li>第 1 学年含两段 11 周课程和 6 个月实习</li><li>AI 方向侧重商业应用</li></ul></article>
-          <article class="position"><span class="position-code">HIM</span><span class="position-school">蒙特勒工商管理大学｜Montreux</span><span class="position-rank">2024 QS 酒店与休闲管理全球第 6</span><h3>工商管理与客户体验</h3><p>本科可选金融、营销、管理或款待业管理；硕士学习 AI 在客户体验中的应用。</p><ul><li>工商管理本科含三次全球实习</li><li>设中英、法英双语过渡轨</li><li>AI 硕士包含线上、澳门和蒙特勒学习</li></ul></article>
+          <article class="position"><span class="position-code">SHMS</span><span class="position-school">瑞士酒店管理大学｜Caux · Leysin</span><span class="position-rank">2024 QS 酒店与休闲管理全球第 2</span><h3>款待业管理、项目管理与设计管理</h3><ul><li>本科 2.5 至 3 年，含两次各 6 个月全球实习</li><li>本科可选款待业管理、项目管理或设计管理</li><li>研究生覆盖 MA、MSc、MBA Global 与模块化 MAS 路线</li></ul></article>
+          <article class="position"><span class="position-code">CAAS</span><span class="position-school">瑞士美食艺术管理大学｜Le Bouveret · Brig</span><span class="position-rank">2024 QS 酒店与休闲管理全球第 7</span><h3>烹饪、甜点与美食商务</h3><ul><li>本科约 1,100 小时厨房实践，并参与运营 50 座餐厅</li><li>本科含两次各 6 个月全球实习</li><li>美食商务管理文学硕士为 1 年路径，含 240 小时厨房实践、真实商业项目与 6 个月全球实习</li><li>职业文凭可分阶段完成，但不可直接升读本科</li></ul></article>
+          <article class="position"><span class="position-code">CRCS</span><span class="position-school">瑞士恺撒里兹学院｜Brig</span><span class="position-rank">2024 QS 酒店与休闲管理全球第 3</span><h3>款待业商务、应用 AI 与领导力</h3><ul><li>2005 年成为瑞士首所获得 EduQua 认证的酒店管理院校</li><li>2023 年获瑞士联邦院校认证，为 SEG 旗下首所；现行 BSc 与 MSc 由 CRCS 本校授予</li><li>行业沉浸学年是两个本科的第 1 学年，不是单独项目</li><li>领导力硕士可选旅游、金融或奢侈品品牌方向</li></ul></article>
+          <article class="position"><span class="position-code">HIM</span><span class="position-school">瑞士蒙特勒工商管理大学｜Montreux</span><span class="position-rank">2024 QS 酒店与休闲管理全球第 6</span><h3>工商管理与客户体验</h3><ul><li>工商管理本科 3 年，含 6 个学习学期与 3 次实习</li><li>英文主轨之外另设中英、法英双语过渡路径</li><li>本科最终由 Northwood University 授予 BBA 学位</li><li>AI 硕士包含线上、澳门与蒙特勒学习，可选 CRCS 阶段</li></ul></article>
         </div>
-        <div class="campus-gallery" aria-label="四校住宿环境">
-          <figure class="campus-card"><img loading="lazy" decoding="async" src="dorm-shms.jpg" alt="SHMS Caux Palace 双人房实景"><figcaption><strong>SHMS｜Caux Palace 双人房示例</strong><span>图片可确认为 Caux 校区房间；实际楼栋、房型与入住安排以 Offer 为准。</span></figcaption></figure>
-          <figure class="campus-card"><img loading="lazy" decoding="async" src="dorm-caas.jpg" alt="CAAS Le Bouveret 标准双人房实景"><figcaption><strong>CAAS｜Le Bouveret 标准双人房</strong><span>图片为 Le Bouveret 校区官方住宿图；学生后续是否转至 Brig，按项目阶段确认。</span></figcaption></figure>
-          <figure class="campus-card"><img loading="lazy" decoding="async" src="dorm-crcs.jpg" alt="CRCS Brig Themis 与 Xenius 学生宿舍单人房实景"><figcaption><strong>CRCS｜Brig Themis &amp; Xenius 单人房示例</strong><span>图片可确认为 Brig 学生宿舍；具体房型等级与升级费用以当期费用表为准。</span></figcaption></figure>
-          <figure class="campus-card"><img loading="lazy" decoding="async" src="dorm-him.jpg" alt="HIM Montreux 单人标准房实景"><figcaption><strong>HIM｜Montreux 单人标准房示例</strong><span>图片为 Montreux 校区官方住宿图。学费通常包含标准双人房；单人房属于付费升级选项。</span></figcaption></figure>
-        </div>
-        <p class="campus-note">四张均为已核对到具体学校或校区的官方住宿图。图片用于展示环境，不代表特定学生最终获配的楼栋、房型或朝向。</p>
-        <div class="alumni-head"><h3>校友去了哪里</h3><p>每校选取 3 位有姓名、职业与本人照片同页证据的校友，兼顾本行业发展与跨行业去向。</p></div>
-        <div class="alumni-grid" aria-label="四校校友去向">
-          <article class="alumni-school"><div class="alumni-school-head"><strong>SHMS</strong><span>瑞士酒店管理大学</span></div><div class="alumni-person"><img class="alumni-photo" loading="lazy" decoding="async" src="alumni-shms-eric-hu.jpg" alt="SHMS 校友 Eric Hu"><div class="alumni-copy"><span class="alumni-tag">本行业</span><strong>Eric Hu｜2019 届</strong><p>洲际酒店集团大中华区总部，开发经理</p></div></div><div class="alumni-person"><img class="alumni-photo" loading="lazy" decoding="async" src="alumni-shms-tiffany-tang.jpg" alt="SHMS 校友 Tiffany Tang"><div class="alumni-copy"><span class="alumni-tag">酒店与奢侈品经历</span><strong>Tiffany Tang｜2021 届</strong><p>职业经历包括迪士尼度假酒店、LVMH 时装部和君悦酒店</p></div></div><div class="alumni-person"><img class="alumni-photo" loading="lazy" decoding="async" src="alumni-shms-amanda-liang.jpg" alt="SHMS 校友 Amanda Liang"><div class="alumni-copy"><span class="alumni-tag">跨行业</span><strong>Amanda Liang｜2020 届</strong><p>Morgan Philips Group，高级咨询经理</p></div></div></article>
-          <article class="alumni-school"><div class="alumni-school-head"><strong>CAAS</strong><span>瑞士美食艺术大学</span></div><div class="alumni-person"><img class="alumni-photo" loading="lazy" decoding="async" src="alumni-caas-jerry-tian.jpg" alt="CAAS 校友 Jerry Tian"><div class="alumni-copy"><span class="alumni-tag">本行业</span><strong>Jerry Tian｜2020 届</strong><p>芭芭露莎集团旗下日式餐厅，厨房经理</p></div></div><div class="alumni-person"><img class="alumni-photo" loading="lazy" decoding="async" src="alumni-caas-lola-wang.jpg" alt="CAAS 校友 Lola Wang"><div class="alumni-copy"><span class="alumni-tag">教育行业</span><strong>Lola Wang｜2021 届</strong><p>上海旅游高等专科学校，酒店管理专业教师</p></div></div><div class="alumni-person"><img class="alumni-photo" loading="lazy" decoding="async" src="alumni-caas-theodore-darrel.jpg" alt="CAAS 校友 Theodore Darrel"><div class="alumni-copy"><span class="alumni-tag">本行业创业</span><strong>Theodore Darrel｜2019 届</strong><p>雅加达 Tide &amp; Table 餐厅，创办人兼主厨</p></div></div></article>
-          <article class="alumni-school"><div class="alumni-school-head"><strong>CRCS</strong><span>瑞士恺撒里兹大学</span></div><div class="alumni-person"><img class="alumni-photo" loading="lazy" decoding="async" src="alumni-crcs-ariel-li.jpg" alt="CRCS 校友 Ariel Li"><div class="alumni-copy"><span class="alumni-tag">本行业</span><strong>Ariel Li｜2017 届</strong><p>北京王府井文华东方酒店，市场品牌经理</p></div></div><div class="alumni-person"><img class="alumni-photo" loading="lazy" decoding="async" src="alumni-crcs-will-chen.jpg" alt="CRCS 校友 Will Chen"><div class="alumni-copy"><span class="alumni-tag">跨行业</span><strong>Will Chen｜2015 届</strong><p>职业经历从酒店咨询延伸至戴德梁行和宁德时代</p></div></div><div class="alumni-person"><img class="alumni-photo" loading="lazy" decoding="async" src="alumni-crcs-naomi-ye.jpg" alt="CRCS 校友 Naomi Ye"><div class="alumni-copy"><span class="alumni-tag">跨行业</span><strong>Naomi Ye｜2017 届</strong><p>盈科律师事务所，执业律师</p></div></div></article>
-          <article class="alumni-school"><div class="alumni-school-head"><strong>HIM</strong><span>蒙特勒工商管理大学</span></div><div class="alumni-person"><img class="alumni-photo" loading="lazy" decoding="async" src="alumni-him-fifi-ren.jpg" alt="HIM 校友 Fifi Ren"><div class="alumni-copy"><span class="alumni-tag">酒店与电商经历</span><strong>Fifi Ren｜2020 届</strong><p>职业经历包括文华东方酒店、唯品会和镛舍酒店</p></div></div><div class="alumni-person"><img class="alumni-photo" loading="lazy" decoding="async" src="alumni-him-marielle.jpg" alt="HIM 校友 Marielle"><div class="alumni-copy"><span class="alumni-tag">奢侈品行业</span><strong>Marielle｜2020 届</strong><p>迪拜 Louis Vuitton，精品店经理</p></div></div><div class="alumni-person"><img class="alumni-photo" loading="lazy" decoding="async" src="alumni-him-bowei.jpg" alt="HIM 校友 Bowei"><div class="alumni-copy"><span class="alumni-tag">跨行业</span><strong>Bowei｜2019 届</strong><p>瑞士 LKQ Europe，传播经理</p></div></div></article>
-        </div>
-        <p class="alumni-source">校友姓名、学校、职业与照片摘自《SEG 瑞士教育集团中国校友手册（2025）》及 CAAS、HIM 校友官方册子。职位为资料发布时记录；案例用于说明可能的就业方向，不代表毕业后的固定去向。</p>
       </div>
     </section>
 
-    <section class="finder" id="catalog">
+    <section class="media-page secondary-section lazy-media-section" id="campus" hidden>
       <div class="container">
-        <div class="section-head"><h2>课程详情</h2><p>可按学位和学习方向筛选。每个项目都有独立链接，页面内列出学制、课程、实习和费用。</p></div>
+        <div class="section-head"><h2>校区与住宿</h2><p>每所学校放 3 张已核对来源的官方图片：校区、2027 费表所含基础房型，以及可选单人房／升级房型。先看环境，再按 Offer 确认最终安排。</p></div>
+        <button class="section-close" type="button" data-collapse>返回主页</button>
+        <div class="campus-schools">
+          <article class="campus-school">
+            <div class="campus-school-head"><h3>SHMS｜Caux · Leysin</h3><p>基础房型为标准双人间；单人房按学期另付升级费。</p></div>
+            <div class="campus-gallery" aria-label="SHMS 校区与住宿">
+              <figure class="campus-card"><img loading="lazy" decoding="async" data-src="school-shms-campus.jpg" alt="SHMS Caux Palace 校区"><figcaption><strong>Caux Palace 校区</strong><span>SHMS 官方 Caux 校区全景；后续学习阶段还会使用 Leysin 校区。</span></figcaption></figure>
+              <figure class="campus-card"><img loading="lazy" decoding="async" data-src="school-shms-double-included.jpg" alt="SHMS 标准双人间"><figcaption><span class="room-fee-tag">2027 费表：含在费用内</span><strong>标准双人间</strong><span>Caux 或其他校方住宿楼；具体楼栋和卫浴配置以房间分配为准。</span></figcaption></figure>
+              <figure class="campus-card"><img loading="lazy" decoding="async" data-src="school-shms-single-standard.jpg" alt="SHMS 标准单人间"><figcaption><span class="room-fee-tag upgrade">付费升级</span><strong>标准单人间</strong><span>2027 费表升级费 CHF 4,200／学期；实际可选房源以 Offer 为准。</span></figcaption></figure>
+            </div>
+          </article>
+          <article class="campus-school">
+            <div class="campus-school-head"><h3>CAAS｜Le Bouveret · Brig</h3><p>两校区基础房型不同：Le Bouveret 为标准双人间，Brig 为豪华单人间。</p></div>
+            <div class="campus-gallery" aria-label="CAAS 校区与住宿">
+              <figure class="campus-card"><img loading="lazy" decoding="async" data-src="school-caas-campus.jpg" alt="CAAS Le Bouveret 湖畔校区"><figcaption><strong>Le Bouveret 湖畔校区</strong><span>本科前两年主要在 Le Bouveret，第三年按课程安排转至 Brig。</span></figcaption></figure>
+              <figure class="campus-card"><img loading="lazy" decoding="async" data-src="school-caas-double-included.jpg" alt="CAAS Le Bouveret 标准双人间"><figcaption><span class="room-fee-tag">Le Bouveret：含在费用内</span><strong>标准双人间</strong><span>Le Bouveret 阶段的 2027 基础房型，山景或湖景按实际分配。</span></figcaption></figure>
+              <figure class="campus-card"><img loading="lazy" decoding="async" data-src="school-caas-single-deluxe.jpg" alt="CAAS Le Bouveret 豪华单人间"><figcaption><span class="room-fee-tag upgrade">Le Bouveret：付费升级</span><strong>豪华单人间</strong><span>Le Bouveret 升级费 CHF 3,180／学期；Brig 阶段的豪华单人间则为基础含费房型。</span></figcaption></figure>
+            </div>
+          </article>
+          <article class="campus-school">
+            <div class="campus-school-head"><h3>CRCS｜Brig</h3><p>CRCS 是例外：2027 费表基础房型已是豪华单人间，没有列标准双人间。</p></div>
+            <div class="campus-gallery" aria-label="CRCS 校区与住宿">
+              <figure class="campus-card"><img loading="lazy" decoding="async" data-src="school-crcs-campus.jpg" alt="CRCS Brig 校区"><figcaption><strong>Brig 校区</strong><span>教学楼与 Themis、Xenius 学生宿舍均位于 Brig 城区。</span></figcaption></figure>
+              <figure class="campus-card"><img loading="lazy" decoding="async" data-src="school-crcs-single-included.jpg" alt="CRCS 豪华单人间"><figcaption><span class="room-fee-tag">2027 费表：含在费用内</span><strong>豪华单人间</strong><span>CRCS 当前基础房型为单人房，配独立卫浴；具体楼栋以房间分配为准。</span></figcaption></figure>
+              <figure class="campus-card"><img loading="lazy" decoding="async" data-src="school-crcs-single-premium.jpg" alt="CRCS 高级单人间"><figcaption><span class="room-fee-tag upgrade">付费升级</span><strong>高级单人间</strong><span>2027 费表升级费 CHF 1,280／学期；如需更高等级房型，以 Offer 为准。</span></figcaption></figure>
+            </div>
+          </article>
+          <article class="campus-school">
+            <div class="campus-school-head"><h3>HIM｜Montreux</h3><p>基础房型为标准双人间；标准单人间及其他房型按学期另付升级费。</p></div>
+            <div class="campus-gallery" aria-label="HIM 校区与住宿">
+              <figure class="campus-card"><img loading="lazy" decoding="async" data-src="school-him-campus.jpg" alt="HIM Montreux 校区"><figcaption><strong>Montreux 城市校区</strong><span>校区分布于蒙特勒市中心的校方建筑，靠近日内瓦湖。</span></figcaption></figure>
+              <figure class="campus-card"><img loading="lazy" decoding="async" data-src="school-him-double-included.jpg" alt="HIM 标准双人间"><figcaption><span class="room-fee-tag">2027 费表：含在费用内</span><strong>标准双人间</strong><span>两张单人床、学习空间及独立卫浴；实际房间景观以分配为准。</span></figcaption></figure>
+              <figure class="campus-card"><img loading="lazy" decoding="async" data-src="school-him-single-standard.jpg" alt="HIM 标准单人间"><figcaption><span class="room-fee-tag upgrade">付费升级</span><strong>标准单人间</strong><span>2027 费表升级费 CHF 2,800／学期；房源以 Offer 为准。</span></figcaption></figure>
+            </div>
+          </article>
+        </div>
+        <p class="campus-note">图片均来自四校官方校区页面；金额按 2027 中文费表。图片用于辨认校区与房型，不保证特定楼栋、朝向、景观或家具配置。房型与升级费用最终以学生 Offer 和 Invoice 为准。</p>
+      </div>
+    </section>
+
+    <section class="media-page secondary-section lazy-media-section" id="alumni" hidden>
+      <div class="container">
+          <div class="section-head"><h2>校友案例</h2><p>每校选取 3 位有姓名、职业与本人照片同页证据的校友，兼顾本行业发展与跨行业选择。</p></div>
+          <button class="section-close" type="button" data-collapse>返回主页</button>
+          <div class="alumni-grid" aria-label="四校校友案例">
+          <article class="alumni-school"><div class="alumni-school-head"><strong>SHMS</strong><span>瑞士酒店管理大学</span></div><div class="alumni-person"><img class="alumni-photo" loading="lazy" decoding="async" data-src="alumni-shms-cherry-shang.jpg" alt="SHMS 校友 Cherry Shang"><div class="alumni-copy"><span class="alumni-tag">本行业</span><strong>Cherry Shang｜2016 届</strong><p>香格里拉集团，企业客户销售总监</p></div></div><div class="alumni-person"><img class="alumni-photo" loading="lazy" decoding="async" data-src="alumni-shms-kratos-li.jpg" alt="SHMS 校友 Kratos Li"><div class="alumni-copy"><span class="alumni-tag">酒店与奢华品牌</span><strong>Kratos Li｜2020 届</strong><p>万豪国际集团大中华区，奢华品牌管理及品牌市场营销经理</p></div></div><div class="alumni-person"><img class="alumni-photo" loading="lazy" decoding="async" data-src="alumni-shms-viola-ma.jpg" alt="SHMS 校友 Viola Ma"><div class="alumni-copy"><span class="alumni-tag">跨行业</span><strong>Viola Ma｜2019 届</strong><p>52 Herz 广告咨询公司，营销创意总监</p></div></div></article>
+          <article class="alumni-school"><div class="alumni-school-head"><strong>CAAS</strong><span>瑞士美食艺术管理大学</span></div><div class="alumni-person"><img class="alumni-photo" loading="lazy" decoding="async" data-src="alumni-caas-jerry-tian.jpg" alt="CAAS 校友 Jerry Tian"><div class="alumni-copy"><span class="alumni-tag">本行业</span><strong>Jerry Tian｜2020 届</strong><p>Barbarossa 餐饮集团，集团厨房经理</p></div></div><div class="alumni-person"><img class="alumni-photo" loading="lazy" decoding="async" data-src="alumni-caas-lola-wang.jpg" alt="CAAS 校友 Lola Wang"><div class="alumni-copy"><span class="alumni-tag">教育行业</span><strong>Lola Wang｜2021 届</strong><p>上海旅游高等专科学校，讲师</p></div></div><div class="alumni-person"><img class="alumni-photo" loading="lazy" decoding="async" data-src="alumni-caas-yukun-jia.jpg" alt="CAAS 校友 Yukun Jia"><div class="alumni-copy"><span class="alumni-tag">本行业创业</span><strong>Yukun Jia｜2013 届</strong><p>中国壮壮酒馆 Bistro Strong，创始人</p></div></div></article>
+          <article class="alumni-school"><div class="alumni-school-head"><strong>CRCS</strong><span>瑞士恺撒里兹学院</span></div><div class="alumni-person"><img class="alumni-photo" loading="lazy" decoding="async" data-src="alumni-crcs-ariel-li.jpg" alt="CRCS 校友 Ariel Li"><div class="alumni-copy"><span class="alumni-tag">本行业</span><strong>Ariel Li｜2017 届</strong><p>居舍酒店，助理销售总监</p></div></div><div class="alumni-person"><img class="alumni-photo" loading="lazy" decoding="async" data-src="alumni-crcs-sharon-xu.jpg" alt="CRCS 校友 Sharon Xu"><div class="alumni-copy"><span class="alumni-tag">跨行业科技</span><strong>Sharon Xu｜2020 届</strong><p>TableCheck，资深商务拓展经理</p></div></div><div class="alumni-person"><img class="alumni-photo" loading="lazy" decoding="async" data-src="alumni-crcs-naomi-ye.jpg" alt="CRCS 校友 Naomi Ye"><div class="alumni-copy"><span class="alumni-tag">跨行业</span><strong>Naomi Ye｜2017 届</strong><p>盈科律师事务所，执业律师</p></div></div></article>
+          <article class="alumni-school"><div class="alumni-school-head"><strong>HIM</strong><span>瑞士蒙特勒工商管理大学</span></div><div class="alumni-person"><img class="alumni-photo" loading="lazy" decoding="async" data-src="alumni-him-fifi-ren.jpg" alt="HIM 校友 Fifi Ren"><div class="alumni-copy"><span class="alumni-tag">酒店与电商经历</span><strong>Fifi Ren｜2020 届</strong><p>居舍酒店，市场传讯经理；曾任职文华东方酒店与唯品会</p></div></div><div class="alumni-person"><img class="alumni-photo" loading="lazy" decoding="async" data-src="alumni-him-emelie.jpg" alt="HIM 校友 Emelie Sorensen"><div class="alumni-copy"><span class="alumni-tag">金融行业</span><strong>Emelie Sorensen｜2023 届</strong><p>瑞士瑞讯银行，人力资源运营</p></div></div><div class="alumni-person"><img class="alumni-photo" loading="lazy" decoding="async" data-src="alumni-him-robin.jpg" alt="HIM 校友 Robin Rejnas Falk"><div class="alumni-copy"><span class="alumni-tag">金融行业</span><strong>Robin Rejnas Falk｜2022 届</strong><p>瑞典温加证券，投资经纪人</p></div></div></article>
+          </div>
+          <p class="alumni-source">校友姓名、学校、职业与照片摘自《SEG 瑞士教育集团中国校友手册（2026）》及 2027 四校官方彩页。职位为资料发布时记录；案例用于说明可能的就业方向，不代表毕业后的固定去向。</p>
+      </div>
+    </section>
+
+    <section class="calendar secondary-section" id="calendar" hidden>
+      <div class="container">
+        <div class="section-head"><h2>四校 2027 日历</h2><p>按学校查看报到、迎新、开课、最迟到校、结课与退宿日期，方便提前安排行程。</p></div>
+        <button class="section-close" type="button" data-collapse>返回主页</button>
+        <div class="calendar-grid">
+          <details class="calendar-school" open>
+            <summary>CAAS 瑞士美食艺术管理大学</summary>
+            <div class="table-scroll"><table class="info-table responsive-table">
+              <thead><tr><th>2027 入学季</th><th>报到</th><th>迎新</th><th>开课</th><th>最迟到校</th><th>结课</th><th>退宿</th></tr></thead>
+              <tbody>
+                <tr><td data-label="入学季">1 月</td><td data-label="报到">1 月 8-9 日</td><td data-label="迎新">1 月 10 日</td><td data-label="开课">1 月 11 日</td><td data-label="最迟到校">1 月 18 日</td><td data-label="结课">3 月 26 日</td><td data-label="退宿">3 月 27 日</td></tr>
+                <tr><td data-label="入学季">4 月</td><td data-label="报到">4 月 2-3 日</td><td data-label="迎新">4 月 4 日</td><td data-label="开课">4 月 5 日</td><td data-label="最迟到校">4 月 12 日</td><td data-label="结课">6 月 18 日</td><td data-label="退宿">6 月 19 日</td></tr>
+                <tr><td data-label="入学季">7 月</td><td data-label="报到">7 月 2-3 日</td><td data-label="迎新">7 月 4 日</td><td data-label="开课">7 月 5 日</td><td data-label="最迟到校">7 月 12 日</td><td data-label="结课">9 月 17 日</td><td data-label="退宿">9 月 18 日</td></tr>
+                <tr><td data-label="入学季">10 月</td><td data-label="报到">10 月 1-2 日</td><td data-label="迎新">10 月 3 日</td><td data-label="开课">10 月 4 日</td><td data-label="最迟到校">10 月 11 日</td><td data-label="结课">12 月 17 日</td><td data-label="退宿">12 月 18 日</td></tr>
+              </tbody>
+            </table></div>
+          </details>
+
+          <details class="calendar-school">
+            <summary>CRCS 瑞士恺撒里兹学院</summary>
+            <div class="table-scroll"><table class="info-table responsive-table">
+              <thead><tr><th>2027 入学季</th><th>报到</th><th>迎新</th><th>开课</th><th>最迟到校</th><th>结课</th><th>退宿</th></tr></thead>
+              <tbody>
+                <tr><td data-label="入学季">1 月</td><td data-label="报到">1 月 8-9 日</td><td data-label="迎新">1 月 10 日</td><td data-label="开课">1 月 11 日</td><td data-label="最迟到校">1 月 18 日</td><td data-label="结课">3 月 26 日</td><td data-label="退宿">3 月 27 日</td></tr>
+                <tr><td data-label="入学季">4 月</td><td data-label="报到">4 月 2-3 日</td><td data-label="迎新">4 月 4 日</td><td data-label="开课">4 月 5 日</td><td data-label="最迟到校">4 月 12 日</td><td data-label="结课">6 月 18 日</td><td data-label="退宿">6 月 19 日</td></tr>
+                <tr><td data-label="入学季">7 月</td><td data-label="报到">7 月 2-3 日</td><td data-label="迎新">7 月 4 日</td><td data-label="开课">7 月 5 日</td><td data-label="最迟到校">7 月 12 日</td><td data-label="结课">9 月 17 日</td><td data-label="退宿">9 月 18 日</td></tr>
+                <tr><td data-label="入学季">10 月</td><td data-label="报到">10 月 1-2 日</td><td data-label="迎新">10 月 3 日</td><td data-label="开课">10 月 4 日</td><td data-label="最迟到校">10 月 11 日</td><td data-label="结课">12 月 17 日</td><td data-label="退宿">12 月 18 日</td></tr>
+              </tbody>
+            </table></div>
+          </details>
+
+          <details class="calendar-school">
+            <summary>HIM 瑞士蒙特勒工商管理大学</summary>
+            <div class="table-scroll"><table class="info-table responsive-table">
+              <thead><tr><th>2027 入学季</th><th>报到</th><th>迎新</th><th>开课</th><th>最迟到校</th><th>结课</th><th>退宿</th></tr></thead>
+              <tbody>
+                <tr><td data-label="入学季">1 月</td><td data-label="报到">1 月 8-9 日</td><td data-label="迎新">1 月 10 日</td><td data-label="开课">1 月 11 日</td><td data-label="最迟到校">1 月 18 日</td><td data-label="结课">3 月 26 日</td><td data-label="退宿">3 月 27 日</td></tr>
+                <tr><td data-label="入学季">4 月</td><td data-label="报到">4 月 2-3 日</td><td data-label="迎新">4 月 4 日</td><td data-label="开课">4 月 5 日</td><td data-label="最迟到校">4 月 12 日</td><td data-label="结课">6 月 18 日</td><td data-label="退宿">6 月 19 日</td></tr>
+                <tr><td data-label="入学季">7 月</td><td data-label="报到">7 月 2-3 日</td><td data-label="迎新">7 月 4 日</td><td data-label="开课">7 月 5 日</td><td data-label="最迟到校">7 月 12 日</td><td data-label="结课">9 月 17 日</td><td data-label="退宿">9 月 18 日</td></tr>
+                <tr><td data-label="入学季">10 月</td><td data-label="报到">10 月 1-2 日</td><td data-label="迎新">10 月 3 日</td><td data-label="开课">10 月 4 日</td><td data-label="最迟到校">10 月 11 日</td><td data-label="结课">12 月 17 日</td><td data-label="退宿">12 月 18 日</td></tr>
+              </tbody>
+            </table></div>
+          </details>
+
+          <details class="calendar-school shms-calendar">
+            <summary>SHMS 瑞士酒店管理大学</summary>
+            <div class="table-scroll"><table class="info-table responsive-table">
+              <thead><tr><th>入学季</th><th>报到</th><th>迎新</th><th>开课</th><th>最迟到校</th><th>圣诞退宿</th><th>新年返校</th><th>结课</th><th>退宿</th></tr></thead>
+              <tbody>
+                <tr><td data-label="入学季">2027 年 2 月</td><td data-label="报到">2 月 5-6 日</td><td data-label="迎新">2 月 6-7 日</td><td data-label="开课">2 月 8 日</td><td data-label="最迟到校">2 月 22 日</td><td data-label="圣诞退宿">不适用</td><td data-label="新年返校">不适用</td><td data-label="结课">6 月 11 日</td><td data-label="退宿">6 月 12 日</td></tr>
+                <tr><td data-label="入学季">2027 年 9 月</td><td data-label="报到">9 月 3-4 日</td><td data-label="迎新"><strong class="date-pending">迎新日期待校方确认</strong></td><td data-label="开课">9 月 6 日</td><td data-label="最迟到校">9 月 20 日</td><td data-label="圣诞退宿">12 月 18 日</td><td data-label="新年返校">2028 年 1 月 7-9 日</td><td data-label="结课">2028 年 1 月 28 日</td><td data-label="退宿">2028 年 1 月 29 日</td></tr>
+                <tr><td data-label="入学季">2027 年 11 月</td><td data-label="报到">11 月 5-6 日</td><td data-label="迎新">11 月 6-7 日</td><td data-label="开课">11 月 8 日</td><td data-label="最迟到校">11 月 22 日</td><td data-label="圣诞退宿">12 月 18 日</td><td data-label="新年返校">2028 年 1 月 7-9 日</td><td data-label="结课">2028 年 4 月 7 日</td><td data-label="退宿">2028 年 4 月 8 日</td></tr>
+              </tbody>
+            </table></div>
+            <div class="table-note"><strong>SHMS 9 月入学季：</strong>原始校历的迎新日期顺序存在矛盾，因此先标注为“迎新日期待校方确认”。</div>
+          </details>
+        </div>
+        <p class="calendar-source">日期整理自四校官方 Term Calendar。校历可用于提前安排行程，具体报到、迎新和课程安排以录取后的正式通知为准。</p>
+      </div>
+    </section>
+
+    <section class="finder secondary-section" id="catalog" hidden>
+      <div class="container">
+        <div class="section-head"><h2>课程详情</h2><p>先用下方关键词筛选，再按学校查看。每所学校依次分为本科、硕士和其他项目，点击项目即可查看学制、课程、实习和费用。</p></div>
+        <button class="section-close" type="button" data-collapse>返回主页</button>
         <div class="filters" role="group" aria-label="筛选项目">
           <button class="filter" aria-pressed="true" data-filter="all">全部</button>
           <button class="filter" aria-pressed="false" data-filter="undergrad">本科与职业文凭</button>
           <button class="filter" aria-pressed="false" data-filter="postgrad">硕士、研究生文凭与转专业</button>
-          <button class="filter" aria-pressed="false" data-filter="executive">在职与双硕士</button>
+          <button class="filter" aria-pressed="false" data-filter="executive">在职与继续教育</button>
           <button class="filter" aria-pressed="false" data-filter="ai">AI 方向</button>
         </div>
         <div class="catalog" id="catalogGrid"></div>
+        <div class="catalog-empty" id="catalogEmpty" hidden>暂未找到匹配项目，请切换其他筛选条件。</div>
       </div>
     </section>
 
-    <section class="agency" id="cases">
+    <section class="agency secondary-section" id="cases" hidden>
       <div class="container">
-        <div class="section-head"><h2>中留服既往案例</h2><p>5 份已提供的认证书全部放在这里。只有能与当前项目及学位层级对应的案例，才会在该项目详情中出现。</p></div>
+        <div class="section-head"><h2>中留服既往案例</h2><p>6 份已提供的认证书全部放在这里。只有能与当前项目及学位层级对应的案例，才会在该项目详情中出现。</p></div>
+        <button class="section-close" type="button" data-collapse>返回主页</button>
         <div class="concern-grid">
           <article class="concern"><span class="concern-kicker">CASE 01 · CAAS RELATED</span><h3>烹饪艺术本科案例</h3><p>University of Derby 授予荣誉文学学士学位，专业领域为烹饪艺术；认证书显示于 2019 年获得学位。</p><div class="case-degree">本科｜烹饪艺术</div><button class="case-open" data-case="caas-ba">查看中留服认证书</button></article>
-          <article class="concern"><span class="concern-kicker">CASE 02 · CRCS 历史合作学位</span><h3>酒店商务管理本科历史案例</h3><p>Washington State University 授予文学学士学位，专业领域为酒店商务管理。该证书对应 CRCS 既往合作学位，不对应现行 CRCS 独立学位。</p><div class="case-degree">本科｜酒店商务管理｜历史合作学位</div><button class="case-open" data-case="crcs-ba">查看中留服认证书</button></article>
-          <article class="concern"><span class="concern-kicker">CASE 03 · HIM</span><h3>酒店管理本科案例</h3><p>Northwood University 授予工商管理学士学位，专业领域为酒店管理。</p><div class="case-degree">本科｜工商管理学士</div><button class="case-open" data-case="him-ba">查看中留服认证书</button></article>
-          <article class="concern"><span class="concern-kicker">CASE 04 · SHMS</span><h3>国际酒店管理本科案例</h3><p>University of Derby 授予文学学士学位，专业领域为国际酒店管理；认证书显示于 2018 年获得学位。</p><div class="case-degree">本科｜国际酒店管理</div><button class="case-open" data-case="shms-ba">查看中留服认证书</button></article>
-          <article class="concern"><span class="concern-kicker">CASE 05 · SHMS</span><h3>国际酒店商务管理硕士案例</h3><p>University of Derby 授予文学硕士学位，专业领域为国际酒店商务管理；认证书显示于 2022 年获得学位。</p><div class="case-degree">硕士｜国际酒店商务管理</div><button class="case-open" data-case="shms-ma">查看中留服认证书</button></article>
+          <article class="concern"><span class="concern-kicker">CASE 02 · CRCS</span><h3>酒店商务管理理学学士案例</h3><p>证书显示，申请人在 César Ritz Colleges Switzerland 学习，于 2025 年 1 月获得该校授予的理学学士学位，专业领域为酒店商务管理。</p><div class="case-degree">CRCS 本校授予｜本科｜酒店商务管理</div><button class="case-open" data-case="crcs-bsc">查看中留服认证书</button></article>
+          <article class="concern"><span class="concern-kicker">CASE 03 · CRCS</span><h3>领导力理学硕士案例</h3><p>证书显示，申请人在 César Ritz Colleges Switzerland 学习，于 2025 年 9 月获得该校授予的理学硕士学位，专业领域为领导力。</p><div class="case-degree">CRCS 本校授予｜硕士｜领导力</div><button class="case-open" data-case="crcs-msc">查看中留服认证书</button></article>
+          <article class="concern"><span class="concern-kicker">CASE 04 · HIM</span><h3>酒店管理本科案例</h3><p>Northwood University 授予工商管理学士学位，专业领域为酒店管理。</p><div class="case-degree">本科｜工商管理学士</div><button class="case-open" data-case="him-ba">查看中留服认证书</button></article>
+          <article class="concern"><span class="concern-kicker">CASE 05 · SHMS</span><h3>国际酒店管理本科案例</h3><p>University of Derby 授予文学学士学位，专业领域为国际酒店管理；认证书显示于 2018 年获得学位。</p><div class="case-degree">本科｜国际酒店管理</div><button class="case-open" data-case="shms-ba">查看中留服认证书</button></article>
+          <article class="concern"><span class="concern-kicker">CASE 06 · SHMS</span><h3>国际酒店商务管理硕士案例</h3><p>University of Derby 授予文学硕士学位，专业领域为国际酒店商务管理；认证书显示于 2022 年获得学位。</p><div class="case-degree">硕士｜国际酒店商务管理</div><button class="case-open" data-case="shms-ma">查看中留服认证书</button></article>
         </div>
-        <div class="case-boundary"><strong>边界说明：</strong>以上 5 份为已完成个案，只说明对应学历曾有中留服认证结果，不代表同校其他课程或未来每位学生自动获得相同结果。CRCS 案例对应既往 Washington State University 合作学位；CRCS 现行本科与硕士由 CRCS 独立颁发，因此不在现项目详情中挂载该历史案例。新项目、职业文凭、在线或混合授课路径均不显示中留服链接。</div>
+        <div class="case-boundary"><strong>边界说明：</strong>以上为已完成的个人认证案例，仅说明该申请人的具体学位获得中留服认证，不代表所有入学年份、项目路径、授课方式或未来申请自动获得相同结果。最终以个人材料及中留服审核为准。新项目、职业文凭、在线或混合授课路径仍只在有直接对应案例时显示入口。</div>
       </div>
     </section>
   </main>
 
-  <footer><div class="container footer-inner"><span>本页由 Lucinda 个人整理，用于家长、学生与合作机构进行项目初筛；不属于 SEG 官方网站，也不替代正式录取、费用或认证文件。</span><span class="lucinda-sign">LUCINDA LU · SEG RECRUITMENT OFFICER<br>邮箱：lucindalu@swisseducation.com.cn · <a href="tel:+8615821368840">+86 158 2136 8840</a> · <a href="https://www.swisseducation.com.cn/namecard/discovery-our-program-greeting-from-swiss-education-group-lucinda/" target="_blank" rel="noopener noreferrer nofollow">SEG 官网个人名片</a></span></div></footer>
+  <footer><div class="container footer-inner"><span>本页由 Lucinda 个人整理，用于家长、学生与合作机构进行项目初筛；不属于 SEG 官方网站，也不替代正式录取、费用或认证文件。</span><span class="lucinda-sign">LUCINDA LU · SEG RECRUITMENT OFFICER<br>邮箱：lucindalu@swisseducation.com.cn · <a href="tel:+8619117284880">19117284880</a> · <a href="https://www.swisseducation.com.cn/namecard/discovery-our-program-greeting-from-swiss-education-group-lucinda/" target="_blank" rel="noopener noreferrer nofollow">SEG 官网个人名片</a></span></div></footer>
 
   <dialog id="detailDialog" aria-labelledby="dialogTitle">
     <div class="dialog-head"><div><small id="dialogSchool"></small><h2 id="dialogTitle"></h2></div><button class="close" id="closeDialog" aria-label="关闭">×</button></div>
@@ -374,98 +896,124 @@
     <div class="dialog-head"><div><small>CSCSE · 中留服既往案例</small><h2 id="caseDialogTitle"></h2></div><button class="close" id="closeCaseDialog" aria-label="关闭">×</button></div>
     <div class="dialog-scroll"><div class="case-document"><img id="caseDialogImage" decoding="async" alt=""></div><div class="case-caption"><strong id="caseDialogDegree"></strong><span>图片为用户提供的已打码认证案例，仅供项目咨询参考；既往个案不代表未来自动获得相同结果。</span></div></div>
   </dialog>
+  <button class="floating-home" id="floatingHome" type="button" hidden>← 返回主页</button>
   <div class="toast" id="toast" role="status">项目链接已复制</div>
 
   <script>
     const programs = {
-      "shms-ba": {school:"SHMS",title:"国际款待业管理本科",tags:["undergrad"],audience:"高中毕业生；希望同时学习实操、管理并参加全球实习",duration:"2-3 年；本科完整路径 3 年",campus:"Caux → Leysin",intake:"2027 年 2 月、9 月",language:"全英文；IELTS 5.5 / TOEFL 46",fee:"CHF 186,500",feeNote:"本科完整四个学术学期；另有 CHF 2,000 security deposit，最终以 Invoice 为准。",lead:"前期在宫殿酒店校区学习餐饮、房务和收益管理，后期可选择款待业管理、活动管理或酒店设计。",sell:["前三个学期与瑞士高等职业教育文凭课程共用，完成后可继续衔接本科最后阶段","本科安排两次各约 6 个月的全球实习","可选款待业管理、活动管理或酒店设计专业方向"],curriculum:["前期：餐饮服务、厨房、成本控制、会计与沟通","中期：房务、收益管理、活动策划和设计","后期：数据决策、领导力、品牌、战略和数字作品集"],agency:["最低年龄 17 岁；高中学历与语言成绩需满足当期要求","学校提供职业服务和岗位支持，具体实习仍以岗位匹配和学生表现为准","咨询时先确认学生更偏酒店运营、活动管理还是空间与体验设计"]},
-      "shms-pgd": {school:"SHMS",title:"酒店、度假村与水疗管理研究生文凭",tags:["postgrad"],audience:"本科毕业转专业；或高中毕业并有至少 3 年工作经验",duration:"1 年",campus:"Leysin + 全球实习",intake:"2027 年 2 月、9 月",language:"全英文；IELTS 5.5 / TOEFL 46",fee:"2027 正式价格待确认",feeNote:"这是研究生文凭，不是硕士学位。当前本地 2027 费用表未形成独立完整报价。",lead:"为没有款待业学历、但希望进入酒店、度假村或康养场景的人建立运营基础。",sell:["研究生文凭，非硕士学位","18 周集中课程后进入 6 个月全球实习","同时覆盖餐饮、前厅、收益、活动、数字营销和人力资源"],curriculum:["Food & Beverage、Front Office、Finance & Yield","Event Planning、HR、Market Research、Digital Sales","Service、International Cuisine、Spa & Guest Services"],agency:["建议 21 岁以上","高中学历申请者通常需要至少 3 年工作经验","适合明确要转入款待业的人，不应作为硕士项目介绍"]},
-      "shms-ma": {school:"SHMS",title:"国际款待业商务管理硕士",tags:["postgrad"],audience:"本科毕业转专业；希望进入款待业运营、商业管理或客户体验方向",duration:"标准轨 36 周；快轨 18 周在校 + 独立研究",campus:"Caux + off-campus",intake:"2 月、9 月；11 月仅快轨",language:"全英文；IELTS 6.0 / TOEFL 60",fee:"CHF 54,500 / 40,800",feeNote:"分别对应 36 周标准轨与 18 周快轨；另有 CHF 2,000 security deposit。",lead:"以财务、营销和领导力为核心，适合进入款待业运营、MICE、康养和消费者体验相关岗位。",sell:["本科可来自任意专业，适合跨专业进入款待业商务管理","标准轨与快轨两种节奏，适应不同时间安排","课程组合财务、市场、领导力与独立研究"],curriculum:["Strategic Financial & Revenue Management","Marketing Management；Leadership & Talent Management","Independent Study；可选全球实习"],agency:["通常需 21 岁以上","本科或符合条件的管理经验路径需个案审核","奢侈品品牌管理是 SHMS 文学硕士体系中单独列示的路径，不能只作为一门选修课介绍"]},
-      "shms-luxury": {school:"SHMS",title:"奢侈品品牌管理硕士",tags:["postgrad"],audience:"本科毕业；希望进入奢侈品、高端生活方式、品牌管理或消费者体验领域",duration:"1 年；18 周或 36 周在校 + 独立研究；实习可选",campus:"Caux + off-campus",intake:"2027 年 2 月、9 月、11 月；具体路径以当期申请页为准",language:"全英文；IELTS 6.0 / TOEFL 60",fee:"CHF 54,500 / 40,800",feeNote:"沿用 SHMS 文学硕士 36 周标准轨／18 周快轨官方 Grand Total；另有 CHF 2,000 security deposit，最终以 Invoice 为准。",lead:"第一阶段与国际款待业商务管理共享管理核心，后续集中学习奢侈品价值创造、品牌管理和消费者体验。",sell:["SHMS 文学硕士体系中单独列示的奢侈品品牌管理路径，不只是一门选修课","把品牌管理与消费者体验、营销和领导力结合","可选 18 周或 36 周在校学习，并完成独立研究"],curriculum:["Strategic Financial & Revenue Management、Marketing Management","Leadership & Talent Management","Luxury Value Creation、Modern Luxury Consumer、Strategic Luxury Brand Management、Consumer Experience Design"],agency:["不能把本路径说成与国际款待业商务管理完全无关的独立学位","本科背景与具体开学路径按当期招生要求审核","本项目没有对应的中留服既往案例，因此不显示案例链接"]},
-      "shms-msc": {school:"SHMS",title:"国际款待业管理硕士",tags:["postgrad","ai"],audience:"相关本科毕业；希望强化战略、数据与技术驱动管理",duration:"1 年；90 ECTS",campus:"Leysin + 5 个月项目",intake:"2027 年 2 月、9 月",language:"全英文；IELTS 6.0 / TOEFL 60",fee:"Grand Total CHF 40,800",feeNote:"2027 费用表 tuition 分项存在算术差异，预算暂以 Grand Total 为准。",lead:"比文学硕士更偏战略、研究、风险、体验设计、数据分析与技术驱动的款待业管理。",sell:["把数据分析与 AI 放进运营效率和客户体验决策","第二学期以 Integrated Business Project 收束","适合未来进入战略、咨询、项目管理或高级运营岗位"],curriculum:["Business Leadership、Technology-Driven Value Creation","Strategic Directions、Risk & Uncertainty、Experience Design","Data Analytics、Revenue、Hospitality Design & Entrepreneurship"],agency:["通常要求相关本科或行业管理经验","不建议简单理解为“文学硕士的更高级版本”，两者培养方式不同","费用对外只使用 Grand Total"]},
-      "shms-mas": {school:"SHMS",title:"商业高级研修硕士",tags:["postgrad","executive","ai"],audience:"本科或专科毕业者、转专业申请人和有经验的管理人员",duration:"6-12 个月；可选实习",campus:"Leysin + off-campus",intake:"2027 年 9 月、11 月",language:"全英文；PGC 入学 IELTS 5.5，MAS 阶段前 6.0",fee:"CHF 43,000",feeNote:"完整 MAS 路径；部分校内停留、住宿及可选实习另核。",lead:"课程分为证书、研究生文凭和高级研修硕士三个阶段，可选择房地产、康养或大型活动数字化方向。",sell:["每个阶段都有对应资格，学生可按职业计划决定完成到哪一阶段","三个方向均包含领导力、财务、AI、数据和风险治理","Industry Atelier 使用企业题目完成项目"],curriculum:["房地产与奢华物业管理","康养与长寿商业管理","大型活动数字化管理"],agency:["这是职业／继续教育路径，申请前要核对学生的学历认证用途","可接受专科或职业本科，3 年以上高级经验者可个案考虑","介绍时应说明具体方向、学习成果和认证边界"]},
-      "shms-online": {school:"SHMS",title:"在职款待业管理在线硕士",tags:["postgrad","executive","ai"],audience:"在职酒店、旅游及服务业管理者",duration:"加速 18 个月；常规 2-3 年",campus:"Online；可选 Leysin 驻留周",intake:"2027 年 1 月、5 月、9 月",language:"全英文；IELTS 6.0 / TOEFL 60",fee:"CHF 20,700",feeNote:"付款计划会加收总额 5%；另有 CHF 2,000 security deposit。",lead:"不离职完成款待业管理硕士，课程直接覆盖财务、AI、营销、项目与体验设计。",sell:["6 个核心模块，每模块 10 周，可一次修一门或两门","学习任务可连接当前工作场景","可选择 Integrated Business Project 或 Dissertation"],curriculum:["Financial Decision Making","AI Technology & Data Analysis；Digital Sales","Operations & Project、Leadership、Sustainable Experience Design"],agency:["适合能够稳定投入学习时间的在职人士","本科或 5 年款待业／旅游管理经验可申请","线上学历认可目标需按学生所在国家与具体用途核验"]},
-      "shms-mba": {school:"SHMS",title:"全球工商管理硕士",tags:["postgrad","executive"],audience:"希望学习综合商业管理的本科毕业者与管理人员",duration:"计划 1 年左右",campus:"Leysin",intake:"计划 2027 年 9 月上线",language:"全英文；正式录取要求待发布",fee:"CHF 49,200",feeNote:"计划项目。金额来自 2027 官方费用表；正式项目页与完整 Admissions 尚待发布。",lead:"计划中的综合商科 MBA，不限定酒店管理背景，现阶段仅适合作为 2027 意向登记。",sell:["培训信息显示与 University of Derby 合作","计划采用多个 9 周模块与独立研究","结业项目可能包括 Dissertation 或 Social Impact Project"],curriculum:["正式课程表待官网项目页发布","当前只适合说明方向，不宜承诺完整课程细节"],agency:["这是计划产品，不与已完整上线项目同等销售","费用已出现，但录取、校历和正式项目页尚未闭环","可以收集需求，不建议在正式文件前做精确承诺"]},
-      "caas-diploma-culinary": {school:"CAAS",title:"瑞士烹饪艺术职业文凭",tags:["undergrad"],audience:"17 岁以上；想先验证烹饪兴趣或快速建立专业厨房技能",duration:"完整路径：3 个 11 周学期 + 6 个月实习",campus:"Le Bouveret",intake:"2027 年 1 月、4 月、7 月、10 月",language:"全英文；IELTS 5.5 / Duolingo 95",fee:"CHF 20,000 / term",feeNote:"两学期按公开学期价预算为 CHF 40,000；三学期完整路径 CHF 60,000；另有 CHF 2,000 security deposit，最终以 Invoice 为准。",lead:"从基础技法学到欧洲菜、冷厨房、全球菜系与可持续菜单，可按学期逐级完成。",sell:["最多约 850 课时烹饪专业训练","在专业厨房中完成实操课程","属于瑞士职业文凭路线，不是本科学位"],curriculum:["1 学期：Professional Certificate","2 学期 + 6 个月实习：Professional Swiss Diploma","3 学期 + 6 个月实习：Professional Swiss Grand Diploma","课程由基础技法进阶至欧洲、国际烹饪与综合实训"],agency:["17 岁可入学，瑞士／EU 实习通常需 18 岁","未完成高中者可个案申请职业文凭，但后续申请本科需补足学历条件","阶段退出奖项与对应费用应以个案 Invoice 确认"]},
-      "caas-diploma-pastry": {school:"CAAS",title:"瑞士甜点艺术职业文凭",tags:["undergrad"],audience:"17 岁以上；想学习甜点、烘焙、面包与巧克力专业技能",duration:"完整路径：3 个 11 周学期 + 6 个月实习",campus:"Le Bouveret",intake:"2027 年 1 月、7 月",language:"全英文；IELTS 5.5 / Duolingo 95",fee:"CHF 20,000 / term",feeNote:"两学期按公开学期价预算为 CHF 40,000；三学期完整路径 CHF 60,000；另有 CHF 2,000 security deposit，最终以 Invoice 为准。",lead:"从经典烘焙学到巧克力、现代甜点、法式甜点与面包，可按学期逐级完成。",sell:["最多约 850 课时甜点专业训练","在烘焙、甜点与巧克力实验室中完成实操","属于瑞士职业文凭路线，不是本科学位"],curriculum:["1 学期：Professional Certificate","2 学期 + 6 个月实习：Professional Swiss Diploma","3 学期 + 6 个月实习：Professional Swiss Grand Diploma","课程由甜点基础进阶至巧克力、烘焙与维也纳式面包"],agency:["17 岁可入学，瑞士／EU 实习通常需 18 岁","与烹饪职业文凭是两条独立路线，开学月份不同","阶段退出奖项与对应费用应以个案 Invoice 确认"]},
-      "caas-ba-culinary": {school:"CAAS",title:"烹饪艺术本科",tags:["undergrad"],audience:"高中毕业；希望把烹饪技能发展成餐饮经营、管理或创业能力",duration:"3 年；180 ECTS",campus:"Le Bouveret → Brig",intake:"2027 年 1 月、4 月、7 月、10 月",language:"全英文；IELTS 5.5 / TOEFL 55 / Duolingo 95",fee:"CHF 176,200",feeNote:"本科完整路径；另有 CHF 2,000 security deposit。",lead:"前两年学习烹饪技能和餐厅运营，第三年进入商业计划、品牌、财务和创业。",sell:["约 1,100 小时厨房实训，并参与经营 50 座对外餐厅","两次各约 6 个月实习","把烹饪训练与餐饮商业、品牌和创业结合"],curriculum:["Year 1：经典技法、全球菜系、营养与厨房领导力","Year 2：Fine Dining、成本、服务、饮品与产品开发","Year 3：Business Plan、营销、财务、活动、餐厅设计与战略"],agency:["建议 18 岁，Term 3 结束时必须满 18 岁","这是技能与商业并重的本科，不是单纯厨师培训","本页仅在此烹饪艺术本科显示对应的中留服既往案例"]},
-      "caas-ba-pastry": {school:"CAAS",title:"甜点、烘焙及巧克力艺术本科",tags:["undergrad"],audience:"高中毕业；希望把甜点、烘焙及巧克力技能发展成产品、品牌或创业能力",duration:"3 年；180 ECTS",campus:"Le Bouveret → Brig",intake:"2027 年 1 月、7 月",language:"全英文；IELTS 5.5 / TOEFL 55 / Duolingo 95",fee:"CHF 176,200",feeNote:"本科完整路径；另有 CHF 2,000 security deposit。",lead:"前两年强化甜点、烘焙、面包和巧克力技艺，第三年进入品牌、财务、商业计划和创业。",sell:["甜点、烘焙及巧克力为独立本科方向","两次各约 6 个月实习","把产品研发与餐饮商业、品牌和创业结合"],curriculum:["Year 1：经典甜点、烘焙、面包与巧克力基础","Year 2：高级甜点、产品开发、成本与餐厅运营","Year 3：Business Plan、营销、财务、活动、餐厅设计与战略"],agency:["建议 18 岁，Term 3 结束时必须满 18 岁","与烹饪艺术本科是两条独立路线，开学月份不同","现有中留服案例为烹饪艺术本科，因此本项目不挂载该案例"]},
-      "caas-ma": {school:"CAAS",title:"美食商务管理硕士",tags:["postgrad"],audience:"本科毕业转专业、餐饮创业者与食品行业从业者",duration:"1 年；90 ECTS",campus:"Le Bouveret",intake:"2027 年 4 月、10 月",language:"全英文；IELTS 6.0，单项不低于 5.5",fee:"CHF 49,000",feeNote:"另有 CHF 2,000 security deposit。",lead:"课程结合食品概念、产品创新、活动策划、创业项目和厨房实践。",sell:["本科专业不限，适合希望转入餐饮或食品行业的人","安排 240 小时厨房训练","包含活动项目、Integrated Business Project 和 6 个月实习"],curriculum:["Food Culture、Leadership、Revenue、Sustainability、Strategy","Culinary Innovation & AI、Marketing、Research、Entrepreneurship","Integrated Business Project + Internship"],agency:["通常建议 21 岁以上","不接受 Duolingo；语言单项要求需提前核对","咨询时先确认学生更关注餐饮运营、品牌、产品还是创业"]},
-      "crcs-bsc": {school:"CRCS",title:"款待业商务管理本科",tags:["undergrad"],audience:"高中毕业；希望学习综合商业、领导力与款待业管理",duration:"4 年；180 ECTS；第 1 学年为行业沉浸学年",campus:"Brig + 全球实习",intake:"2027 年 1 月、7 月、10 月",language:"全英文；IELTS 5.5，单项不低于 4.5",fee:"2027 学费待发布",feeNote:"2026 总价 CHF 163,200 不能直接作为 2027 报价。",lead:"这是 CRCS 四年制本科。第 1 学年就是行业沉浸学年，含两段 11 周课程和 6 个月实习，后续再进入商业管理与战略课程。",sell:["现行学位由 CRCS 独立颁发，并获瑞士联邦认可","行业沉浸学年不是单独的产品，而是本科第 1 学年","可选领导力、金融、商业分析、创业、营销或数字战略方向"],curriculum:["第 1 学年：客户服务、厨房、餐饮系统、房务、领导力，然后完成 6 个月全球实习","Business Essentials：经济、营销、会计、统计与 AI Foundations","Advanced Management 与 Executive Competences：CRM、ESG、创新、战略与论文"],agency:["四年总学制已包含行业沉浸学年，不应再把它单列为一个本科产品","学制与三年制本科不同，需提前比较时间与总预算","2027 费用需等待新的官方费用表"]},
-      "crcs-ai": {school:"CRCS",title:"应用人工智能与款待业商务管理本科",tags:["undergrad","ai"],audience:"高中毕业；希望学习人工智能在商业和服务业中的应用",duration:"4 年；180 ECTS；第 1 学年为行业沉浸学年",campus:"Brig + 全球实习",intake:"首届 2027 年 10 月",language:"全英文；IELTS 5.5，单项不低于 4.5",fee:"2027 学费待发布",feeNote:"首届项目，必须等待 CRCS 2027 正式费用文件。",lead:"这是 CRCS 四年制本科。第 1 学年就是行业沉浸学年，含两段 11 周课程和 6 个月实习，后续进入 AI、数据与自动化的商业应用课程。",sell:["现行学位由 CRCS 独立颁发，并获瑞士联邦认可","行业沉浸学年不是单独的产品，而是本科第 1 学年","课程从 AI Literacy、Analytics 和 Automation 学到原型设计与商业项目"],curriculum:["第 1 学年：客户服务、厨房、餐饮系统、房务、领导力，然后完成 6 个月全球实习","应用阶段：AI Tools、Automation、Analytics、Customer Intelligence、Revenue","战略阶段：Responsible AI、Digital Transformation、Venture Creation、Pitching"],agency:["四年总学制已包含行业沉浸学年，不应再把它单列为一个本科产品","课程面向商业应用，编程和算法研发不是培养重点","这是首届项目，咨询时需确认学生接受四年学制和第 1 学年的服务运营课程"]},
-      "crcs-msc": {school:"CRCS",title:"领导力理学硕士",tags:["postgrad","executive"],audience:"本科毕业；希望进入管理、金融、奢侈品或旅游行业的管理岗位",duration:"官网主口径 15 个月；90 ECTS",campus:"Brig + off-campus",intake:"2027 年 4 月、10 月",language:"全英文；IELTS 6.0",fee:"2027 学费待发布",feeNote:"官网页面同时出现 15 个月与 two-year/five terms 表述；2027 报价待正式费用表。",lead:"由 CRCS 独立颁发、获瑞士联邦认可的硕士学位。结课方式包括领导力项目、创业加速器或可选实习。",sell:["学位由 CRCS 独立颁发，并获瑞士联邦认可","课程包括人员管理、财务、战略、组织变革和董事会沟通","可选 Hospitality & Tourism、Finance & Wealth 或 Luxury Brand 方向"],curriculum:["Term 1：People、Finance、Operations、Marketing","Term 2：Change、Strategy、Storytelling、Ethics、Negotiation","Term 3：专业课、Leadership in Practice、Retreat、Valuation"],agency:["官网对学制有不同表述，本页暂按 Admissions 的 15 个月口径","非相关本科可能需要 Business Immersion","2027 学费尚未发布"]},
-      "him-bba": {school:"HIM",title:"工商管理本科",tags:["undergrad"],audience:"高中毕业；希望进入金融、营销、管理或款待业管理",duration:"瑞士高等职业教育文凭 2.5 年；本科完整路径 3 年",campus:"Montreux",intake:"2027 年 1 月、4 月",language:"英语主轨；另有中英／法英双语过渡轨",fee:"Grand Total CHF 131,800",feeNote:"2027 费用表六个 term 的 tuition 分项合计与总栏相差 CHF 200；预算暂用 Grand Total。",lead:"把客户体验作为商科底层能力，再选择金融、营销、管理或款待业管理专业。",sell:["三次 4-6 个月全球实习，毕业形成约 1.5 年职业经验","四个专业方向，不再局限于酒店行业","中英／法英轨从母语逐步过渡到全英文课程"],curriculum:["Year 1：Customer Experience、Finance、Marketing、Data Decision","Year 2：Management、Accounting、Innovating with AI + 专业课","Year 3：Strategy、Ethics、Law、Organization + 高级专业课"],agency:["英语主轨 IELTS 5.5 / TOEFL 46；双语轨应按对应页面核对语言条件","瑞士高等职业教育文凭独立页面与本科页面对认可状态的文字尚未完全统一","Northwood University BBA 与 HIM 阶段性资格应分别解释"]},
-      "him-ai": {school:"HIM",title:"AI 与客户体验硕士",tags:["postgrad","ai"],audience:"本科毕业；没有工程背景，希望学习 AI 的商业应用",duration:"1 年；限 24 人",campus:"Online + Macao + Montreux",intake:"2027 年 1 月",language:"全英文；IELTS 6.0",fee:"Grand Total CHF 38,000",feeNote:"Term 1 tuition 与 term total 相差 CHF 200；预算暂用 Grand Total，双硕士另计。",lead:"课程面向 AI 产品、数据、伦理和客户体验的商业应用，重点不是算法工程。",sell:["1 至 3 月线上学习，4 至 5 月在澳门，6 至 9 月在蒙特勒","安排两次 Industry Immersion，最后完成线上 Capstone","本科专业不限；选拔包括 case、video 和院长面试"],curriculum:["Level 1：AI Fundamentals、UX、Applied AI、Data Science","Level 2：AI Product、CSR、Ethics & IP、UX Neuroscience、Trends","Oct-Dec：Online Capstone；之后可申请 CRCS 双硕士"],agency:["本科 GPA 通常需达到 3.0","瑞士端的认可表述不能直接等同中国留服认证","申请前要确认学生能接受线上、澳门与瑞士三段学习安排"]},
-      "him-dual": {school:"HIM + CRCS",title:"AI 与客户体验 + 领导力双硕士路径",tags:["postgrad","executive","ai"],audience:"希望继续学习领导力并取得第二个硕士学位的 HIM 学生",duration:"完成 HIM 主项目后增加 CRCS 阶段",campus:"Montreux / Online → Brig",intake:"随 HIM AI Master 路径",language:"全英文",fee:"双硕士增量费用待个案确认",feeNote:"HIM CHF 38,000 不等于双硕士完整总价，Brig 阶段住宿及额外费用需另核。",lead:"完成 HIM 的 AI 与客户体验硕士后，可另行申请 CRCS 领导力硕士，继续学习战略、组织变革和高管沟通。",sell:["先学习 AI 产品与客户体验，再学习组织变革和全球战略","完成两个学校规定的课程后可取得两个硕士学位","第二阶段需单独申请，并增加学习时间和费用"],curriculum:["Leadership for Change & Innovation","Global Strategic Management、Storytelling、Ethics","C-suite、Negotiation、Networking"],agency:["双硕士不在 HIM 主项目中自动包含，需要单独申请和计费","先确认学生是否需要第二学位及其认证用途","住宿、额外 term 和学习时间需重新预算"]},
-      "foundation": {school:"SEG / SHMS",title:"入学准备课程",tags:["undergrad"],audience:"语言、学历或瑞士学习准备度暂未达到主课要求的学生",duration:"EFP 10 周；IFP 4 周；Access 9 或 18 周",campus:"Leysin",intake:"按各校 2027 Admissions 页面",language:"EFP 为英语强化；IFP 为学习适应；Access 入门英语约 IELTS 4.5",fee:"Access CHF 12,400 / 24,900",feeNote:"分别对应 9 周／18 周；EFP、IFP 当前完整 2027 价格需另核。",lead:"EFP、IFP 和 Access 的用途不同，分别对应英语强化、入学适应和本科衔接。",sell:["EFP：提高英语与学术学习能力","IFP：主课前适应瑞士校园和跨文化环境","Access：为学历或学术准备不足者提供本科衔接"],curriculum:["具体学习安排按学生最终学校与入学季匹配","IFP 主要用于主课前适应，不能代替语言提分课程"],agency:["先确认学生需要补英语、补学历条件，还是提前适应海外学习","Access 已有 2027 册子与费用，但英文官网独立页面待发布","签证所需英语成绩仍以当期官方要求为准"]}
+      "shms-ba": {school:"SHMS",title:"国际款待业管理本科（BA）",tags:["undergrad"],audience:"高中毕业生；希望兼顾酒店实操、商业管理与全球实习",duration:"2.5 至 3 年；含 2 次各 6 个月全球实习",campus:"Caux → Leysin",intake:"2027 年 2 月、9 月",language:"全英文；IELTS Academic 5.5 或同等",fee:"CHF 186,500",feeNote:"本科完整路径；另缴 CHF 2,000 保证金，最终以 Invoice 为准。",lead:"在 Caux 皇宫校区打下运营基础，再到 Leysin 完成专业方向与战略管理学习。",sell:["可先取得瑞士高等职业教育文凭，再完成本科最后阶段","两次各 6 个月全球实习，把课堂训练接到真实岗位","可选款待业管理、项目管理或设计管理 3 个方向"],curriculum:["运营基础：餐饮服务、厨房、成本、会计、房务与收益管理","方向课程：AI 与数字创新、可持续项目管理、设计与技术创新等","管理收束：数据决策、领导力、品牌、战略与毕业项目"],agency:["建议最低 17 岁，高中毕业或同等学历","实习由学校职业团队支持，最终岗位取决于匹配与学生表现","三个方向应按职业目标解释，不再使用笼统的“活动与体验设计”"]},
+      "shms-ma": {school:"SHMS",title:"国际款待业商务管理文学硕士（MA）",tags:["postgrad"],audience:"本科毕业转专业；希望进入款待业运营、商业管理或客户体验方向",duration:"标准轨 36 周；快轨 18 周；可选 6 个月实习",campus:"Caux + 校外研究",intake:"标准轨 2 月、9 月；快轨 2 月、9 月、11 月",language:"全英文；IELTS Academic 6.0 或同等",fee:"CHF 54,100 / 40,800",feeNote:"分别对应 36 周标准轨和 18 周快轨；另缴 CHF 2,000 保证金。",lead:"围绕财务、市场、领导力和研究能力，建立国际款待业的商业管理框架。",sell:["本科可来自不同专业，也可按规定以管理经验路径申请","标准轨和快轨两种节奏，适配转专业与相关背景申请人","SHMS 与 University of Derby 双授予"],curriculum:["战略财务与收益管理","市场管理、领导力与人才管理","独立研究；可选全球实习"],agency:["通常需 SHMS PGD、认可的 2:2 学士学位，或 5 年酒店管理经验并通过面试","标准轨和快轨的费用、在校时间不同，应分开报价","只有本路径显示已提供的对应中留服既往案例"]},
+      "shms-luxury": {school:"SHMS",title:"奢侈品品牌管理文学硕士（MA）",tags:["postgrad"],audience:"本科毕业；希望进入奢侈品、高端生活方式、品牌管理或消费者体验领域",duration:"1 年；18 周或 36 周在校 + 独立研究；实习可选",campus:"Caux + 校外研究",intake:"2027 年 2 月、9 月、11 月；轨道按当期开学季匹配",language:"全英文；IELTS Academic 6.0 或同等",fee:"CHF 54,100 / 40,800",feeNote:"按 2027 通用 MA 费表预算；费表未单列 Luxury，最终以该路径 Invoice 为准。",lead:"先学习款待业商务管理核心，再集中研究奢侈品价值、品牌与消费者体验。",sell:["这是 MA 体系内正式列示的专业路径，不只是一门选修课","把奢侈品品牌管理与财务、市场和领导力结合","SHMS 与 University of Derby 双授予"],curriculum:["Luxury Value Creation、Modern Luxury Consumer","Strategic Luxury Brand Management、Consumer Experience Design","战略财务、市场管理、领导力与独立研究"],agency:["属于国际款待业商务管理 MA 的奢侈品品牌方向","通用 MA 费表未单列本方向，应在申请时用 Invoice 复核","没有对应的中留服既往案例，因此不显示案例入口"]},
+      "shms-msc": {school:"SHMS",title:"国际款待业管理理学硕士（MSc）",tags:["postgrad","ai"],audience:"相关本科毕业；希望强化战略、风险、数据与技术驱动管理",duration:"1 年；第 1 学期在校 + 5 个月项目或论文；可选 6 个月实习",campus:"Leysin + 校外项目",intake:"2027 年 2 月、9 月、11 月",language:"全英文；IELTS Academic 6.0 或同等",fee:"Grand Total CHF 40,800",feeNote:"费表分项与 Grand Total 存在算术冲突；页面只按官方 Grand Total 做预算，待学校确认。",lead:"以战略、体验设计、风险治理、数据分析和技术创新为主线，适合相关背景进阶。",sell:["把数据分析和技术创新放进运营与客户体验决策","第二阶段以综合商业项目或论文收束","SHMS 与 University of Derby 双授予"],curriculum:["Business Leadership、Strategic Experience Design & Operations","Strategic Direction、Risk Management、Technology Innovation & Value Creation","选修可含数据分析、收益管理、社交媒体策略或款待业设计与创业"],agency:["通常要求相关本科、SHMS PGD，或 5 年酒店管理经验并通过面试","MSc 与 MA 的培养重点不同，不应只按“更高级”解释","费用对外只使用 Grand Total，分项待校方确认"]},
+      "shms-mas": {school:"SHMS",title:"证书、文凭与高级研修硕士路线（PGC→PGD→MAS）",tags:["postgrad","executive","ai"],audience:"本科、职业本科或专科毕业者，以及有经验的管理人员",duration:"1 年学习 + 可选 1 年全球带薪实习",campus:"Leysin + 校外实践",intake:"2027 年 2 月、9 月、11 月",language:"全英文；PGC 入学 IELTS 5.5，进入硕士实战项目前需 6.0",fee:"CHF 44,500",feeNote:"PGC 阶段 CHF 29,000 + MAS 阶段 CHF 15,500；PGD 的 6 周如选择校内学习，另加 CHF 3,000（含标准住宿与餐饮）。",lead:"一条模块化进阶路线：先读研究生证书，再取得研究生文凭，最后完成高级研修硕士。",sell:["每个阶段都有相应资格，学生可按职业目标决定完成到哪一步","可选房地产与奢华物业、康养商业或大型活动数字化 3 个方向","课程结合领导力、财务、AI、数据、风险治理与企业题目"],curriculum:["第 1 阶段：15 周 Leysin 研究生证书课程","第 2 阶段：6 周校外实践或可选校内学习，取得研究生文凭","第 3 阶段：9 周 Leysin 课程 + 6 周校外硕士项目"],agency:["这是职业／继续教育路径，PGC、PGD 和 MAS 不应混称为同一个硕士","学士或 BTEC Level 5／专科可申请；3 年以上高级经验者可无学位个案评估","无对应中留服案例，不显示案例入口"]},
+      "shms-online": {school:"SHMS",title:"在职款待业管理在线文学硕士（MA）",tags:["postgrad","executive","ai"],audience:"希望在不离职情况下系统进修的酒店、旅游及服务业管理者",duration:"6 个 10 周模块；约 1.5 至 2 年或更久；另含 5 个月项目或论文",campus:"全在线；可选 Leysin 沉浸周",intake:"2027 年 2 月、9 月、11 月",language:"全英文；IELTS Academic 6.0 或同等",fee:"CHF 20,700",feeNote:"分期付款加收总额 5%；Leysin 沉浸周另付费。在线费表未列 CHF 2,000 保证金。",lead:"课程可连接当前工作场景，覆盖财务、AI、营销、领导力、运营项目与可持续体验。",sell:["6 个核心模块，每模块 10 周，可按个人节奏修读","作业可与当前岗位或企业问题结合","SHMS 与 University of Derby 双授予"],curriculum:["AI 技术与数据分析；预测与财务决策","数字营销与市场战略；领导力、战略与文化","质量运营与项目；客户体验与可持续发展；综合项目或论文"],agency:["适合能够长期稳定投入学习时间的在职人士","本科或 5 年款待业／旅游管理经验可按规定申请","线上项目的认证用途应按学生所在国家和个人目的核验"]},
+      "shms-mba": {school:"SHMS",title:"全球工商管理硕士（MBA Global）",tags:["postgrad","executive"],audience:"希望系统学习综合商业管理的本科毕业者与管理人员",duration:"12 个月；3 个 9 周在校阶段 + 9 周校外毕业项目",campus:"SHMS 校区 + 校外项目",intake:"2027 年 2 月、9 月、11 月",language:"全英文；IELTS Academic 总分 6.5、单项不低于 6.0，或同等",fee:"CHF 49,200",feeNote:"2027 官方课程单页与费表均已发布；另缴 CHF 2,000 保证金。",lead:"从责任领导力、可持续运营和创业，推进到数字营销、战略财务与商业转型。",sell:["正式 12 个月项目，不再属于“计划产品”","三个在校阶段后完成论文或社会影响力项目","学位由 University of Derby 授予"],curriculum:["责任与真实领导力、可持续运营","创业与创新、国际数字营销","战略、财务、商业转型、商业分析与决策","Dissertation 或 Social Impact Project"],agency:["需认可的学士学位或同等资格","英语授课学位背景可按规定申请语言豁免","没有对应中留服既往案例，不显示案例入口"]},
+      "caas-diploma-culinary": {school:"CAAS",title:"瑞士烹饪艺术职业文凭",tags:["undergrad","executive"],audience:"17 岁以上；希望短期系统进修、转向专业厨房或验证烹饪方向",duration:"每学期 11 周；2 学期 + 6 个月实习取得职业文凭；可加读第 3 学期",campus:"Le Bouveret",intake:"2027 年 1 月、4 月、7 月、10 月",language:"全英文；IELTS Academic 5.5 或同等，Duolingo 95+ 可按规定接受",fee:"职业文凭 CHF 40,000；加读至 Grand Diploma 累计 CHF 60,000",feeNote:"1 学期证书 CHF 20,000；2 学期 + 实习取得 Professional Swiss Diploma；加读第 3 学期取得 Grand Diploma。另缴 CHF 2,000 保证金。",lead:"从基础技法进阶到欧洲菜、冷厨房、全球菜系与可持续菜单，按阶段取得资格。",sell:["最多约 850 小时专业厨房训练","可以 1、2 或 3 个学期分阶段完成","属于职业文凭路线，不是本科学位，也不能直接升读本科"],curriculum:["第 1 学期：Professional Certificate","第 2 学期 + 6 个月实习：Professional Swiss Diploma","加读第 3 学期：Professional Swiss Grand Diploma"],agency:["建议 17 岁；在瑞士／欧盟实习通常需年满 18 岁","未完成高中者可个案评估，但申请本科仍须另行满足本科录取要求","阶段奖项与最终费用以个案 Offer 和 Invoice 为准"]},
+      "caas-diploma-pastry": {school:"CAAS",title:"瑞士甜点艺术职业文凭",tags:["undergrad","executive"],audience:"17 岁以上；希望短期系统进修甜点、烘焙、面包与巧克力专业技能",duration:"每学期 11 周；2 学期 + 6 个月实习取得职业文凭；可加读第 3 学期",campus:"Le Bouveret",intake:"2027 年 1 月、7 月",language:"全英文；IELTS Academic 5.5 或同等，Duolingo 95+ 可按规定接受",fee:"职业文凭 CHF 40,000；加读至 Grand Diploma 累计 CHF 60,000",feeNote:"1 学期证书 CHF 20,000；2 学期 + 实习取得 Professional Swiss Diploma；加读第 3 学期取得 Grand Diploma。另缴 CHF 2,000 保证金。",lead:"从经典烘焙进阶到巧克力、现代甜点、法式甜点与面包，按阶段取得资格。",sell:["最多约 850 小时专业训练","可以 1、2 或 3 个学期分阶段完成","属于职业文凭路线，不是本科学位，也不能直接升读本科"],curriculum:["第 1 学期：Professional Certificate","第 2 学期 + 6 个月实习：Professional Swiss Diploma","加读第 3 学期：Professional Swiss Grand Diploma"],agency:["建议 17 岁；在瑞士／欧盟实习通常需年满 18 岁","与烹饪职业文凭是两条独立路线，开学月份不同","申请本科仍须另行满足本科录取要求"]},
+      "caas-ba-culinary": {school:"CAAS",title:"烹饪艺术文学学士（BA）",tags:["undergrad"],audience:"高中毕业；希望把烹饪技能发展成餐饮经营、管理或创业能力",duration:"3 年；180 ECTS；2 次各 6 个月实习",campus:"Le Bouveret（前两年）→ Brig（第三年）",intake:"2027 年 1 月、4 月、7 月、10 月",language:"全英文；IELTS Academic 5.5 或同等，Duolingo 95+ 可按规定接受",fee:"CHF 176,200",feeNote:"本科完整路径；另缴 CHF 2,000 保证金。",lead:"前两年训练烹饪与餐厅运营，第三年转向商业计划、品牌、财务与创业。",sell:["约 1,100 小时厨房实践，并参与运营 50 座对外餐厅","两次各 6 个月全球实习","CAAS 与 University of Derby 双授予"],curriculum:["第一年：经典技法、全球菜系、营养、可持续菜单与厨房领导力","第二年：Fine Dining、成本、餐厅服务、饮品与产品开发","第三年：商业计划、营销、财务、活动、餐厅设计与战略"],agency:["建议 18 岁，且第 3 学期结束时必须满 18 岁","这是技能与商业并重的本科，不是单纯厨师培训","本页只在烹饪艺术本科显示已提供的对应中留服既往案例"]},
+      "caas-ba-pastry": {school:"CAAS",title:"甜点、烘焙及巧克力艺术文学学士（BA）",tags:["undergrad"],audience:"高中毕业；希望把甜点、烘焙及巧克力技能发展成产品、品牌或创业能力",duration:"3 年；180 ECTS；2 次各 6 个月实习",campus:"Le Bouveret（前两年）→ Brig（第三年）",intake:"2027 年 1 月、7 月",language:"全英文；IELTS Academic 5.5 或同等，Duolingo 95+ 可按规定接受",fee:"CHF 176,200",feeNote:"本科完整路径；另缴 CHF 2,000 保证金。",lead:"前两年强化甜点、烘焙、面包和巧克力技艺，第三年进入品牌、财务、商业计划与创业。",sell:["约 1,100 小时厨房实践","两次各 6 个月全球实习","CAAS 与 University of Derby 双授予；Derby 合作学位名称仍为 Culinary Arts"],curriculum:["第一年：经典甜点、烘焙、面包与巧克力基础","第二年：高级甜点、产品开发、成本与餐厅运营","第三年：商业计划、营销、财务、活动、餐厅设计与战略"],agency:["建议 18 岁，且第 3 学期结束时必须满 18 岁","与烹饪艺术本科是两条独立路线，开学月份不同","现有中留服案例为烹饪艺术本科，因此本项目不挂该案例"]},
+      "caas-ma": {school:"CAAS",title:"美食商务管理文学硕士（MA）",tags:["postgrad"],audience:"本科毕业转专业者、餐饮创业者与食品行业从业者",duration:"1 年；两段 11 周课程 + 6 个月全球实习",campus:"Le Bouveret",intake:"2027 年 4 月、10 月",language:"全英文；IELTS Academic 6.0、单项不低于 5.5；不接受 Duolingo",fee:"CHF 43,950（据 2027 中文费表）",feeNote:"最新中文费表为 CHF 43,950，但文件注明中英文不一致时以英文版为准；现有较早英文表为 CHF 49,000，需补核配套新版英文表或 Invoice。另缴 CHF 2,000 保证金。",lead:"把食品文化、创新、经营与创业放在一起，并用真实咨询项目或商业策划收束。",sell:["安排 240 小时厨房实践与 6 个月全球实习","课程包含美食创新与 AI、可持续发展、市场与创业","CAAS 与 University of Derby 双授予"],curriculum:["食品文化与趋势、领导力、收益与绩效、可持续发展与商业伦理","美食创新与 AI、餐饮活动、市场、研究与食品初创企业","咨询项目或商业策划（Consulting Project or Business Plan）+ 实习"],agency:["建议 21 岁以上；不接受 Duolingo","可按英／美学士、SHMS PGD + 实习，或 5 年酒店管理经验 + 面试的规定路径申请","CHF 43,950 与 CHF 49,000 存在版本冲突，报价前必须以最新英文费表或 Invoice 闭环"]},
+      "crcs-bsc": {school:"CRCS",title:"款待业商务管理理学学士（BSc）",tags:["undergrad"],audience:"高中毕业；希望学习综合商业、领导力与款待业管理",duration:"4 年；180 ECTS；含行业沉浸学年与 2 次实习",campus:"Brig + 全球实习",intake:"2027 年 1 月、7 月、10 月",language:"全英文；IELTS Academic 5.5 或同等",fee:"CHF 169,300",feeNote:"2027 Bachelor of Science Program 总价；另缴 CHF 2,000 保证金。",lead:"第 1 年是课程内的行业沉浸学年，之后进入商学基础、高阶管理和专业方向。",sell:["2023 年获瑞士联邦院校认证；现行 BSc 由 CRCS 本校授予","四年内安排 2 次全球实习","可选高管领导力、市场传播、全球金融、商业分析、创业或数字战略 6 个方向"],curriculum:["第一年：款待业运营基础、AI 导论与 6 个月实习","第二年：经济、营销、会计、统计、商学与数字认知，再完成第二次实习","第三至四年：高阶管理、专业方向、管理能力与毕业论文"],agency:["行业沉浸学年是本科第 1 年，不应作为独立产品销售","四年学制与三年制本科不同，应提前比较总时间与预算","已提供同层级 CRCS 本校授予学位的中留服既往案例，可在项目详情查看"]},
+      "crcs-ai": {school:"CRCS",title:"AI 与款待业商务管理理学学士（BSc）",tags:["undergrad","ai"],audience:"高中毕业；希望学习人工智能在商业、服务与客户体验中的应用",duration:"4 年；180 ECTS；含行业沉浸学年与 2 次实习",campus:"Brig + 全球实习",intake:"首届 2027 年 10 月",language:"全英文；IELTS Academic 5.5 或同等",fee:"CHF 169,300（本科费表口径）",feeNote:"2027 费表统一列 Bachelor of Science Program，页面暂按 CHF 169,300 预算；AI 本科是否完全同价以 Offer 与 Invoice 为准。另缴 CHF 2,000 保证金。",lead:"先建立款待业运营与商学基础，再学习 AI、数据、自动化、原型和企业创业设计。",sell:["AI 面向商业应用，不是计算机工程或算法研发本科","第 1 年行业沉浸、第 2 年商学与数字基础、第 3 至 4 年进入 AI 应用与战略","2023 年获瑞士联邦院校认证；现行 BSc 由 CRCS 本校授予"],curriculum:["第一年：款待业基础、AI 导论与实习","第二年：商学精要、数字与数据认知，再完成第二次实习","第三年：AI 工具、自动化、商业分析、客户洞察、收益优化与产品原型","第四年：负责任 AI、数字化转型、AI 战略与企业创业设计"],agency:["行业沉浸学年已包含在四年总学制中","课程培养 AI 商业应用能力，不以深度编程为主","首届 2027 年 10 月，费用与项目安排以最终 Offer 和 Invoice 为准"]},
+      "crcs-msc": {school:"CRCS",title:"领导力理学硕士（MSc）",tags:["postgrad","executive"],audience:"本科毕业；希望进入管理、金融、奢侈品、旅游或款待业领导岗位",duration:"15 个月；90 ECTS；3 个课程阶段 + 毕业设计／创业加速",campus:"Brig；可选实习",intake:"2027 年 4 月、10 月",language:"全英文；IELTS Academic 6.0 或同等",fee:"CHF 63,700",feeNote:"2027 MSc Leadership 完整报价；另缴 CHF 2,000 保证金。付费创业加速器、可选实习及延住另计。",lead:"从组织领导、财务与战略推进到专业方向，并通过毕业设计或创业加速器完成实践。",sell:["2023 年获瑞士联邦院校认证；现行 MSc 由 CRCS 本校授予","可选款待业与旅游、金融与财富管理、奢侈品品牌管理 3 个方向","第 1、2、3 阶段可依次获得 CAS、DAS、MAS 阶段性资格"],curriculum:["阶段 1：高绩效组织、公司财务、流程管理、战略营销与数字领导力","阶段 2：变革创新、全球战略、叙事表达、商业伦理、董事会与谈判","阶段 3：专业方向课程与 Leadership in Practice","阶段 4 至 5：毕业设计或付费创业加速器；实习可选"],agency:["建议 21 岁，商科或相关学士背景；其他学科可能需补商业沉浸研讨会","创业加速器、实习与延住不是 CHF 63,700 内的自动项目","已提供同层级 CRCS 本校授予学位的中留服既往案例，可在项目详情查看"]},
+      "him-bba": {school:"HIM",title:"工商管理学士（BBA）",tags:["undergrad"],audience:"高中毕业；希望进入金融、营销、管理或款待业管理",duration:"3 年；6 个学习学期 + 3 次各 4 至 6 个月实习",campus:"Montreux",intake:"2027 年 1 月、4 月、10 月",language:"英语主轨；另设中英、法英双语路径，由母语逐步过渡至全英文",fee:"Grand Total CHF 131,800",feeNote:"2027 费表的学费总栏存在 CHF 200 排版算术错误；完整 Grand Total CHF 131,800 可闭合，页面按总价预算。另缴 CHF 2,000 保证金。",lead:"以客户体验为商科底层能力，再选择金融、营销、管理或款待业管理专业。",sell:["3 次各 4 至 6 个月全球实习，形成持续的课堂与职场循环","四个专业方向，不局限于酒店行业","英文主轨之外另设中英、法英双语过渡路径"],curriculum:["前两学期：客户体验、商业数学、研究、沟通、会计、金融、营销与数据决策","第 3 至 5 学期：管理、宏微观经济、管理会计、AI 创新、财务与专业方向课程","第 6 学期：公共政策、战略、商业伦理与法律、组织行为及高级专业课"],agency:["英语主轨一般 IELTS 5.5／TOEFL 46；双语路径按对应专页核对语言要求","前 5 学期的 Swiss Federal Diploma in Business Administration (ES) 自 2026 年 10 月起仍处待正式认可状态","第 6 学期完成后由 Northwood University 授予所选专业的 BBA 学位"]},
+      "him-ai": {school:"HIM",title:"应用 AI 与客户体验硕士",tags:["postgrad","ai"],audience:"本科毕业；没有工程背景，希望学习 AI 产品、数据与客户体验的商业应用",duration:"1 年；限 24 人；可选 CRCS 领导力阶段并延长学习",campus:"线上 + 澳门 + Montreux；可选 Brig",intake:"2027 年 1 月",language:"全英文；IELTS Academic 6.0 或同等",fee:"CHF 38,000",feeNote:"主项目三阶段合计 CHF 38,000；最新费表不存在 CHF 200 冲突。可选 CRCS 阶段的申请条件、附加费用及住宿须另行确认。",lead:"围绕 AI 产品、数据、伦理与客户体验做商业应用，不把学生培养成算法工程师。",sell:["1 至 3 月线上，4 至 5 月澳门，6 至 9 月蒙特勒，10 至 12 月线上完成 Capstone","安排两次 Industry Immersion；本科专业不限","可选 Brig 的 CRCS 领导力阶段，满足要求后取得 HIM Master + CRCS MSc Leadership"],curriculum:["阶段 1：AI Fundamentals、UX、Applied AI、Data Science 与澳门沉浸","阶段 2：AI Product、CSR、Ethics & IP、UX Neuroscience、Trends 与蒙特勒沉浸","阶段 3：线上 Capstone；可选同时进入 Brig 领导力课程，随后完成 CRCS 论文"],agency:["本科 GPA 通常至少 3.0；选拔含线上 case、视频和校长面试","主项目 CHF 38,000 不等于可选双硕士路径完整总价","项目含线上及跨地区学习；中留服用途须按实际学习方式和个人材料核验"]},
+      "foundation": {school:"SEG / SHMS",title:"入学准备课程",tags:["undergrad"],audience:"语言、学历或瑞士学习准备度暂未达到主课要求的学生",duration:"EFP 10 周；IFP 4 周；SHMS 本科预科 AFP 9 或 18 周",campus:"Leysin",intake:"按学生主课与当期校历匹配",language:"EFP 为英语强化；IFP 为学习适应；AFP 18 周入门英语约 IELTS 4.5",fee:"AFP CHF 12,400 / 24,900",feeNote:"分别对应 AFP 9 周／18 周；EFP、IFP 的 2027 完整价格需另核。",lead:"三类课程用途不同：EFP 补英语，IFP 做主课前适应，AFP 用于本科衔接准备。",sell:["EFP：提高英语与学术学习能力","IFP：主课前适应瑞士校园和跨文化环境","AFP：18 周课程适合需要本科衔接准备的学生"],curriculum:["AFP 18 周在 Leysin，通常要求入学时年满 16 岁、IELTS 4.5、个人陈述、简历与面试","具体课程与开学安排按学生最终学校和主课入学季匹配"],agency:["先确认学生需要补英语、补学历条件，还是提前适应海外学习","AFP 是 The Access Foundation Program，不再使用含混的 SHMS Access 称呼","签证所需英语成绩仍以当期官方要求为准"]}
     };
 
     const officialNames={
-      "shms-ba":"Bachelor of Arts in International Hospitality Management｜文学学士",
-      "shms-pgd":"Postgraduate Diploma in International Hotel, Resort & Spa Management｜研究生文凭（非硕士）",
-      "shms-ma":"Master of Arts in International Hospitality Business Management｜文学硕士",
-      "shms-luxury":"Master of Arts in International Hospitality Business Management: Luxury Brand Management｜国际款待业商务管理—奢侈品品牌管理文学硕士",
-      "shms-msc":"Master of Science in International Hospitality Management｜理学硕士",
-      "shms-mas":"Master of Advanced Studies in Business｜高级研修硕士（职业／继续教育路径）",
-      "shms-online":"Master of Arts in Executive Hospitality Management (Online)｜在线文学硕士",
-      "shms-mba":"Master of Business Administration (Global)｜计划项目",
+      "shms-ba":"SHMS Bachelor in International Hospitality Management and chosen specialization + University of Derby Bachelor of Arts (Honours) in International Hospitality Management and chosen specialization｜双授予本科路径",
+      "shms-ma":"SHMS Master in International Hospitality Business Management + University of Derby Master of Arts in International Hospitality Business Management｜双授予文学硕士",
+      "shms-luxury":"SHMS Master in International Hospitality Business Management: Luxury Brand Management + University of Derby Master of Arts in International Hospitality Business Management: Luxury Brand Management｜双授予文学硕士",
+      "shms-msc":"SHMS Master in International Hospitality Management + University of Derby Master of Science in International Hospitality Management｜双授予理学硕士",
+      "shms-mas":"Postgraduate Certificate → Postgraduate Diploma → Master of Advanced Studies｜研究生证书、研究生文凭与高级研修硕士模块化路线",
+      "shms-online":"SHMS Master in Executive Hospitality Management + University of Derby Master of Arts in Executive Hospitality Management｜双授予在线文学硕士",
+      "shms-mba":"University of Derby Master of Business Administration - MBA Global｜全球工商管理硕士",
       "caas-diploma-culinary":"Professional Swiss Diploma in Culinary Arts｜瑞士职业文凭（非本科学位）",
       "caas-diploma-pastry":"Professional Swiss Diploma in Pastry and Chocolate Arts｜瑞士职业文凭（非本科学位）",
-      "caas-ba-culinary":"CAAS Bachelor of International Business in Culinary Arts + University of Derby BA (Hons) in Culinary Arts｜本科授予路径",
-      "caas-ba-pastry":"CAAS Bachelor of International Business in Pastry, Bakery & Chocolate Arts + University of Derby BA (Hons) in Culinary Arts｜本科授予路径",
-      "caas-ma":"Master of Arts in Culinary Business Management｜文学硕士",
-      "crcs-bsc":"Bachelor of Science in Hospitality Business Management｜理学学士",
+      "caas-ba-culinary":"CAAS Bachelor of International Business in Culinary Arts + University of Derby Bachelor of Arts (Honours) in Culinary Arts｜双授予本科路径",
+      "caas-ba-pastry":"CAAS Bachelor of International Business in Pastry, Bakery, and Chocolate Arts + University of Derby Bachelor of Arts (Honours) in Culinary Arts｜双授予本科路径",
+      "caas-ma":"CAAS Master of International Business in Culinary Business Management + University of Derby Master of Arts in Culinary Business Management｜双授予硕士路径",
+      "crcs-bsc":"Bachelor of Science in Hospitality Business Management with specialization｜理学学士",
       "crcs-ai":"Bachelor of Science in Applied AI for Hospitality Business Management｜理学学士",
-      "crcs-msc":"Master of Science in Leadership｜理学硕士",
-      "him-bba":"Bachelor of Business Administration｜工商管理学士",
+      "crcs-msc":"Master of Science in Leadership with specialization｜理学硕士",
+      "him-bba":"Bachelor of Business Administration in chosen major awarded by Northwood University (US)｜工商管理学士",
       "him-ai":"Master in Applied AI in Customer Experience｜HIM Professional Master",
-      "him-dual":"HIM Master + CRCS Master of Science in Leadership｜双硕士申请路径",
-      "foundation":"EFP / IFP / SHMS Access Foundation｜入学准备课程"
+      "foundation":"EFP / IFP / The Access Foundation Program (AFP)｜入学准备课程"
     };
-    const programAliases={"caas-diploma":"caas-diploma-culinary","caas-ba":"caas-ba-culinary"};
+    const programAliases={"caas-diploma":"caas-diploma-culinary","caas-ba":"caas-ba-culinary","shms-pgd":"shms-mas","him-dual":"him-ai"};
     const resolveProgram=id=>programAliases[id]||id;
 
-    const FX_RATE=8.36;
-    const FX_UPDATED="2026-08-11";
-    const standardCampus=["住宿：含在校学期标准房型","餐饮：含在校学期餐食","保险：含在校学期健康险＋责任险；实习期另计"];
+    const catalogSchools=[
+      {code:"SHMS",name:"瑞士酒店管理大学",campus:"Caux · Leysin"},
+      {code:"CAAS",name:"瑞士美食艺术管理大学",campus:"Le Bouveret · Brig"},
+      {code:"CRCS",name:"瑞士恺撒里兹学院",campus:"Brig"},
+      {code:"HIM",name:"瑞士蒙特勒工商管理大学",campus:"Montreux"}
+    ];
+    const catalogLevels=[
+      {key:"bachelor",label:"本科",note:"Bachelor"},
+      {key:"master",label:"硕士",note:"Master"},
+      {key:"other",label:"其他项目",note:"Diploma · Continuing education"}
+    ];
+    const catalogLevelByProgram={
+      "shms-ba":"bachelor",
+      "shms-ma":"master","shms-luxury":"master","shms-msc":"master","shms-online":"master","shms-mba":"master",
+      "shms-mas":"other",
+      "caas-ba-culinary":"bachelor","caas-ba-pastry":"bachelor",
+      "caas-ma":"master",
+      "caas-diploma-culinary":"other","caas-diploma-pastry":"other",
+      "crcs-bsc":"bachelor","crcs-ai":"bachelor",
+      "crcs-msc":"master",
+      "him-bba":"bachelor",
+      "him-ai":"master"
+    };
+
+    const FX_RATE=8.34;
+    const FX_UPDATED="2026-09-04";
+    const shmsCampus=["住宿：含在校学期标准双人房","餐饮：含工作日三餐及周末早午餐、晚餐","保险：含在校学期医疗险＋全球私人民事责任险；实习期另计"];
+    const caasCampus=["住宿：含在校学期标准房型（Le Bouveret 双人房；Brig 豪华单人房）","餐饮：Le Bouveret 含工作日三餐及周末两餐；Brig 含工作日午、晚餐，周末提供厨房","保险：含在校学期医疗险＋全球私人民事责任险；实习期另计"];
+    const crcsCampus=["住宿：含在校学期豪华单人房","餐饮：含工作日午、晚餐；周末提供公共厨房","保险：含在校学期医疗险＋全球私人民事责任险；实习期另计"];
+    const himCampus=["住宿：含在校学期标准双人房","餐饮：含工作日三餐及周末早午餐、晚餐","保险：含在校学期医疗险＋全球私人民事责任险；实习期另计"];
     const feeMeta={
-      "shms-ba":{chf:[186500],coverage:standardCampus},
-      "shms-pgd":{chf:[],coverage:["住宿：2027 价格待确认","餐饮：2027 价格待确认","保险：2027 价格待确认"]},
-      "shms-ma":{chf:[54500,40800],labels:["36 周标准轨","18 周快轨"],coverage:standardCampus},
-      "shms-luxury":{chf:[54500,40800],labels:["36 周标准轨","18 周快轨"],coverage:standardCampus},
-      "shms-msc":{chf:[40800],coverage:standardCampus},
-      "shms-mas":{chf:[43000],coverage:["住宿：含列示在校阶段标准房型","餐饮：含列示在校阶段餐食","保险：含在校学期；可选延住／实习另计"]},
+      "shms-ba":{chf:[186500],coverage:shmsCampus},
+      "shms-ma":{chf:[54100,40800],labels:["36 周标准轨","18 周快轨"],coverage:shmsCampus},
+      "shms-luxury":{chf:[54100,40800],labels:["36 周标准轨","18 周快轨"],coverage:shmsCampus},
+      "shms-msc":{chf:[40800],coverage:shmsCampus},
+      "shms-mas":{chf:[44500],coverage:["住宿：含列示的 Leysin 在校阶段标准房型","餐饮：含列示的 Leysin 在校阶段餐食","保险：含在校学期；可选实习、延住另计"]},
       "shms-online":{chf:[20700],coverage:["住宿：不含；驻留周另计","餐饮：不含","保险：不含"]},
-      "shms-mba":{chf:[49200],coverage:standardCampus},
-      "caas-diploma-culinary":{chf:[20000,40000,60000],labels:["每学期","两学期路径预算","三学期完整路径"],coverage:standardCampus},
-      "caas-diploma-pastry":{chf:[20000,40000,60000],labels:["每学期","两学期路径预算","三学期完整路径"],coverage:standardCampus},
-      "caas-ba-culinary":{chf:[176200],coverage:standardCampus},
-      "caas-ba-pastry":{chf:[176200],coverage:standardCampus},
-      "caas-ma":{chf:[49000],coverage:standardCampus},
-      "crcs-bsc":{chf:[],coverage:["住宿：2027 费用表待发布","餐饮：2027 费用表待发布","保险：2027 费用表待发布"]},
-      "crcs-ai":{chf:[],coverage:["住宿：2027 费用表待发布","餐饮：2027 费用表待发布","保险：2027 费用表待发布"]},
-      "crcs-msc":{chf:[],coverage:["住宿：2027 费用表待发布","餐饮：2027 费用表待发布","保险：2027 费用表待发布"]},
-      "him-bba":{chf:[131800],coverage:standardCampus},
-      "him-ai":{chf:[38000],coverage:["住宿：费用表列示校内阶段标准房型","餐饮：费用表列示校内阶段餐食","保险：含在校学期；线上／跨地阶段按安排"]},
-      "him-dual":{chf:[],coverage:["住宿：双硕士增量待核","餐饮：双硕士增量待核","保险：双硕士增量待核"]},
-      "foundation":{chf:[12400,24900],labels:["Access 9 周","Access 18 周"],coverage:standardCampus}
+      "shms-mba":{chf:[49200],coverage:shmsCampus},
+      "caas-diploma-culinary":{chf:[40000,60000],labels:["职业文凭路径","加读 Grand Diploma"],coverage:caasCampus},
+      "caas-diploma-pastry":{chf:[40000,60000],labels:["职业文凭路径","加读 Grand Diploma"],coverage:caasCampus},
+      "caas-ba-culinary":{chf:[176200],coverage:caasCampus},
+      "caas-ba-pastry":{chf:[176200],coverage:caasCampus},
+      "caas-ma":{chf:[43950],coverage:caasCampus},
+      "crcs-bsc":{chf:[169300],coverage:crcsCampus},
+      "crcs-ai":{chf:[169300],coverage:crcsCampus},
+      "crcs-msc":{chf:[63700],coverage:crcsCampus},
+      "him-bba":{chf:[131800],coverage:himCampus},
+      "him-ai":{chf:[38000],coverage:["住宿：澳门段含标准双人房，蒙特勒段含标准房；线上阶段不含","餐饮：蒙特勒段含餐，澳门段不含餐，线上阶段不含","保险：在校阶段按费表；可选 CRCS 阶段和延住另核"]},
+      "foundation":{chf:[12400,24900],labels:["AFP 9 周","AFP 18 周"],coverage:["住宿：AFP 费表明确列入","餐饮：AFP 费表明确列入","基础设施及服务：AFP 费表明确列入"]}
     };
     const directCases={
       "shms-ba":"SHMS 本科既往案例：University of Derby 文学学士，专业领域为国际酒店管理。",
       "shms-ma":"SHMS 硕士既往案例：University of Derby 文学硕士，专业领域为国际酒店商务管理。",
       "caas-ba-culinary":"CAAS 相关本科既往案例：University of Derby 荣誉文学学士，专业领域为烹饪艺术。",
+      "crcs-bsc":"CRCS 本科既往案例：CRCS 本校授予理学学士学位，专业领域为酒店商务管理，2025 年 1 月获得学位。",
+      "crcs-msc":"CRCS 硕士既往案例：CRCS 本校授予理学硕士学位，专业领域为领导力，2025 年 9 月获得学位。",
       "him-bba":"HIM 本科既往案例：Northwood University 工商管理学士，专业领域为酒店管理。"
     };
     const caseDocuments={
       "caas-ba":{title:"烹饪艺术本科案例",degree:"本科｜烹饪艺术｜University of Derby",image:"case-caas-ba.png"},
-      "crcs-ba":{title:"酒店商务管理本科历史案例",degree:"本科｜酒店商务管理｜Washington State University 历史合作学位",image:"case-crcs-ba.png"},
+      "crcs-bsc":{title:"酒店商务管理理学学士案例",degree:"CRCS 本校授予｜本科｜酒店商务管理｜2025 年 1 月",image:"case-crcs-bsc-2025.jpg"},
+      "crcs-msc":{title:"领导力理学硕士案例",degree:"CRCS 本校授予｜硕士｜领导力｜2025 年 9 月",image:"case-crcs-msc-leadership-2025.jpg"},
       "him-ba":{title:"酒店管理本科案例",degree:"本科｜工商管理学士｜Northwood University",image:"case-him-ba.png"},
       "shms-ba":{title:"国际酒店管理本科案例",degree:"本科｜国际酒店管理｜University of Derby",image:"case-shms-ba.png"},
       "shms-ma":{title:"国际酒店商务管理硕士案例",degree:"硕士｜国际酒店商务管理｜University of Derby",image:"case-shms-ma.png"}
     };
-    const programCaseDocument={"caas-ba-culinary":"caas-ba","him-bba":"him-ba","shms-ba":"shms-ba","shms-ma":"shms-ma"};
+    const programCaseDocument={"caas-ba-culinary":"caas-ba","crcs-bsc":"crcs-bsc","crcs-msc":"crcs-msc","him-bba":"him-ba","shms-ba":"shms-ba","shms-ma":"shms-ma"};
 
     const catalogGrid=document.getElementById('catalogGrid');
+    const catalogEmpty=document.getElementById('catalogEmpty');
     const dialog=document.getElementById('detailDialog');
     const dialogSchool=document.getElementById('dialogSchool');
     const dialogTitle=document.getElementById('dialogTitle');
@@ -474,21 +1022,82 @@
     const caseDialogTitle=document.getElementById('caseDialogTitle');
     const caseDialogImage=document.getElementById('caseDialogImage');
     const caseDialogDegree=document.getElementById('caseDialogDegree');
+    const floatingHome=document.getElementById('floatingHome');
     const toast=document.getElementById('toast');
 
     const escapeHtml=s=>String(s).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
     const rmb=n=>`约 ¥${Math.round(n*FX_RATE/1000)*1000}`.replace(/\B(?=(\d{3})+(?!\d))/g,',');
+    document.querySelectorAll('[data-chf-budget]').forEach(item=>{item.textContent=`人民币预算：${rmb(Number(item.dataset.chfBudget))}`});
+    document.querySelectorAll('[data-chf-saving]').forEach(item=>{item.textContent=`较 2027 全程瑞士完成按费表少：${rmb(Number(item.dataset.chfSaving))}`});
+    document.querySelectorAll('[data-fx-note]').forEach(item=>{item.textContent=`人民币预算按 1 CHF ≈ ¥${FX_RATE.toFixed(2)} 换算（${FX_UPDATED} 更新），仅供参考。`});
     function rmbLine(id){const m=feeMeta[id];if(!m||!m.chf.length)return '<span class="rmb-price">人民币预算：待官方瑞郎价格发布</span>';return `<span class="rmb-price">人民币预算：${m.chf.map((n,i)=>`${m.labels?.[i]?m.labels[i]+' ':''}${rmb(n)}`).join(' ｜ ')}</span>`}
     function coverageLine(id){const m=feeMeta[id];return `<div class="coverage">${(m?.coverage||[]).map(x=>`<span>${escapeHtml(x)}</span>`).join('')}</div>`}
     function caseBlock(id){const copy=directCases[id];const doc=programCaseDocument[id];if(!copy||!doc)return '';return `<div class="detail-block"><h3>中留服既往案例</h3><div class="case-panel"><span class="case-label">CSCSE · 与本项目层级对应</span><p><strong>对应案例：</strong>${escapeHtml(copy)} 既往个案不代表未来自动通过，最终以申请时的证书、学习方式、个人材料及中留服审核为准。</p><button class="case-open" data-case="${doc}">查看对应认证书</button></div></div>`}
-    function showCase(id){const c=caseDocuments[id];if(!c)return;caseDialogTitle.textContent=c.title;caseDialogDegree.textContent=c.degree;caseDialogImage.src=c.image;caseDialogImage.alt=`${c.title}中留服认证书（已打码）`;if(!caseDialog.open)caseDialog.showModal()}
+    function showCase(id){const c=caseDocuments[id];if(!c)return;caseDialogTitle.textContent=c.title;caseDialogDegree.textContent=c.degree;caseDialogImage.src=c.image;caseDialogImage.alt=`${c.title}中留服认证书（已打码）`;if(!caseDialog.open)caseDialog.showModal();refreshFloatingHome()}
+    function catalogBadges(id,p){
+      const labels=[];
+      if(p.tags.includes('ai'))labels.push('AI');
+      if(id==='shms-online')labels.push('在线／在职');
+      if(id==='shms-mas')labels.push('模块化');
+      if(id.startsWith('caas-diploma-'))labels.push('非学位');
+      if(id==='him-ai')labels.push('混合学习');
+      return labels.map(label=>`<span class="catalog-card-badge">${escapeHtml(label)}</span>`).join('');
+    }
     function renderCatalog(){
-      catalogGrid.innerHTML=Object.entries(programs).filter(([id])=>id!=='foundation').map(([id,p])=>`<article class="catalog-card" data-school="${escapeHtml(p.school)}" data-tags="${p.tags.join(' ')}"><div class="catalog-top"><span>${escapeHtml(p.school)}</span><span>${p.tags.includes('ai')?'AI 方向':'2027'}</span></div><h3>${escapeHtml(p.title)}</h3><p>${escapeHtml(p.lead)}</p><div class="catalog-bottom"><div class="price"><small>2027 学费</small>${escapeHtml(p.fee)}${rmbLine(id)}</div><button class="open-detail" data-program="${id}">课程详情</button></div></article>`).join('');
+      const entries=Object.entries(programs).filter(([id])=>id!=='foundation');
+      const mobile=window.matchMedia('(max-width:760px)').matches;
+      catalogGrid.innerHTML=catalogSchools.map((school,schoolIndex)=>{
+        const schoolEntries=entries.filter(([,p])=>p.school===school.code);
+        const rows=catalogLevels.map(level=>{
+          const rowEntries=schoolEntries.filter(([id])=>(catalogLevelByProgram[id]||'other')===level.key);
+          if(!rowEntries.length)return '';
+          const cards=rowEntries.map(([id,p])=>`<article class="catalog-card" data-school="${escapeHtml(p.school)}" data-level="${level.key}" data-tags="${p.tags.join(' ')}"><button class="catalog-card-link" type="button" data-program="${id}" aria-label="查看${escapeHtml(p.title)}详情"><span class="catalog-card-head"><span class="catalog-card-title">${escapeHtml(p.title)}</span><span class="catalog-card-arrow" aria-hidden="true">↗</span></span><span class="catalog-card-meta">${escapeHtml(p.duration)}</span><span class="catalog-card-foot"><span class="catalog-card-price">${escapeHtml(p.fee)}</span><span class="catalog-card-badges">${catalogBadges(id,p)}</span></span></button></article>`).join('');
+          const trackClass=rowEntries.length===1?'is-single':'';
+          return `<div class="catalog-degree-row" data-catalog-level="${level.key}"><div class="catalog-row-label"><strong>${level.label}</strong><span>${rowEntries.length} 个项目</span></div><div class="catalog-row-track ${trackClass}" style="--course-count:${rowEntries.length}">${cards}</div></div>`;
+        }).join('');
+        const open=!mobile||schoolIndex===0?' open':'';
+        return `<details class="catalog-school" data-school-group="${school.code}"${open}><summary><span class="catalog-school-code">${school.code}</span><span class="catalog-school-name"><strong>${school.name}</strong><span>${school.campus}</span></span><span class="catalog-school-status"><span>${schoolEntries.length} 个项目</span><i class="catalog-school-toggle" aria-hidden="true"></i></span></summary><div class="catalog-school-body">${rows}</div></details>`;
+      }).join('');
+      applyCatalogFilter(activeCatalogFilter);
+    }
+    let catalogRendered=false;
+    function ensureCatalogRendered(){if(catalogRendered)return;renderCatalog();catalogRendered=true}
+    let activeCatalogFilter='all';
+    function applyCatalogFilter(filter){
+      activeCatalogFilter=filter;
+      let visibleCount=0;
+      const mobile=window.matchMedia('(max-width:760px)').matches;
+      catalogGrid.querySelectorAll('.catalog-school').forEach((school,schoolIndex)=>{
+        let schoolMatches=0;
+        school.querySelectorAll('.catalog-degree-row').forEach(row=>{
+          const cards=[...row.querySelectorAll('.catalog-card')];
+          const empty=row.querySelector('.catalog-row-empty');
+          let rowMatches=0;
+          cards.forEach(card=>{
+            const matches=filter==='all'||card.dataset.tags.split(' ').includes(filter);
+            card.hidden=!matches;
+            if(matches){rowMatches+=1;visibleCount+=1}
+          });
+          if(empty)empty.hidden=filter!=='all';
+          row.hidden=filter!=='all'&&rowMatches===0;
+          schoolMatches+=rowMatches;
+        });
+        school.hidden=filter!=='all'&&schoolMatches===0;
+        if(filter==='all')school.open=!mobile||schoolIndex===0;
+        else if(schoolMatches>0)school.open=true;
+      });
+      catalogEmpty.hidden=visibleCount>0;
     }
     function list(items){return `<ul>${items.map(x=>`<li>${escapeHtml(x)}</li>`).join('')}</ul>`}
+    const BASE_TITLE=document.title;
+    const viewTitles={catalog:"项目与 2027 费用",admissions:"录取要求",selling:"四校定位",campus:"校区与住宿",alumni:"校友案例",cases:"中留服案例",calendar:"四校 2027 日历",preparation:"入学准备与中国校区项目",swissPrep:"瑞士本部入学准备课程",chinaCampus:"中国校区项目"};
+    let programReturnHash='#matrix';
     function showProgram(rawId,pushHash=true){
       const id=resolveProgram(rawId);
       const p=programs[id]; if(!p)return;
+      const feeBoundary=id==='foundation'
+        ? `换算汇率：1 CHF ≈ ¥${FX_RATE.toFixed(2)}（${FX_UPDATED} 更新）。人民币仅供预算，实际付款以 CHF、学校 Invoice 及银行结算为准。AFP 另缴 CHF 2,000 保证金；EFP 和 IFP 的当期费用需再核对官方文件。`
+        : `换算汇率：1 CHF ≈ ¥${FX_RATE.toFixed(2)}（${FX_UPDATED} 更新）。人民币仅供预算，实际付款以 CHF、学校 Invoice 及银行结算为准。校内项目通常另缴 CHF 2,000 保证金；实习期及假期住宿、餐饮、保险另计。符合“开学前至少 90 天全额付款”等条件时，指定学费、标准住宿与餐饮项目可享 2% 早鸟优惠，最终以 Invoice 为准。`;
       dialogSchool.textContent=p.school;
       dialogTitle.textContent=p.title;
       dialogContent.innerHTML=`
@@ -496,10 +1105,11 @@
         <div class="detail-meta"><div class="meta"><span>适合人群</span><strong>${escapeHtml(p.audience)}</strong></div><div class="meta"><span>学制</span><strong>${escapeHtml(p.duration)}</strong></div><div class="meta"><span>地点</span><strong>${escapeHtml(p.campus)}</strong></div><div class="meta"><span>2027 开学</span><strong>${escapeHtml(p.intake)}</strong></div></div>
         <div class="detail-lead">${escapeHtml(p.lead)}</div>
         <div class="detail-grid"><div class="detail-block"><h3>项目特点</h3>${list(p.sell)}</div><div class="detail-block"><h3>课程与实践安排</h3>${list(p.curriculum)}</div><div class="detail-block"><h3>授课与语言</h3><p>${escapeHtml(p.language)}</p></div>${caseBlock(id)}</div>
-        <div class="fee-box"><div class="fee-main"><span>2027 学费／预算口径</span><strong>${escapeHtml(p.fee)}</strong>${rmbLine(id)}${coverageLine(id)}</div><div class="fee-note">${escapeHtml(p.feeNote)}<div class="fee-disclaimer">换算汇率：1 CHF ≈ ¥${FX_RATE.toFixed(2)}（${FX_UPDATED} 更新）。人民币仅供预算，实际付款以 CHF、学校 Invoice 及银行结算为准。校内项目另付 CHF 2,000 security deposit；实习期住宿、餐饮及保险按项目与所在地另计。</div></div></div>
+        <div class="fee-box"><div class="fee-main"><span>2027 学费／预算口径</span><strong>${escapeHtml(p.fee)}</strong>${rmbLine(id)}${coverageLine(id)}</div><div class="fee-note">${escapeHtml(p.feeNote)}<div class="fee-disclaimer">${feeBoundary}</div></div></div>
         <div class="dialog-actions"><button class="action" id="copyLink">复制本项目链接</button><span class="fee-disclaimer">项目咨询统一联系 Lucinda；本导航不设置四校官网外跳入口。</span></div>`;
-      if(pushHash)history.replaceState(null,'',`#program/${id}`);
+      if(pushHash){programReturnHash=location.hash&&!location.hash.startsWith('#program/')?location.hash:'#matrix';history.replaceState(null,'',`#program/${id}`)}
       if(!dialog.open)dialog.showModal();
+      refreshFloatingHome();
       document.getElementById('copyLink').addEventListener('click',()=>copyProgramLink(id));
     }
     async function copyProgramLink(id){
@@ -512,11 +1122,73 @@
     document.getElementById('closeCaseDialog').addEventListener('click',()=>caseDialog.close());
     dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});
     caseDialog.addEventListener('click',e=>{if(e.target===caseDialog)caseDialog.close()});
-    dialog.addEventListener('close',()=>{if(location.hash.startsWith('#program/'))history.replaceState(null,'',location.pathname+location.search)});
-    document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');const f=b.dataset.filter;document.querySelectorAll('.catalog-card').forEach(c=>c.hidden=f!=='all'&&!c.dataset.tags.split(' ').includes(f))}));
-    renderCatalog();
-    window.addEventListener('hashchange',()=>{const next=location.hash.match(/^#program\/(.+)$/);if(next)showProgram(next[1],false)});
+    caseDialog.addEventListener('close',()=>{caseDialogImage.removeAttribute('src');refreshFloatingHome()});
+    dialog.addEventListener('close',()=>{if(location.hash.startsWith('#program/'))history.replaceState(null,'',programReturnHash);refreshFloatingHome()});
+    document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');ensureCatalogRendered();applyCatalogFilter(b.dataset.filter)}));
+    const lazyMediaSections=[...document.querySelectorAll('.lazy-media-section')];
+    const secondarySections=[...document.querySelectorAll('.secondary-section')];
+    const prepPanels=[...document.querySelectorAll('#preparation .prep-panel')];
+    function loadDisclosureImages(panel){panel.querySelectorAll('img[data-src]').forEach(img=>{if(!img.getAttribute('src'))img.src=img.dataset.src})}
+    function unloadDisclosureImages(panel){panel.querySelectorAll('img[data-src]').forEach(img=>img.removeAttribute('src'))}
+    function hideSecondarySections(){
+      secondarySections.forEach(section=>section.hidden=true);
+      lazyMediaSections.forEach(unloadDisclosureImages);
+      prepPanels.forEach(panel=>panel.hidden=false);
+      document.body.classList.remove('secondary-view');
+      document.querySelectorAll('[data-reveal]').forEach(link=>link.setAttribute('aria-expanded','false'));
+    }
+    function refreshFloatingHome(){
+      const modalHost=caseDialog.open?caseDialog:dialog.open?dialog:null;
+      const hasSecondary=secondarySections.some(section=>!section.hidden);
+      if(modalHost&&floatingHome.parentElement!==modalHost)modalHost.appendChild(floatingHome);
+      if(!modalHost&&floatingHome.parentElement!==document.body)document.body.appendChild(floatingHome);
+      floatingHome.hidden=!modalHost&&!hasSecondary;
+    }
+    function goHome(){
+      if(caseDialog.open)caseDialog.close();
+      if(dialog.open)dialog.close();
+      hideSecondarySections();
+      history.replaceState(null,'','#matrix');
+      document.title=BASE_TITLE;
+      refreshFloatingHome();
+      document.getElementById('matrix').scrollIntoView({behavior:'auto',block:'start'});
+    }
+    function revealSecondary(sectionId,targetId=sectionId,openDetails=false,updateHash=true){
+      const section=document.getElementById(sectionId);
+      const target=document.getElementById(targetId)||section;
+      if(!section||!target)return;
+      hideSecondarySections();
+      if(sectionId==='catalog')ensureCatalogRendered();
+      if(sectionId==='preparation'&&(targetId==='swissPrep'||targetId==='chinaCampus'))prepPanels.forEach(panel=>panel.hidden=panel.id!==targetId);
+      section.hidden=false;
+      document.body.classList.add('secondary-view');
+      if(section.classList.contains('lazy-media-section'))loadDisclosureImages(sectionId==='preparation'?target:section);
+      const active=document.querySelector(`[data-reveal="${sectionId}"][data-target="${targetId}"]`);
+      if(active)active.setAttribute('aria-expanded','true');
+      if(updateHash)history.replaceState(null,'',`#${targetId}`);
+      document.title=`${viewTitles[targetId]||viewTitles[sectionId]||'SEG 2027 产品导航'}｜Lucinda Lu`;
+      refreshFloatingHome();
+      requestAnimationFrame(()=>target.scrollIntoView({behavior:'auto',block:'start'}));
+    }
+    document.querySelectorAll('[data-reveal]').forEach(link=>link.addEventListener('click',event=>{
+      event.preventDefault();
+      revealSecondary(link.dataset.reveal,link.dataset.target||link.dataset.reveal,link.hasAttribute('data-open-details'));
+    }));
+    document.querySelectorAll('[data-collapse]').forEach(control=>control.addEventListener('click',event=>{
+      event.preventDefault();
+      goHome();
+    }));
+    floatingHome.addEventListener('click',goHome);
+    function revealFromHash(){
+      const id=location.hash.slice(1);
+      if(!id||id==='matrix'){hideSecondarySections();document.title=BASE_TITLE;refreshFloatingHome();return}
+      if(id==='catalog'||id==='admissions'||id==='selling'||id==='campus'||id==='alumni'||id==='cases'||id==='calendar'||id==='preparation')revealSecondary(id,id,false,false);
+      if(id==='swissPrep'||id==='chinaCampus')revealSecondary('preparation',id,false,false);
+    }
+    window.addEventListener('hashchange',()=>{const next=location.hash.match(/^#program\/(.+)$/);if(next)showProgram(next[1],false);else revealFromHash()});
     const match=location.hash.match(/^#program\/(.+)$/);if(match)showProgram(match[1],false);
+    else revealFromHash();
+    refreshFloatingHome();
   </script>
 </body>
 </html>
