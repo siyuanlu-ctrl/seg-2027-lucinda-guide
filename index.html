@@ -256,20 +256,25 @@
       .media-disclosure[open]>.media-summary{margin-bottom:12px}
       .media-disclosure .campus-gallery{margin-top:0}.media-disclosure .campus-note{padding-bottom:14px}.media-disclosure .alumni-head{margin:8px 0 20px}.media-disclosure .alumni-source{padding-bottom:14px}
     }
-    /* Matrix-first home: the product table is the only primary-page content. */
+    /* Business-card home: contact first, detailed content stays behind the navigation. */
     html{scroll-behavior:auto}
     .topbar{height:78px;overflow:visible;background:#fff;border-top:5px solid var(--red);box-shadow:0 5px 18px rgba(65,12,12,.07);backdrop-filter:none}
-    .matrix-home{padding:30px 0 52px;background:#fff}
+    .matrix-home{min-height:calc(100dvh - 78px);padding:34px 0 58px;background:#fff}
+    .matrix-home>.container{display:flex;align-items:flex-start;justify-content:center}
     .matrix-home,.secondary-section,.media-disclosure{scroll-margin-top:90px}
-    .matrix-home .identity-card{width:100%;margin:0 0 18px;padding:18px 20px;grid-template-columns:minmax(300px,1.15fr) minmax(210px,.65fr) minmax(320px,.9fr);gap:20px}
+    .matrix-home .identity-card{width:min(100%,1280px);margin:0;padding:26px 28px;grid-template-columns:minmax(300px,1.15fr) minmax(190px,.65fr) minmax(300px,.95fr) 178px;gap:24px;box-shadow:0 18px 46px rgba(65,12,12,.1)}
     .matrix-home .identity-card::after{font-size:42px;bottom:-15px}
     .matrix-home .identity-photo{width:72px;height:92px}
     .matrix-home .identity-name{font-size:24px}
     .matrix-home .identity-org{padding-left:20px}
     .matrix-home .identity-org img{width:132px}
-    .matrix-home .identity-contact{grid-template-columns:1fr 1fr;gap:6px}
+    .matrix-home .identity-contact{grid-template-columns:1fr 1fr;gap:6px;align-content:center}
     .matrix-home .identity-contact .contact-link.primary,.matrix-home .identity-contact .contact-email,.matrix-home .identity-contact .contact-line{grid-column:1/-1}
     .matrix-home .identity-contact .contact-link{min-height:36px}
+    .wechat-contact{position:relative;z-index:1;margin:0;padding-left:22px;border-left:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px}
+    .wechat-contact[hidden]{display:none!important}
+    .matrix-home .contact-qr{grid-column:auto;width:152px;height:auto;margin:0;padding:5px;border:1px solid var(--line);background:#fff}
+    .wechat-contact figcaption{max-width:160px;color:var(--navy);font-size:11px;font-weight:750;line-height:1.5;text-align:center}
     .topbar .explore-nav{width:min(calc(100% - 48px),var(--max));height:73px;margin:0 auto;display:grid;grid-template-columns:210px minmax(0,1fr);border:1px solid var(--line);border-top:0;background:#fff}
     .explore-nav-title{margin:0;padding:0 18px;background:#4b0909;color:#fff;display:flex;align-items:center;text-decoration:none;font-size:13px;font-weight:850;line-height:1.35}
     .explore-links{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));background:var(--line);gap:1px;min-width:0}
@@ -279,11 +284,13 @@
     .explore-link[aria-expanded="true"]{box-shadow:inset 0 -4px 0 var(--red);color:var(--red)}
     .secondary-section[hidden]{display:none!important}
     .secondary-section{scroll-margin-top:86px}
-    body.secondary-view .matrix-home{padding-bottom:0}
+    body.secondary-view .matrix-home{min-height:0;padding:20px 0 0}
+    body.secondary-view .matrix-home>.container{justify-content:stretch}
     body.secondary-view .matrix-home .matrix-shell,
     body.secondary-view .matrix-home .matrix-hint,
     body.secondary-view .matrix-home .fee-rate{display:none}
-    body.secondary-view .matrix-home .identity-card{margin-bottom:0}
+    body.secondary-view .matrix-home .identity-card{width:100%;margin:0;padding:16px 20px;grid-template-columns:minmax(280px,1.15fr) minmax(180px,.65fr) minmax(300px,.9fr);gap:18px;box-shadow:0 10px 28px rgba(65,12,12,.07)}
+    body.secondary-view .wechat-contact{display:none!important}
     body.secondary-view .secondary-section{padding-top:62px}
     .section-close{margin:0 0 28px;padding:10px 14px;border:1px solid currentColor;background:transparent;color:inherit;font-size:12px;font-weight:800}
     .finder .section-close,.agency .section-close,.preparation .section-close,.calendar .section-close{color:var(--navy)}
@@ -413,11 +420,18 @@
     .catalog-card-badge{padding:3px 5px;border:1px solid #d9c7c4;color:var(--red);font-size:8.5px;font-weight:850;letter-spacing:.04em;white-space:nowrap}
     .catalog-row-empty{min-height:84px;margin:0;padding:20px;display:flex;align-items:center;color:var(--muted);font-size:12px;line-height:1.6}
     .catalog-empty{margin:24px 0 0;padding:22px;border-left:5px solid var(--red);background:#fff;color:var(--navy);font-weight:750}
-    @media(max-width:1050px){
+    .catalog-support-entries{margin-top:28px}
+    body:not(.secondary-view)>footer{display:none}
+    @media(max-width:1120px){
       .topbar .explore-nav{grid-template-columns:158px minmax(0,1fr)}
       .explore-nav-title{padding-inline:12px;font-size:11px}
       .explore-link{padding-inline:7px;font-size:10.5px}
       .explore-link small{display:none}
+      .matrix-home .identity-card{grid-template-columns:1fr 1fr}
+      .matrix-home .identity-contact{grid-column:1}
+      .matrix-home .wechat-contact{grid-column:2}
+      body.secondary-view .matrix-home .identity-card{grid-template-columns:1fr 1fr}
+      body.secondary-view .matrix-home .identity-contact{grid-column:1/-1}
       .catalog-school>summary{grid-template-columns:76px minmax(0,1fr) auto}
       .catalog-degree-row{grid-template-columns:112px minmax(0,1fr)}
     }
@@ -430,10 +444,11 @@
       .explore-link:last-child{grid-column:1/-1}
       .explore-link{min-height:0;padding:5px 9px;align-items:center;text-align:center;font-size:11.5px;line-height:1.1}
       .explore-link small{display:none}
-      .matrix-home{padding:14px 0 34px}
-      body.secondary-view .matrix-home{padding-bottom:0}
+      .matrix-home{min-height:calc(100dvh - 158px);padding:14px 0 34px}
+      body.secondary-view .matrix-home{min-height:0;padding:14px 0 0}
       .matrix-home,.secondary-section,.media-disclosure{scroll-margin-top:166px}
       .matrix-home .identity-card{width:100%;margin:0 0 14px;padding:14px;grid-template-columns:1fr;gap:12px}
+      body.secondary-view .matrix-home .identity-card{grid-template-columns:1fr;margin-bottom:0}
       .matrix-home .identity-main{gap:13px}
       .matrix-home .identity-photo{width:72px;height:92px}
       .matrix-home .identity-name{font-size:21px}
@@ -445,7 +460,9 @@
       .matrix-home .identity-contact .contact-link{min-height:38px;padding-inline:8px;font-size:10.5px}
       .matrix-home .identity-contact .contact-email{padding:7px 9px;text-align:left;white-space:normal;overflow-wrap:anywhere}
       .matrix-home .identity-contact .contact-line{text-align:left;font-size:9.5px}
-      .matrix-home .identity-contact .contact-qr{width:min(100%,210px)}
+      .matrix-home .wechat-contact{grid-column:1;padding:12px 0 0;border-left:0;border-top:1px solid var(--line)}
+      .matrix-home .contact-qr{width:138px;padding:4px}
+      .wechat-contact figcaption{max-width:230px;font-size:11.5px}
       .matrix-shell{box-shadow:0 12px 30px rgba(65,12,12,.09)}
       .matrix-hint{font-size:10.5px}.fee-rate{padding:14px 15px}
       .secondary-section{padding:56px 0}
@@ -510,7 +527,7 @@
   </style>
 </head>
 <body>
-  <a class="skip-link" href="#matrix">跳到项目总览</a>
+  <a class="skip-link" href="#matrix">跳到个人名片</a>
   <div class="watermark" aria-hidden="true">LUCINDA · SEG PRODUCT GUIDE</div>
   <header class="topbar">
     <nav class="explore-nav" aria-label="SEG 四校快速导航">
@@ -533,43 +550,9 @@
         <aside class="identity-card" id="contact" aria-label="Lucinda SEG 联系信息">
           <div class="identity-main"><img class="identity-photo" src="lucinda-lu-web.jpg" width="420" height="376" alt="Lucinda Lu 陆思远" decoding="async"><div><span class="identity-kicker">YOUR SEG CONTACT · PERSONAL GUIDE</span><strong class="identity-name">Lucinda Lu｜陆思远</strong><span class="identity-role">SEG 招生官｜SEG Recruitment Officer</span></div></div>
           <div class="identity-org"><img src="seg-dark.png" width="145" height="145" alt="Swiss Education Group"><span>Swiss Education Group · China Office</span></div>
-          <div class="identity-contact"><a class="contact-link primary" href="https://www.swisseducation.com.cn/namecard/discovery-our-program-greeting-from-swiss-education-group-lucinda/" target="_blank" rel="noopener noreferrer nofollow">查看 SEG 官网个人名片</a><span class="contact-email">邮箱：lucindalu@swisseducation.com.cn</span><a class="contact-link" href="tel:+8619117284880">电话：19117284880</a><a class="contact-link" href="lucinda-seg.vcf" download="Lucinda-Lu-SEG.vcf">保存名片</a><img class="contact-qr" src="lucinda-wechat-qr.png" width="306" height="314" alt="Lucinda SEG 微信二维码" loading="lazy" decoding="async"></div>
+          <div class="identity-contact"><a class="contact-link primary" href="https://www.swisseducation.com.cn/namecard/discovery-our-program-greeting-from-swiss-education-group-lucinda/" target="_blank" rel="noopener noreferrer nofollow">查看 SEG 官网个人名片</a><span class="contact-email">邮箱：lucindalu@swisseducation.com.cn</span><a class="contact-link" href="tel:+8619117284880">电话：19117284880</a><a class="contact-link" href="lucinda-seg.vcf" download="Lucinda-Lu-SEG.vcf">保存名片</a></div>
+          <figure class="wechat-contact" aria-label="微信咨询"><img class="contact-qr" data-src="lucinda-wechat-qr.png" width="306" height="314" alt="Lucinda SEG 微信二维码" loading="lazy" decoding="async"><figcaption>有任何问题，欢迎扫码添加微信咨询。</figcaption></figure>
         </aside>
-
-        <div class="matrix-shell" aria-label="SEG 2027 四校项目导航">
-          <div class="matrix">
-            <div class="corner">先看当前阶段，再点项目看详情</div>
-            <div class="school-head"><div><img loading="lazy" decoding="async" src="shms-dark.png" alt="SHMS 瑞士酒店管理大学"><strong>SHMS</strong><span class="school-cn">瑞士酒店管理大学</span><span>Swiss Hotel Management School</span><span class="school-rank">2024 QS 酒店与休闲管理：全球第 2</span></div></div>
-            <div class="school-head"><div><img loading="lazy" decoding="async" src="caas-dark.png" alt="CAAS 瑞士美食艺术管理大学"><strong>CAAS</strong><span class="school-cn">瑞士美食艺术管理大学</span><span>Culinary Arts Academy Switzerland</span><span class="school-rank">2024 QS 酒店与休闲管理：全球第 7</span></div></div>
-            <div class="school-head"><div><img loading="lazy" decoding="async" src="crcs-logo.svg" alt="CRCS 瑞士恺撒里兹学院"><strong>CRCS</strong><span class="school-cn">瑞士恺撒里兹学院</span><span>César Ritz Colleges Switzerland</span><span class="school-rank">2024 QS 酒店与休闲管理：全球第 3</span></div></div>
-            <div class="school-head"><div><img loading="lazy" decoding="async" src="him-dark.png" alt="HIM 瑞士蒙特勒工商管理大学"><strong>HIM</strong><span class="school-cn">瑞士蒙特勒工商管理大学</span><span>HIM Business School</span><span class="school-rank">2024 QS 酒店与休闲管理：全球第 6</span></div></div>
-
-            <div class="audience">高中毕业／<br>预科学生</div>
-            <div class="matrix-cell" data-school="SHMS｜瑞士酒店管理大学"><button class="program-link" data-program="shms-ba">国际款待业管理本科<small>可先完成瑞士高等职业教育文凭，再衔接本科</small></button></div>
-            <div class="matrix-cell" data-school="CAAS｜瑞士美食艺术管理大学"><button class="program-link" data-program="caas-ba-culinary">烹饪艺术本科（BA）<small>厨房实训与餐饮经营</small></button><button class="program-link" data-program="caas-ba-pastry">甜点、烘焙及巧克力艺术本科（BA）<small>约 1,100 小时厨房实践</small></button></div>
-            <div class="matrix-cell" data-school="CRCS｜瑞士恺撒里兹学院"><button class="program-link" data-program="crcs-bsc">款待业商务管理本科（BSc）<small>四年制｜第 1 学年为行业沉浸学年</small></button><button class="program-link" data-program="crcs-ai">AI 与款待业商务管理本科（BSc）<small>AI 商业应用｜首届 2027 年 10 月</small></button></div>
-            <div class="matrix-cell" data-school="HIM｜瑞士蒙特勒工商管理大学"><button class="program-link" data-program="him-bba">工商管理本科（BBA）<small>3 年｜英文主轨，另设中英／法英过渡路径｜3 次实习</small></button></div>
-
-            <div class="audience">本科毕业／<br>转专业申请</div>
-            <div class="matrix-cell" data-school="SHMS｜瑞士酒店管理大学"><button class="program-link" data-program="shms-ma">国际款待业商务管理文学硕士（MA）<small>标准轨或快轨｜可选实习</small></button><button class="program-link" data-program="shms-luxury">奢侈品品牌管理文学硕士（MA）<small>奢侈品价值、品牌与消费者体验</small></button><button class="program-link" data-program="shms-msc">国际款待业管理理学硕士（MSc）<small>战略、风险、数据与技术</small></button><button class="program-link" data-program="shms-mas">证书、文凭与高级研修硕士路线<small>PGC → PGD → MAS｜3 个职业方向</small></button></div>
-            <div class="matrix-cell" data-school="CAAS｜瑞士美食艺术管理大学"><button class="program-link" data-program="caas-ma">美食商务管理文学硕士（MA）<small>食品创新、餐饮创业与商业项目</small></button></div>
-            <div class="matrix-cell" data-school="CRCS｜瑞士恺撒里兹学院"><button class="program-link" data-program="crcs-msc">领导力理学硕士（MSc）<small>15 个月｜3 个专业方向</small></button></div>
-            <div class="matrix-cell" data-school="HIM｜瑞士蒙特勒工商管理大学"><button class="program-link" data-program="him-ai">AI 与客户体验硕士<small>1 年｜线上 + 澳门 + 蒙特勒｜可选 CRCS 阶段</small></button></div>
-
-            <div class="audience">在职进修／<br>继续深造</div>
-            <div class="matrix-cell" data-school="SHMS｜瑞士酒店管理大学"><button class="program-link" data-program="shms-online">在职款待业管理在线文学硕士（MA）<small>6 个模块｜约 1.5 至 2 年或更久</small></button><button class="program-link" data-program="shms-mba">全球工商管理硕士（MBA Global）<small>12 个月｜3 个在校阶段 + 毕业项目</small></button></div>
-            <div class="matrix-cell" data-school="CAAS｜瑞士美食艺术管理大学"><button class="program-link" data-program="caas-diploma-culinary">瑞士烹饪艺术职业文凭<small>短期技能进阶｜非本科学位</small></button><button class="program-link" data-program="caas-diploma-pastry">瑞士甜点艺术职业文凭<small>短期技能进阶｜非本科学位</small></button></div>
-            <div class="matrix-cell" data-school="CRCS｜瑞士恺撒里兹学院"></div>
-            <div class="matrix-cell" data-school="HIM｜瑞士蒙特勒工商管理大学"></div>
-          </div>
-          <div class="entry-strip" aria-label="入学准备与中国校区项目">
-            <button type="button" data-reveal="preparation" data-target="swissPrep" aria-expanded="false">瑞士本部入学准备课程<small>EFP、IFP、AFP 用途与费用</small></button>
-            <button type="button" data-reveal="preparation" data-target="chinaCampus" aria-expanded="false">中国校区项目<small>2026 班型、学制、费用与赴瑞衔接</small></button>
-          </div>
-        </div>
-        <div class="matrix-hint"><span><strong>使用提示：</strong>先按当前学历和学习目标找到合适项目，再点击查看学制、课程、实习和费用。</span><span>项目设置、学费、开学时间与录取要求以当期官网、Offer 和 Invoice 为准。</span></div>
-        <div class="matrix-hint"><span><strong>名称说明：</strong>矩阵使用便于理解的中文简称；正式英文项目名、学位类型及授予信息请点击项目详情查看。</span></div>
-        <div class="fee-rate"><strong>本周预算汇率：1 CHF ≈ ¥8.34</strong><span>更新于 2026-09-04｜按中国银行瑞郎现汇卖出价取整<br>人民币仅供预算；正式付款币种为 CHF，银行手续费另计</span></div>
       </div>
     </section>
 
@@ -718,7 +701,7 @@
           </details>
         </div>
 
-        <div class="admission-boundary"><strong>最终判断：</strong>达到最低条件不等于获得录取。学校会结合完整学历、成绩、英语、工作经历、面试及补充材料综合审核。若不确定自己的学历或语言如何对应，可扫描页面上方 Lucinda 微信二维码核对材料。</div>
+        <div class="admission-boundary"><strong>最终判断：</strong>达到最低条件不等于获得录取。学校会结合完整学历、成绩、英语、工作经历、面试及补充材料综合审核。如需核对材料，请通过页面上方电话、邮箱或微信联系 Lucinda。</div>
         <p class="calendar-source">资料来源：《SEG Admission Requirements 2025》；《2027 SHMS 中文折页＋课程》与《2027 HIM 中文折页＋课程》仅用于补充两项新增项目。</p>
       </div>
     </section>
@@ -855,7 +838,7 @@
 
     <section class="finder secondary-section" id="catalog" hidden>
       <div class="container">
-        <div class="section-head"><h2>课程详情</h2><p>先用下方关键词筛选，再按学校查看。每所学校依次分为本科、硕士和其他项目，点击项目即可查看学制、课程、实习和费用。</p></div>
+        <div class="section-head"><h2>四校项目与 2027 费用</h2><p>先选学校，再看本科、硕士和其他项目。点击具体项目，可查看学制、课程、实习和 2027 费用。</p></div>
         <button class="section-close" type="button" data-collapse>返回主页</button>
         <div class="filters" role="group" aria-label="筛选项目">
           <button class="filter" aria-pressed="true" data-filter="all">全部</button>
@@ -866,6 +849,10 @@
         </div>
         <div class="catalog" id="catalogGrid"></div>
         <div class="catalog-empty" id="catalogEmpty" hidden>暂未找到匹配项目，请切换其他筛选条件。</div>
+        <div class="entry-strip catalog-support-entries" aria-label="入学准备与中国校区项目">
+          <button type="button" data-reveal="preparation" data-target="swissPrep" aria-expanded="false">瑞士本部入学准备课程<small>EFP、IFP、AFP 用途与费用</small></button>
+          <button type="button" data-reveal="preparation" data-target="chinaCampus" aria-expanded="false">中国校区项目<small>2026 班型、学制、费用与赴瑞衔接</small></button>
+        </div>
       </div>
     </section>
 
@@ -1024,6 +1011,8 @@
     const caseDialogDegree=document.getElementById('caseDialogDegree');
     const floatingHome=document.getElementById('floatingHome');
     const toast=document.getElementById('toast');
+    const wechatContact=document.querySelector('.wechat-contact');
+    const contactQr=document.querySelector('.contact-qr[data-src]');
 
     const escapeHtml=s=>String(s).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
     const rmb=n=>`约 ¥${Math.round(n*FX_RATE/1000)*1000}`.replace(/\B(?=(\d{3})+(?!\d))/g,',');
@@ -1033,7 +1022,7 @@
     function rmbLine(id){const m=feeMeta[id];if(!m||!m.chf.length)return '<span class="rmb-price">人民币预算：待官方瑞郎价格发布</span>';return `<span class="rmb-price">人民币预算：${m.chf.map((n,i)=>`${m.labels?.[i]?m.labels[i]+' ':''}${rmb(n)}`).join(' ｜ ')}</span>`}
     function coverageLine(id){const m=feeMeta[id];return `<div class="coverage">${(m?.coverage||[]).map(x=>`<span>${escapeHtml(x)}</span>`).join('')}</div>`}
     function caseBlock(id){const copy=directCases[id];const doc=programCaseDocument[id];if(!copy||!doc)return '';return `<div class="detail-block"><h3>中留服既往案例</h3><div class="case-panel"><span class="case-label">CSCSE · 与本项目层级对应</span><p><strong>对应案例：</strong>${escapeHtml(copy)} 既往个案不代表未来自动通过，最终以申请时的证书、学习方式、个人材料及中留服审核为准。</p><button class="case-open" data-case="${doc}">查看对应认证书</button></div></div>`}
-    function showCase(id){const c=caseDocuments[id];if(!c)return;caseDialogTitle.textContent=c.title;caseDialogDegree.textContent=c.degree;caseDialogImage.src=c.image;caseDialogImage.alt=`${c.title}中留服认证书（已打码）`;if(!caseDialog.open)caseDialog.showModal();refreshFloatingHome()}
+    function showCase(id){const c=caseDocuments[id];if(!c)return;caseDialogTitle.textContent=c.title;caseDialogDegree.textContent=c.degree;caseDialogImage.src=c.image;caseDialogImage.alt=`${c.title}中留服认证书（已打码）`;if(!caseDialog.open)caseDialog.showModal();syncWechatContact();refreshFloatingHome()}
     function catalogBadges(id,p){
       const labels=[];
       if(p.tags.includes('ai'))labels.push('AI');
@@ -1045,8 +1034,7 @@
     }
     function renderCatalog(){
       const entries=Object.entries(programs).filter(([id])=>id!=='foundation');
-      const mobile=window.matchMedia('(max-width:760px)').matches;
-      catalogGrid.innerHTML=catalogSchools.map((school,schoolIndex)=>{
+      catalogGrid.innerHTML=catalogSchools.map(school=>{
         const schoolEntries=entries.filter(([,p])=>p.school===school.code);
         const rows=catalogLevels.map(level=>{
           const rowEntries=schoolEntries.filter(([id])=>(catalogLevelByProgram[id]||'other')===level.key);
@@ -1055,8 +1043,7 @@
           const trackClass=rowEntries.length===1?'is-single':'';
           return `<div class="catalog-degree-row" data-catalog-level="${level.key}"><div class="catalog-row-label"><strong>${level.label}</strong><span>${rowEntries.length} 个项目</span></div><div class="catalog-row-track ${trackClass}" style="--course-count:${rowEntries.length}">${cards}</div></div>`;
         }).join('');
-        const open=!mobile||schoolIndex===0?' open':'';
-        return `<details class="catalog-school" data-school-group="${school.code}"${open}><summary><span class="catalog-school-code">${school.code}</span><span class="catalog-school-name"><strong>${school.name}</strong><span>${school.campus}</span></span><span class="catalog-school-status"><span>${schoolEntries.length} 个项目</span><i class="catalog-school-toggle" aria-hidden="true"></i></span></summary><div class="catalog-school-body">${rows}</div></details>`;
+        return `<details class="catalog-school" data-school-group="${school.code}"><summary><span class="catalog-school-code">${school.code}</span><span class="catalog-school-name"><strong>${school.name}</strong><span>${school.campus}</span></span><span class="catalog-school-status"><span>${schoolEntries.length} 个项目</span><i class="catalog-school-toggle" aria-hidden="true"></i></span></summary><div class="catalog-school-body">${rows}</div></details>`;
       }).join('');
       applyCatalogFilter(activeCatalogFilter);
     }
@@ -1066,8 +1053,7 @@
     function applyCatalogFilter(filter){
       activeCatalogFilter=filter;
       let visibleCount=0;
-      const mobile=window.matchMedia('(max-width:760px)').matches;
-      catalogGrid.querySelectorAll('.catalog-school').forEach((school,schoolIndex)=>{
+      catalogGrid.querySelectorAll('.catalog-school').forEach(school=>{
         let schoolMatches=0;
         school.querySelectorAll('.catalog-degree-row').forEach(row=>{
           const cards=[...row.querySelectorAll('.catalog-card')];
@@ -1083,14 +1069,13 @@
           schoolMatches+=rowMatches;
         });
         school.hidden=filter!=='all'&&schoolMatches===0;
-        if(filter==='all')school.open=!mobile||schoolIndex===0;
-        else if(schoolMatches>0)school.open=true;
+        school.open=filter!=='all'&&schoolMatches>0;
       });
       catalogEmpty.hidden=visibleCount>0;
     }
     function list(items){return `<ul>${items.map(x=>`<li>${escapeHtml(x)}</li>`).join('')}</ul>`}
     const BASE_TITLE=document.title;
-    const viewTitles={catalog:"项目与 2027 费用",admissions:"录取要求",selling:"四校定位",campus:"校区与住宿",alumni:"校友案例",cases:"中留服案例",calendar:"四校 2027 日历",preparation:"入学准备与中国校区项目",swissPrep:"瑞士本部入学准备课程",chinaCampus:"中国校区项目"};
+    const viewTitles={catalog:"四校项目与 2027 费用",admissions:"录取要求",selling:"四校定位",campus:"校区与住宿",alumni:"校友案例",cases:"中留服案例",calendar:"四校 2027 日历",preparation:"入学准备与中国校区项目",swissPrep:"瑞士本部入学准备课程",chinaCampus:"中国校区项目"};
     let programReturnHash='#matrix';
     function showProgram(rawId,pushHash=true){
       const id=resolveProgram(rawId);
@@ -1109,6 +1094,7 @@
         <div class="dialog-actions"><button class="action" id="copyLink">复制本项目链接</button><span class="fee-disclaimer">项目咨询统一联系 Lucinda；本导航不设置四校官网外跳入口。</span></div>`;
       if(pushHash){programReturnHash=location.hash&&!location.hash.startsWith('#program/')?location.hash:'#matrix';history.replaceState(null,'',`#program/${id}`)}
       if(!dialog.open)dialog.showModal();
+      syncWechatContact();
       refreshFloatingHome();
       document.getElementById('copyLink').addEventListener('click',()=>copyProgramLink(id));
     }
@@ -1122,20 +1108,28 @@
     document.getElementById('closeCaseDialog').addEventListener('click',()=>caseDialog.close());
     dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});
     caseDialog.addEventListener('click',e=>{if(e.target===caseDialog)caseDialog.close()});
-    caseDialog.addEventListener('close',()=>{caseDialogImage.removeAttribute('src');refreshFloatingHome()});
-    dialog.addEventListener('close',()=>{if(location.hash.startsWith('#program/'))history.replaceState(null,'',programReturnHash);refreshFloatingHome()});
+    caseDialog.addEventListener('close',()=>{caseDialogImage.removeAttribute('src');syncWechatContact();refreshFloatingHome()});
+    dialog.addEventListener('close',()=>{if(location.hash.startsWith('#program/'))history.replaceState(null,'',programReturnHash);syncWechatContact();refreshFloatingHome()});
     document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');ensureCatalogRendered();applyCatalogFilter(b.dataset.filter)}));
     const lazyMediaSections=[...document.querySelectorAll('.lazy-media-section')];
     const secondarySections=[...document.querySelectorAll('.secondary-section')];
     const prepPanels=[...document.querySelectorAll('#preparation .prep-panel')];
     function loadDisclosureImages(panel){panel.querySelectorAll('img[data-src]').forEach(img=>{if(!img.getAttribute('src'))img.src=img.dataset.src})}
     function unloadDisclosureImages(panel){panel.querySelectorAll('img[data-src]').forEach(img=>img.removeAttribute('src'))}
-    function hideSecondarySections(){
+    function setWechatContactVisible(visible){
+      if(!wechatContact||!contactQr)return;
+      wechatContact.hidden=!visible;
+      if(visible){if(!contactQr.getAttribute('src'))contactQr.setAttribute('src',contactQr.dataset.src)}
+      else contactQr.removeAttribute('src');
+    }
+    function syncWechatContact(){setWechatContactVisible(!document.body.classList.contains('secondary-view')&&!dialog.open&&!caseDialog.open)}
+    function hideSecondarySections(showHomeContact=true){
       secondarySections.forEach(section=>section.hidden=true);
       lazyMediaSections.forEach(unloadDisclosureImages);
       prepPanels.forEach(panel=>panel.hidden=false);
       document.body.classList.remove('secondary-view');
       document.querySelectorAll('[data-reveal]').forEach(link=>link.setAttribute('aria-expanded','false'));
+      setWechatContactVisible(showHomeContact);
     }
     function refreshFloatingHome(){
       const modalHost=caseDialog.open?caseDialog:dialog.open?dialog:null;
@@ -1157,7 +1151,7 @@
       const section=document.getElementById(sectionId);
       const target=document.getElementById(targetId)||section;
       if(!section||!target)return;
-      hideSecondarySections();
+      hideSecondarySections(false);
       if(sectionId==='catalog')ensureCatalogRendered();
       if(sectionId==='preparation'&&(targetId==='swissPrep'||targetId==='chinaCampus'))prepPanels.forEach(panel=>panel.hidden=panel.id!==targetId);
       section.hidden=false;
