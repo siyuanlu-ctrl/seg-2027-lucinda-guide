@@ -389,9 +389,12 @@
     .catalog{display:grid;grid-template-columns:1fr;gap:24px;background:transparent;border:0}
     .catalog-school{min-width:0;border:1px solid var(--line);border-top:6px solid var(--red);background:#fff;box-shadow:0 18px 42px rgba(65,12,12,.08)}
     .catalog-school[hidden],.catalog-degree-row[hidden],.catalog-empty[hidden],.catalog-row-empty[hidden]{display:none!important}
-    .catalog-school>summary{min-height:94px;padding:20px 24px;display:grid;grid-template-columns:88px minmax(0,1fr) auto;align-items:center;gap:20px;list-style:none;color:var(--navy);cursor:pointer}
+    .catalog-school>summary{min-height:104px;padding:20px 24px;display:grid;grid-template-columns:96px minmax(0,1fr) auto;align-items:center;gap:20px;list-style:none;color:var(--navy);cursor:pointer}
     .catalog-school>summary::-webkit-details-marker{display:none}
-    .catalog-school-code{font-size:23px;font-weight:900;letter-spacing:.08em}
+    .catalog-school-logo{width:88px;height:74px;display:flex;align-items:center;justify-content:flex-start;overflow:visible}
+    .catalog-school-logo img{display:block;width:74px;height:74px;object-fit:contain;object-position:center}
+    .catalog-school-logo.is-caas img{transform:scale(1.08)}
+    .catalog-school-logo.is-him img{transform:scale(1.2)}
     .catalog-school-name strong{display:block;font-family:"Bodoni 72",Didot,Georgia,"Songti SC",serif;font-size:25px;font-weight:600;line-height:1.15}
     .catalog-school-name span{display:block;margin-top:5px;color:var(--muted);font-size:11px;font-weight:650;letter-spacing:.04em}
     .catalog-school-status{display:flex;align-items:center;gap:14px;color:var(--muted);font-size:11px;font-weight:750;white-space:nowrap}
@@ -432,7 +435,7 @@
       .matrix-home .wechat-contact{grid-column:2}
       body.secondary-view .matrix-home .identity-card{grid-template-columns:1fr 1fr}
       body.secondary-view .matrix-home .identity-contact{grid-column:1/-1}
-      .catalog-school>summary{grid-template-columns:76px minmax(0,1fr) auto}
+      .catalog-school>summary{grid-template-columns:84px minmax(0,1fr) auto}
       .catalog-degree-row{grid-template-columns:112px minmax(0,1fr)}
     }
     @media(max-width:760px){
@@ -502,8 +505,9 @@
       .catalog-card,.position,.concern,.program-link,.filter,.open-detail,.action,.explore-link{transition:none!important;transform:none!important}
       .catalog{gap:14px}
       .catalog-school{box-shadow:none}
-      .catalog-school>summary{min-height:76px;padding:14px;grid-template-columns:58px minmax(0,1fr) auto;gap:10px}
-      .catalog-school-code{font-size:16px}
+      .catalog-school>summary{min-height:88px;padding:12px 14px;grid-template-columns:70px minmax(0,1fr) auto;gap:10px}
+      .catalog-school-logo{width:66px;height:64px}
+      .catalog-school-logo img{width:62px;height:62px}
       .catalog-school-name strong{font-size:18px}
       .catalog-school-name span{margin-top:3px;font-size:9px}
       .catalog-school-status>span{display:none}
@@ -932,10 +936,10 @@
     const resolveProgram=id=>programAliases[id]||id;
 
     const catalogSchools=[
-      {code:"SHMS",name:"瑞士酒店管理大学",campus:"Caux · Leysin"},
-      {code:"CAAS",name:"瑞士美食艺术管理大学",campus:"Le Bouveret · Brig"},
-      {code:"CRCS",name:"瑞士恺撒里兹学院",campus:"Brig"},
-      {code:"HIM",name:"瑞士蒙特勒工商管理大学",campus:"Montreux"}
+      {code:"SHMS",name:"瑞士酒店管理大学",campus:"Caux · Leysin",logo:"shms-dark.png"},
+      {code:"CAAS",name:"瑞士美食艺术管理大学",campus:"Le Bouveret · Brig",logo:"caas-dark.png"},
+      {code:"CRCS",name:"瑞士恺撒里兹学院",campus:"Brig",logo:"crcs-logo.svg"},
+      {code:"HIM",name:"瑞士蒙特勒工商管理大学",campus:"Montreux",logo:"him-dark.png"}
     ];
     const catalogLevels=[
       {key:"bachelor",label:"本科",note:"Bachelor"},
@@ -1043,7 +1047,7 @@
           const trackClass=rowEntries.length===1?'is-single':'';
           return `<div class="catalog-degree-row" data-catalog-level="${level.key}"><div class="catalog-row-label"><strong>${level.label}</strong><span>${rowEntries.length} 个项目</span></div><div class="catalog-row-track ${trackClass}" style="--course-count:${rowEntries.length}">${cards}</div></div>`;
         }).join('');
-        return `<details class="catalog-school" data-school-group="${school.code}"><summary><span class="catalog-school-code">${school.code}</span><span class="catalog-school-name"><strong>${school.name}</strong><span>${school.campus}</span></span><span class="catalog-school-status"><span>${schoolEntries.length} 个项目</span><i class="catalog-school-toggle" aria-hidden="true"></i></span></summary><div class="catalog-school-body">${rows}</div></details>`;
+        return `<details class="catalog-school" data-school-group="${school.code}"><summary><span class="catalog-school-logo is-${school.code.toLowerCase()}"><img src="${school.logo}" width="145" height="145" alt="${school.code}" decoding="async"></span><span class="catalog-school-name"><strong>${school.name}</strong><span>${school.campus}</span></span><span class="catalog-school-status"><span>${schoolEntries.length} 个项目</span><i class="catalog-school-toggle" aria-hidden="true"></i></span></summary><div class="catalog-school-body">${rows}</div></details>`;
       }).join('');
       applyCatalogFilter(activeCatalogFilter);
     }
