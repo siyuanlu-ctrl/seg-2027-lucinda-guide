@@ -972,8 +972,8 @@
       "him-ai":"master"
     };
 
-    const FX_RATE=8.34;
-    const FX_UPDATED="2026-09-04";
+    const FX_RATE=8.07;
+    const FX_UPDATED="2026-10-08";
     const shmsCampus=["住宿：含在校学期标准双人房","餐饮：含工作日三餐及周末早午餐、晚餐","保险：含在校学期医疗险＋全球私人民事责任险；实习期另计"];
     const caasCampus=["住宿：含在校学期标准房型（Le Bouveret 双人房；Brig 豪华单人房）","餐饮：Le Bouveret 含工作日三餐及周末两餐；Brig 含工作日午、晚餐，周末提供厨房","保险：含在校学期医疗险＋全球私人民事责任险；实习期另计"];
     const crcsCampus=["住宿：含在校学期豪华单人房","餐饮：含工作日午、晚餐；周末提供公共厨房","保险：含在校学期医疗险＋全球私人民事责任险；实习期另计"];
@@ -1035,7 +1035,7 @@
     const rmb=n=>`约 ¥${Math.round(n*FX_RATE/1000)*1000}`.replace(/\B(?=(\d{3})+(?!\d))/g,',');
     document.querySelectorAll('[data-chf-budget]').forEach(item=>{item.textContent=`人民币预算：${rmb(Number(item.dataset.chfBudget))}`});
     document.querySelectorAll('[data-chf-saving]').forEach(item=>{item.textContent=`较 2027 全程瑞士完成按费表少：${rmb(Number(item.dataset.chfSaving))}`});
-    document.querySelectorAll('[data-fx-note]').forEach(item=>{item.textContent=`人民币预算按 1 CHF ≈ ¥${FX_RATE.toFixed(2)} 换算（${FX_UPDATED} 更新），仅供参考。`});
+    document.querySelectorAll('[data-fx-note]').forEach(item=>{item.textContent=`人民币预算按 1 CHF ≈ ¥${FX_RATE.toFixed(2)} 换算（参考中国银行瑞士法郎现汇卖出价，${FX_UPDATED} 更新），并四舍五入到千元；仅供参考，实际以缴费或购汇当日银行成交汇率及手续费为准。`});
     function rmbLine(id){const m=feeMeta[id];if(!m||!m.chf.length)return '<span class="rmb-price">人民币预算：请咨询</span>';return `<span class="rmb-price">人民币预算：${m.chf.map((n,i)=>`${m.labels?.[i]?m.labels[i]+' ':''}${rmb(n)}`).join(' ｜ ')}</span>`}
     function coverageLine(id){const m=feeMeta[id];return `<div class="coverage">${(m?.coverage||[]).map(x=>`<span>${escapeHtml(x)}</span>`).join('')}</div>`}
     function caseBlock(id){const copy=directCases[id];const doc=programCaseDocument[id];if(!copy||!doc)return '';return `<div class="detail-block"><h3>中留服既往案例</h3><div class="case-panel"><span class="case-label">CSCSE · 与本项目层级对应</span><p><strong>对应案例：</strong>${escapeHtml(copy)} 既往个案不代表未来自动通过，最终以申请时的证书、学习方式、个人材料及中留服审核为准。</p><button class="case-open" data-case="${doc}">查看对应认证书</button></div></div>`}
@@ -1098,8 +1098,8 @@
       const id=resolveProgram(rawId);
       const p=programs[id]; if(!p)return;
       const feeBoundary=id==='foundation'
-        ? `换算汇率：1 CHF ≈ ¥${FX_RATE.toFixed(2)}（${FX_UPDATED} 更新）。人民币仅供预算，实际付款以 CHF、学校 Invoice 及银行结算为准。AFP 另缴 CHF 2,000 保证金；EFP 和 IFP 的当期费用请联系 Lucinda 获取。`
-        : `换算汇率：1 CHF ≈ ¥${FX_RATE.toFixed(2)}（${FX_UPDATED} 更新）。人民币仅供预算，实际付款以 CHF、学校 Invoice 及银行结算为准。校内项目通常另缴 CHF 2,000 保证金；实习期及假期住宿、餐饮、保险另计。符合“开学前至少 90 天全额付款”等条件时，指定学费、标准住宿与餐饮项目可享 2% 早鸟优惠，最终以 Invoice 为准。`;
+        ? `换算汇率：1 CHF ≈ ¥${FX_RATE.toFixed(2)}（参考中国银行瑞士法郎现汇卖出价，${FX_UPDATED} 更新）。人民币预算按千元四舍五入，实际付款以 CHF、学校 Invoice、缴费或购汇当日银行成交汇率及手续费为准。AFP 另缴 CHF 2,000 保证金；EFP 和 IFP 的当期费用请联系 Lucinda 获取。`
+        : `换算汇率：1 CHF ≈ ¥${FX_RATE.toFixed(2)}（参考中国银行瑞士法郎现汇卖出价，${FX_UPDATED} 更新）。人民币预算按千元四舍五入，实际付款以 CHF、学校 Invoice、缴费或购汇当日银行成交汇率及手续费为准。校内项目通常另缴 CHF 2,000 保证金；实习期及假期住宿、餐饮、保险另计。符合“开学前至少 90 天全额付款”等条件时，指定学费、标准住宿与餐饮项目可享 2% 早鸟优惠，最终以 Invoice 为准。`;
       dialogSchool.textContent=p.school;
       dialogTitle.textContent=p.title;
       dialogContent.innerHTML=`
